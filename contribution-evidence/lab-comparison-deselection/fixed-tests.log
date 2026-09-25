@@ -1,0 +1,2437 @@
+yarn run v1.22.22
+$ yarn workspace @oss-compass/web test:ci --runInBand
+$ jest --ci --runInBand
+jest-haste-map: Haste module naming collision: @oss-compass/web
+  The following files share their name; please adjust your hasteImpl:
+    * <rootDir>/package.json
+    * <rootDir>/.next/standalone/apps/web/package.json
+
+PASS src/modules/lab/model/components/DataSetPanel/index.test.tsx
+  ● Console
+
+    console.error
+      `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      34 |     />
+      35 |   );
+    > 36 |   render(strict ? <React.StrictMode>{panel}</React.StrictMode> : panel);
+         |         ^
+      37 |   fireEvent.click(screen.getByText('lab:pick_for_compare'));
+      38 |   return screen.getAllByRole('checkbox');
+      39 | }
+
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:19:17)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at startComparison (src/modules/lab/model/components/DataSetPanel/index.test.tsx:36:9)
+      at Object.startComparison (src/modules/lab/model/components/DataSetPanel/index.test.tsx:45:34)
+
+PASS src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/IssueOverview/IssueRepoProgressSection.test.ts
+PASS src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx
+  ● Console
+
+    console.error
+      `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+       5 | describe('PainIssueTable with overview slim Issue data', () => {
+       6 |   it('renders an archived Issue before the full detail request finishes', () => {
+    >  7 |     render(
+         |           ^
+       8 |       <PainIssueTable
+       9 |         issues={[{ number: '202', score: null, metric_code: '' }]}
+      10 |         pagination={false}
+
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:19:17)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:7:11)
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+       5 | describe('PainIssueTable with overview slim Issue data', () => {
+       6 |   it('renders an archived Issue before the full detail request finishes', () => {
+    >  7 |     render(
+         |           ^
+       8 |       <PainIssueTable
+       9 |         issues={[{ number: '202', score: null, metric_code: '' }]}
+      10 |         pagination={false}
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:7:11)
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+       5 | describe('PainIssueTable with overview slim Issue data', () => {
+       6 |   it('renders an archived Issue before the full detail request finishes', () => {
+    >  7 |     render(
+         |           ^
+       8 |       <PainIssueTable
+       9 |         issues={[{ number: '202', score: null, metric_code: '' }]}
+      10 |         pagination={false}
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:7:11)
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+       5 | describe('PainIssueTable with overview slim Issue data', () => {
+       6 |   it('renders an archived Issue before the full detail request finishes', () => {
+    >  7 |     render(
+         |           ^
+       8 |       <PainIssueTable
+       9 |         issues={[{ number: '202', score: null, metric_code: '' }]}
+      10 |         pagination={false}
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:7:11)
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+       5 | describe('PainIssueTable with overview slim Issue data', () => {
+       6 |   it('renders an archived Issue before the full detail request finishes', () => {
+    >  7 |     render(
+         |           ^
+       8 |       <PainIssueTable
+       9 |         issues={[{ number: '202', score: null, metric_code: '' }]}
+      10 |         pagination={false}
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:7:11)
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+       5 | describe('PainIssueTable with overview slim Issue data', () => {
+       6 |   it('renders an archived Issue before the full detail request finishes', () => {
+    >  7 |     render(
+         |           ^
+       8 |       <PainIssueTable
+       9 |         issues={[{ number: '202', score: null, metric_code: '' }]}
+      10 |         pagination={false}
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:7:11)
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+       5 | describe('PainIssueTable with overview slim Issue data', () => {
+       6 |   it('renders an archived Issue before the full detail request finishes', () => {
+    >  7 |     render(
+         |           ^
+       8 |       <PainIssueTable
+       9 |         issues={[{ number: '202', score: null, metric_code: '' }]}
+      10 |         pagination={false}
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:7:11)
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayStyle` is deprecated. Please use `styles={{ root: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Tooltip] `overlayInnerStyle` is deprecated. Please use `styles={{ body: {} }}` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/tooltip/index.js:98:15
+          at Array.forEach (<anonymous>)
+      at Tooltip (../../node_modules/antd/lib/tooltip/index.js:97:388)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateForwardRef (../../node_modules/react-dom/cjs/react-dom-client.development.js:7762:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:10014:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+    console.error
+      Warning: [antd: Modal] `destroyOnClose` is deprecated. Please use `destroyOnHidden` instead.
+
+      24 |     { actor: {}, expected: '' },
+      25 |   ])('renders actor $actor safely', ({ actor, expected }) => {
+    > 26 |     render(
+         |           ^
+      27 |       <PainIssueTable
+      28 |         issues={[
+      29 |           {
+
+      at warning (../../node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../node_modules/rc-util/lib/warning.js:71:3)
+      at _warning (../../node_modules/antd/lib/_util/warning.js:21:27)
+      at typeWarning (../../node_modules/antd/lib/_util/warning.js:55:49)
+      at Function.typeWarning.deprecated (../../node_modules/antd/lib/_util/warning.js:60:5)
+      at ../../node_modules/antd/lib/modal/Modal.js:101:15
+          at Array.forEach (<anonymous>)
+      at Modal (../../node_modules/antd/lib/modal/Modal.js:100:126)
+      at Object.react-stack-bottom-frame (../../node_modules/react-dom/cjs/react-dom-client.development.js:22428:20)
+      at renderWithHooks (../../node_modules/react-dom/cjs/react-dom-client.development.js:5757:22)
+      at updateFunctionComponent (../../node_modules/react-dom/cjs/react-dom-client.development.js:8018:19)
+      at beginWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:9683:18)
+      at runWithFiberInDEV (../../node_modules/react-dom/cjs/react-dom-client.development.js:543:16)
+      at performUnitOfWork (../../node_modules/react-dom/cjs/react-dom-client.development.js:15052:22)
+      at workLoopSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14870:41)
+      at renderRootSync (../../node_modules/react-dom/cjs/react-dom-client.development.js:14850:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14334:13)
+      at performSyncWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15946:7)
+      at flushSyncWorkAcrossRoots_impl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15807:21)
+      at commitRootImpl (../../node_modules/react-dom/cjs/react-dom-client.development.js:15399:7)
+      at commitRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:15251:11)
+      at performWorkOnRoot (../../node_modules/react-dom/cjs/react-dom-client.development.js:14445:15)
+      at performWorkOnRootViaSchedulerTask (../../node_modules/react-dom/cjs/react-dom-client.development.js:15931:7)
+      at flushActQueue (../../node_modules/react/cjs/react.development.js:862:34)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react/cjs/react.development.js:1151:10)
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:22:20)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/components/PainIssueTable.test.tsx:26:11
+
+PASS src/common/utils/format.test.tsx
+PASS src/modules/developer/DataView/OverviewSummary/Radar/Chart.test.tsx
+PASS src/modules/intelligent-analysis/UserJourney/OverviewDashboard/operatorCategories.test.ts
+PASS src/modules/developer/DataView/OverviewSummary/Languages/Languages.test.tsx
+PASS src/common/utils/links.test.ts
+PASS src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/CiOverview/CiRepoProgressSection.test.ts
+PASS src/modules/analyze/hooks/dateRange.test.ts
+PASS src/common/transform/transDataForOverview.test.ts
+PASS src/common/utils/time.test.ts
+PASS src/common/transform/transMetricToAxis.test.ts
+PASS src/modules/lab/model/Analyze/context/dataHandle.test.tsx
+PASS src/common/transform/transHundredMarkSystem.test.ts
+PASS src/modules/developer/DataView/utils.test.js
+  ● Console
+
+    console.log
+      { min: 50, max: 101, average: 73.33333333333333 } { min: 50, max: 101, average: 73.33333333333333 }
+
+      at log (src/modules/developer/DataView/utils.js:171:11)
+
+    console.log
+      [ 100, 50, 70 ] [
+        '#7f7f7f', '#bcbd22',
+        '#c79f19', '#b6d551',
+        '#17becf', '#1e91d8',
+        '#19c7b9', '#3ba272',
+        '#e377c2', '#fc8452',
+        '#9467bd'
+      ]
+
+      at log (src/modules/developer/DataView/utils.js:88:11)
+
+    console.log
+      { min: 50, max: 101, average: 73.33333333333333 } { min: 50, max: 101, average: 73.33333333333333 }
+
+      at log (src/modules/developer/DataView/utils.js:171:11)
+
+    console.log
+      [ 100, 50, 70 ] [
+        '#7f7f7f', '#bcbd22',
+        '#c79f19', '#b6d551',
+        '#17becf', '#1e91d8',
+        '#19c7b9', '#3ba272',
+        '#e377c2', '#fc8452',
+        '#9467bd'
+      ]
+
+      at log (src/modules/developer/DataView/utils.js:88:11)
+
+    console.log
+      { min: 50, max: 101, average: 73.33333333333333 } { min: 50, max: 101, average: 73.33333333333333 }
+
+      at log (src/modules/developer/DataView/utils.js:171:11)
+
+    console.log
+      [ 100, 50, 70 ] [
+        '#7f7f7f', '#bcbd22',
+        '#c79f19', '#b6d551',
+        '#17becf', '#1e91d8',
+        '#19c7b9', '#3ba272',
+        '#e377c2', '#fc8452',
+        '#9467bd'
+      ]
+
+      at log (src/modules/developer/DataView/utils.js:88:11)
+
+    console.log
+      { min: 50, max: 101, average: 73.33333333333333 } { min: 50, max: 101, average: 73.33333333333333 }
+
+      at log (src/modules/developer/DataView/utils.js:171:11)
+
+    console.log
+      [ 100, 50, 70 ] [
+        '#7f7f7f', '#bcbd22',
+        '#c79f19', '#b6d551',
+        '#17becf', '#1e91d8',
+        '#19c7b9', '#3ba272',
+        '#e377c2', '#fc8452',
+        '#9467bd'
+      ]
+
+      at log (src/modules/developer/DataView/utils.js:88:11)
+
+    console.log
+      { min: 70, max: 101, average: 85 } { min: 70, max: 101, average: 85 }
+
+      at log (src/modules/developer/DataView/utils.js:171:11)
+
+    console.log
+      [ 100, 70 ] [
+        '#7f7f7f', '#bcbd22',
+        '#c79f19', '#b6d551',
+        '#17becf', '#1e91d8',
+        '#19c7b9', '#3ba272',
+        '#e377c2', '#fc8452',
+        '#9467bd'
+      ]
+
+      at log (src/modules/developer/DataView/utils.js:88:11)
+
+PASS src/common/utils/url.test.ts
+PASS src/modules/intelligent-analysis/DeveloperExperience/routes.test.ts
+PASS src/common/components/DocLink.test.tsx
+PASS src/modules/lab/model/Form/utils.test.tsx
+PASS src/common/utils/number.test.ts
+PASS src/modules/intelligent-analysis/UserJourney/OverviewDashboard/scoreTrend.test.ts
+PASS src/modules/intelligent-analysis/DeveloperExperience/IssueContribution/issuePriority.test.ts
+PASS src/modules/intelligent-analysis/server/pathSafety.test.ts
+PASS src/modules/lab/model/User/utils.test.tsx
+PASS src/modules/intelligent-analysis/UserJourney/OverviewDashboard/statusColors.test.ts
+PASS src/modules/submitProject/Misc/index.test.ts
+PASS src/common/transform/transSummaryToAxis.test.tsx
+
+Test Suites: 28 passed, 28 total
+Tests:       119 passed, 119 total
+Snapshots:   0 total
+Time:        6.831 s, estimated 7 s
+Ran all test suites.
+Done in 11.24s.

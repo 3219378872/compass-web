@@ -1,0 +1,101 @@
+yarn run v1.22.22
+$ yarn workspace @oss-compass/web test:ci --runInBand DataSetPanel
+$ jest --ci --runInBand DataSetPanel
+  console.error
+    `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      34 |     />
+      35 |   );
+    > 36 |   render(strict ? <React.StrictMode>{panel}</React.StrictMode> : panel);
+         |         ^
+      37 |   fireEvent.click(screen.getByText('lab:pick_for_compare'));
+      38 |   return screen.getAllByRole('checkbox');
+      39 | }
+
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../node_modules/react-dom/cjs/react-dom-test-utils.development.js:19:17)
+      at ../../node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../node_modules/@testing-library/react/dist/pure.js:246:10)
+      at startComparison (src/modules/lab/model/components/DataSetPanel/index.test.tsx:36:9)
+      at Object.startComparison (src/modules/lab/model/components/DataSetPanel/index.test.tsx:45:34)
+
+FAIL src/modules/lab/model/components/DataSetPanel/index.test.tsx
+  dataset comparison (StrictMode=false)
+    ✕ keeps the other repositories selected and compares them after deselection (128 ms)
+    ✕ clears the final selection and keeps comparison unavailable (40 ms)
+    ✓ resets selections when comparison is cancelled (61 ms)
+  dataset comparison (StrictMode=true)
+    ✕ keeps the other repositories selected and compares them after deselection (25 ms)
+    ✓ clears the final selection and keeps comparison unavailable (27 ms)
+    ✓ resets selections when comparison is cancelled (30 ms)
+
+  ● dataset comparison (StrictMode=false) › keeps the other repositories selected and compares them after deselection
+
+    expect(element).toBeChecked()
+
+    Received element is not checked:
+      <input type="checkbox" />
+
+      47 |     fireEvent.click(beta);
+      48 |
+    > 49 |     expect(alpha).toBeChecked();
+         |                   ^
+      50 |     expect(beta).not.toBeChecked();
+      51 |     expect(gamma).toBeChecked();
+      52 |     fireEvent.click(screen.getByText('collection:compare'));
+
+      at Object.toBeChecked (src/modules/lab/model/components/DataSetPanel/index.test.tsx:49:19)
+
+  ● dataset comparison (StrictMode=false) › clears the final selection and keeps comparison unavailable
+
+    expect(element).not.toBeChecked()
+
+    Received element is checked:
+      <input type="checkbox" />
+
+      64 |
+      65 |     screen.getAllByRole('checkbox').forEach((checkbox) => {
+    > 66 |       expect(checkbox).not.toBeChecked();
+         |                            ^
+      67 |     });
+      68 |     fireEvent.click(screen.getByText('collection:compare'));
+      69 |     expect(mockPush).not.toHaveBeenCalled();
+
+      at toBeChecked (src/modules/lab/model/components/DataSetPanel/index.test.tsx:66:28)
+          at Array.forEach (<anonymous>)
+      at Object.forEach (src/modules/lab/model/components/DataSetPanel/index.test.tsx:65:37)
+
+  ● dataset comparison (StrictMode=true) › keeps the other repositories selected and compares them after deselection
+
+    expect(element).toBeChecked()
+
+    Received element is not checked:
+      <input type="checkbox" />
+
+      47 |     fireEvent.click(beta);
+      48 |
+    > 49 |     expect(alpha).toBeChecked();
+         |                   ^
+      50 |     expect(beta).not.toBeChecked();
+      51 |     expect(gamma).toBeChecked();
+      52 |     fireEvent.click(screen.getByText('collection:compare'));
+
+      at Object.toBeChecked (src/modules/lab/model/components/DataSetPanel/index.test.tsx:49:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 passed, 6 total
+Snapshots:   0 total
+Time:        1.692 s
+Ran all test suites matching /DataSetPanel/i.
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+error Command failed.
+Exit code: 1
+Command: /home/dev/competitions/wuzhen/.tools/node-v18.20.8-linux-x64/bin/node
+Arguments: /home/dev/.cache/node/corepack/v1/yarn/1.22.22/lib/cli.js test:ci --runInBand DataSetPanel
+Directory: /home/dev/competitions/wuzhen/repos/compass-agent/apps/web
+Output:
+
+info Visit https://yarnpkg.com/en/docs/cli/workspace for documentation about this command.
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

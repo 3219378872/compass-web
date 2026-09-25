@@ -1,0 +1,40 @@
+{
+  "baseline": "d709b1898549c5ab4091302a4c26f45bbe198c66",
+  "label": "baseline",
+  "before": [
+    {
+      "repo": "alpha",
+      "checked": true
+    },
+    {
+      "repo": "beta",
+      "checked": true
+    },
+    {
+      "repo": "gamma",
+      "checked": true
+    }
+  ],
+  "after": [
+    {
+      "repo": "alpha",
+      "checked": false
+    },
+    {
+      "repo": "beta",
+      "checked": true
+    },
+    {
+      "repo": "gamma",
+      "checked": false
+    }
+  ],
+  "urlBefore": "http://127.0.0.1:35470/lab/report/my",
+  "urlAfter": "http://127.0.0.1:35470/lab/report/my",
+  "errors": [],
+  "queries": [
+    "userinfo",
+    "myModelReports"
+  ],
+  "mockBoundary": "Only /api/graphql is intercepted with synthetic user and report data. Actual Next.js /lab/report/my, ReportItem, DataSetPanel, RepoCard and RepoCompareBar execute unchanged."
+}

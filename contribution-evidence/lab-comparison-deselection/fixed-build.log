@@ -1,0 +1,1369 @@
+yarn run v1.22.22
+$ yarn workspace @oss-compass/web build
+$ next build
+   ▲ Next.js 15.5.9
+
+   Linting and checking validity of types ...
+
+./src/common/components/DocPopper.tsx
+31:34  Warning: Replace `right-0·bottom-2` with `bottom-2·right-0`  prettier/prettier
+
+./src/common/components/Drawer.tsx
+12:25  Warning: Replace `left-full·right-0·top-0·bottom` with `bottom-0·left-full·right-0·top`  prettier/prettier
+18:36  Warning: Replace `top-0·left-full·bottom-0·right` with `bottom-0·left-full·right-0·top`  prettier/prettier
+25:27  Warning: Replace `top-0·bottom-0·-left-full` with `-left-full·bottom-0·top-0`  prettier/prettier
+
+./src/common/components/OrgEdit/OrgInput.tsx
+86:21  Warning: Replace `top-1.5·right-2` with `right-2·top-1.5`  prettier/prettier
+
+./src/common/components/OrgEdit/index.tsx
+121:24  Warning: Replace `mr-2·!mb-0` with `!mb-0·mr-2`  prettier/prettier
+
+./src/common/components/Questionnaire.tsx
+32:31  Warning: Replace `top-0·right` with `right-0·top`  prettier/prettier
+70:31  Warning: Replace `top-0·right` with `right-0·top`  prettier/prettier
+
+./src/common/components/SelectAndInput/index.tsx
+77:44  Warning: Replace `top-2·right` with `right-2·top`  prettier/prettier
+
+./src/common/components/SelectLike/index.tsx
+39:21  Warning: Replace `top-2·right` with `right-2·top`  prettier/prettier
+50:41  Warning: Replace `top-2·right` with `right-2·top`  prettier/prettier
+
+./src/common/components/Table/Download.tsx
+71:94  Warning: Replace `y-2·px-3` with `x-3·py-2`  prettier/prettier
+
+./src/common/dev/Bomb.tsx
+13:40  Warning: Replace `y-2·px-4` with `x-4·py-2`  prettier/prettier
+
+./src/common/utils/getLocale.ts
+43:9  Warning: Replace `typeof·sessionStorage·!==·'undefined'·&&·sessionStorage.getItem(SESSION_KEY)` with `⏎······typeof·sessionStorage·!==·'undefined'·&&⏎······sessionStorage.getItem(SESSION_KEY)⏎····`  prettier/prettier
+
+./src/modules/about/22CommunityMembers.tsx
+56:43  Warning: Replace `y-10·px-16` with `x-16·py-10`  prettier/prettier
+
+./src/modules/about/23Partners.tsx
+32:44  Warning: Replace `y-10·px-16` with `x-16·py-10`  prettier/prettier
+
+./src/modules/about/30TechnicalCommittee.tsx
+31:39  Warning: Replace `y-10·px-16` with `x-16·py-10`  prettier/prettier
+
+./src/modules/about/40OutreachCommittee.tsx
+47:39  Warning: Replace `y-10·px-16` with `x-16·py-10`  prettier/prettier
+
+./src/modules/about/Banner.tsx
+12:32  Warning: Replace `left-0·right-0·top-0·bottom` with `bottom-0·left-0·right-0·top`  prettier/prettier
+
+./src/modules/academe/Coutact.tsx
+27:29  Warning: Replace `l-2·mb-0.5` with `b-0.5·ml-2`  prettier/prettier
+
+./src/modules/academe/components/Banner/index.tsx
+18:21  Warning: Replace `right-28·bottom-0` with `bottom-0·right-28`  prettier/prettier
+29:14  Warning: Replace `line-clamp-3·mt-4·mb-4` with `mb-4·mt-4·line-clamp-3`  prettier/prettier
+
+./src/modules/analyze/DataView/Charts.tsx
+27:33  Warning: Replace `t-8·mb` with `b-8·mt`  prettier/prettier
+30:31  Warning: Replace `t-2·mr` with `r-2·mt`  prettier/prettier
+53:45  Warning: Replace `t-2·mr` with `r-2·mt`  prettier/prettier
+62:43  Warning: Replace `t-2·mr` with `r-2·mt`  prettier/prettier
+70:46  Warning: Replace `t-2·mr` with `r-2·mt`  prettier/prettier
+
+./src/modules/analyze/DataView/CollaborationDevelopmentIndex/CommitFrequency.tsx
+93:44  Warning: Delete `⏎············`  prettier/prettier
+
+./src/modules/analyze/DataView/CollaborationDevelopmentIndex/IsMaintained.tsx
+73:44  Warning: Delete `⏎············`  prettier/prettier
+78:27  Warning: Replace `·containerRef={ref}·loading={loading}·option={option}` with `⏎····················containerRef={ref}⏎····················loading={loading}⏎····················option={option}⏎·················`  prettier/prettier
+
+./src/modules/analyze/DataView/CommunityServiceSupport/CommentFrequency.tsx
+74:44  Warning: Delete `⏎············`  prettier/prettier
+79:27  Warning: Replace `·containerRef={ref}·loading={loading}·option={option}` with `⏎····················containerRef={ref}⏎····················loading={loading}⏎····················option={option}⏎·················`  prettier/prettier
+
+./src/modules/analyze/DataView/Contributor/OverviewSummary/CommunityRepos.tsx
+38:27  Warning: Replace `line-clamp-1·mt` with `mt-1·line-clamp`  prettier/prettier
+42:27  Warning: Replace `line-clamp-1·mt` with `mt-1·line-clamp`  prettier/prettier
+
+./src/modules/analyze/DataView/Contributor/index.tsx
+24:45  Warning: Replace `t-2·mr` with `r-2·mt`  prettier/prettier
+
+./src/modules/analyze/DataView/MetricDetail/MetricDashboard.tsx
+51:26  Warning: Replace `t-6·mb-2` with `b-2·mt-6`  prettier/prettier
+56:96  Warning: Replace `y-1.5·px-3` with `x-3·py-1.5`  prettier/prettier
+72:24  Warning: Replace `t-6·mb-2` with `b-2·mt-6`  prettier/prettier
+77:94  Warning: Replace `y-1.5·px-3` with `x-3·py-1.5`  prettier/prettier
+111:26  Warning: Replace `t-4·mb-2` with `b-2·mt-4`  prettier/prettier
+114:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+125:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+136:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+147:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+168:24  Warning: Replace `t-4·mb-2` with `b-2·mt-4`  prettier/prettier
+171:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+193:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+204:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+232:26  Warning: Replace `t-4·mb-2` with `b-2·mt-4`  prettier/prettier
+235:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+246:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+257:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+268:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+289:24  Warning: Replace `t-4·mb-2` with `b-2·mt-4`  prettier/prettier
+292:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+303:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+321:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+334:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+365:26  Warning: Replace `t-4·mb-2` with `b-2·mt-4`  prettier/prettier
+368:31  Warning: Replace `line-clamp-1·mt-1·mr-2·` with `mr-2·mt-1·line-clamp-1·`  prettier/prettier
+379:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+390:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+401:32  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+422:24  Warning: Replace `t-4·mb-2` with `b-2·mt-4`  prettier/prettier
+425:29  Warning: Replace `line-clamp-1·mt-1·mr-2·` with `mr-2·mt-1·line-clamp-1·`  prettier/prettier
+436:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+454:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+467:30  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+589:24  Warning: Replace `t-1·mr-2` with `r-2·mt-1`  prettier/prettier
+
+./src/modules/analyze/DataView/MetricDetail/MetricIssue/IssueCompletion.tsx
+25:9  Warning: The 'getStateText' function makes the dependencies of useMemo Hook (at line 40) change on every render. Move it inside the useMemo callback. Alternatively, wrap the definition of 'getStateText' in its own useCallback() Hook.  react-hooks/exhaustive-deps
+
+./src/modules/analyze/DataView/MetricDetail/MetricPr/PrCompletion.tsx
+22:9  Warning: The 'getStateText' function makes the dependencies of useMemo Hook (at line 34) change on every render. Move it inside the useMemo callback. Alternatively, wrap the definition of 'getStateText' in its own useCallback() Hook.  react-hooks/exhaustive-deps
+
+./src/modules/analyze/DataView/MetricDetail/useVerifyDateRange.ts
+48:6  Warning: React Hook useMemo has an unnecessary dependency: 'isLoading'. Either exclude it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/analyze/DataView/OverviewSummary/CommunityRepos.tsx
+38:27  Warning: Replace `line-clamp-1·mt` with `mt-1·line-clamp`  prettier/prettier
+42:27  Warning: Replace `line-clamp-1·mt` with `mt-1·line-clamp`  prettier/prettier
+
+./src/modules/analyze/components/CompareBar/AddInput.tsx
+91:67  Warning: Replace `tr-lg·rounded-b` with `br-lg·rounded-t`  prettier/prettier
+
+./src/modules/analyze/components/CompareBar/ColorSwitcher.tsx
+102:101  Warning: Replace `t-2·pb-1` with `b-1·pt-2`  prettier/prettier
+
+./src/modules/analyze/components/CompareBar/CompareItem.tsx
+25:27  Warning: Replace `top-2·right` with `right-2·top`  prettier/prettier
+
+./src/modules/analyze/components/CompareBar/SearchDropdown.tsx
+35:18  Warning: Replace `line-clamp-1·my-1·flex-shrink-0·whitespace-nowrap·py-1·px-4` with `my-1·line-clamp-1·flex-shrink-0·whitespace-nowrap·px-4·py-1`  prettier/prettier
+
+./src/modules/analyze/components/CompareBar/index.tsx
+18:34  Warning: Replace `top-0·left` with `left-0·top`  prettier/prettier
+22:46  Warning: Replace `tl-lg·rounded-b` with `bl-lg·rounded-t`  prettier/prettier
+33:28  Warning: Replace `tl-lg·rounded-b` with `bl-lg·rounded-t`  prettier/prettier
+
+./src/modules/analyze/components/ConnectLine.tsx
+5:30  Warning: Replace `left-[9px]·-top-4` with `-top-4·left-[9px]`  prettier/prettier
+
+./src/modules/analyze/components/DownCardLoadImage.tsx
+215:30  Warning: Replace `t-8·mb` with `b-8·mt`  prettier/prettier
+
+./src/modules/analyze/components/NavBar/SubscribeButton.tsx
+56:24  Warning: Replace `r-1·ml-2` with `l-2·mr-1`  prettier/prettier
+63:24  Warning: Replace `r-1·ml-2` with `l-2·mr-1`  prettier/prettier
+74:106  Warning: Replace `y-1·px-2` with `x-2·py-1`  prettier/prettier
+
+./src/modules/analyze/components/SectionTitle.tsx
+16:33  Warning: Replace `r-4·ml-1.5` with `l-1.5·mr-4`  prettier/prettier
+
+./src/modules/analyze/components/SideBar/Menu/MenuSubItem.tsx
+11:55  Warning: Replace `y-2·px-4` with `x-4·py-2`  prettier/prettier
+
+./src/modules/analyze/components/SideBar/Menu/MenuTopicItem.tsx
+18:63  Warning: Replace `y-2·px` with `x-2·py`  prettier/prettier
+
+./src/modules/analyze/components/TableList.tsx
+55:31  Warning: Replace `t-2·border-b` with `b·border-t-2`  prettier/prettier
+
+./src/modules/analyze/components/TopicTitle.tsx
+10:26  Warning: Replace `t-20·mb-1` with `b-10·mt-2`  prettier/prettier
+
+./src/modules/analyze/hooks/useQueryDateRange.ts
+62:6  Warning: React Hook useMemo has an unnecessary dependency: 'isLoading'. Either exclude it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/auth/UserInfoStore.tsx
+10:29  Warning: Replace `typeof·userEvent` with `(typeof·userEvent)`  prettier/prettier
+
+./src/modules/collection/MainHeader.tsx
+99:48  Warning: Replace `t-4·pb-5` with `b-5·pt-4`  prettier/prettier
+
+./src/modules/collection/SideMenus.tsx
+111:65  Warning: Replace `t-2·pl-3` with `l-3·pt-2`  prettier/prettier
+
+./src/modules/developer/DataView/Charts.tsx
+20:29  Warning: Replace `t-2·mr` with `r-2·mt`  prettier/prettier
+
+./src/modules/developer/DataView/OverviewSummary/DeveloperDashboard/Pie.tsx
+66:6  Warning: React Hook useEffect has an unnecessary dependency: 'cardRef.current'. Either exclude it or remove the dependency array. Mutable values like 'cardRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+./src/modules/developer/DataView/OverviewSummary/DeveloperDashboard/index.tsx
+69:29  Warning: Replace `right-7·-top-9` with `-top-9·right-7`  prettier/prettier
+
+./src/modules/developer/DataView/RepoDataView/CommunityRepos.tsx
+38:27  Warning: Replace `line-clamp-1·mt` with `mt-1·line-clamp`  prettier/prettier
+42:27  Warning: Replace `line-clamp-1·mt` with `mt-1·line-clamp`  prettier/prettier
+
+./src/modules/developer/DataView/RepoDataView/RepoRanks/RankCharts.tsx
+44:6  Warning: React Hook useMemo has a missing dependency: 't'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/developer/DataView/UserPortrayal/Wordcloud.tsx
+92:22  Warning: Replace `t-6·mb-4` with `b-4·mt-6`  prettier/prettier
+
+./src/modules/developer/components/ConnectLineMini.tsx
+5:31  Warning: Replace `r-4·ml-1.5` with `l-1.5·mr-4`  prettier/prettier
+
+./src/modules/developer/components/SideBar/Menu/MenuSubItem.tsx
+11:55  Warning: Replace `y-2·px-4` with `x-4·py-2`  prettier/prettier
+
+./src/modules/developer/components/SideBar/Menu/MenuTopicItem.tsx
+18:63  Warning: Replace `y-2·px` with `x-2·py`  prettier/prettier
+
+./src/modules/explore/Banner.tsx
+25:25  Warning: Replace `top-0·right-1` with `right-10·top-`  prettier/prettier
+
+./src/modules/explore/RepoCard.tsx
+38:24  Warning: Replace `y-4·px-6` with `x-6·py-4`  prettier/prettier
+39:34  Warning: Replace `top-2·right-3` with `right-3·top-2`  prettier/prettier
+
+./src/modules/home/Banner/Carousel.tsx
+79:19  Warning: Replace `top-[80px]·-right-10` with `-right-10·top-[80px]`  prettier/prettier
+
+./src/modules/home/Banner/Search/components/Tabs.tsx
+28:17  Warning: Replace `y-2·px-6` with `x-6·py-2`  prettier/prettier
+
+./src/modules/home/Explain/Mobile.tsx
+15:21  Warning: Replace `top-0·left-0·right-0·bottom` with `bottom-0·left-0·right-0·top`  prettier/prettier
+21:21  Warning: Replace `top-0·left-0·right-0·bottom` with `bottom-0·left-0·right-0·top`  prettier/prettier
+26:32  Warning: Replace `top-0·left-0·right-0·bottom` with `bottom-0·left-0·right-0·top`  prettier/prettier
+
+./src/modules/home/Explain/PopCard.tsx
+24:21  Warning: Replace `line-clamp-4·mb` with `mb-4·line-clamp`  prettier/prettier
+
+./src/modules/home/Explain/PopCardMobile.tsx
+42:21  Warning: Replace `line-clamp-4·mb` with `mb-4·line-clamp`  prettier/prettier
+
+./src/modules/home/Explain/index.tsx
+13:58  Warning: Replace `t-[40px]·pb-6` with `b-6·pt-[40px]`  prettier/prettier
+
+./src/modules/home/HotFields/ProjectItem.tsx
+45:27  Warning: Replace `line-clamp-1·ml-2` with `ml-2·line-clamp-1`  prettier/prettier
+
+./src/modules/home/HotFields/index.tsx
+26:32  Warning: Replace `right-0·bottom` with `bottom-0·right`  prettier/prettier
+125:64  Warning: Replace `t-[40px]·pb-6` with `b-6·pt-[40px]`  prettier/prettier
+
+./src/modules/home/LatestNews/index.tsx
+43:29  Warning: Replace `line-clamp-3·mt-2` with `mt-2·line-clamp-3`  prettier/prettier
+54:29  Warning: Replace `line-clamp-3·mt-2` with `mt-2·line-clamp-3`  prettier/prettier
+57:30  Warning: Replace `t-4·mb-6` with `b-6·mt-4`  prettier/prettier
+89:44  Warning: Replace `t-[40px]·pb-6` with `b-6·pt-[40px]`  prettier/prettier
+
+./src/modules/home/LatestUpdate/index.tsx
+14:58  Warning: Replace `t-[40px]·pb-6` with `b-6·pt-[40px]`  prettier/prettier
+
+./src/modules/home/Purpose/CooperationCase.tsx
+26:112  Warning: Replace `t-0·border-r` with `r·border-t-0`  prettier/prettier
+75:37  Warning: Replace `l-2·mb-0.5` with `b-0.5·ml-2`  prettier/prettier
+
+./src/modules/home/Trending/index.tsx
+10:64  Warning: Replace `t-[40px]·pb-16` with `b-16·pt-[40px]`  prettier/prettier
+
+./src/modules/intelligent-analysis/DataView/MySubmissions.tsx
+49:36  Warning: Insert `;`  prettier/prettier
+53:6  Warning: React Hook useEffect has a missing dependency: 'fetchSubmissions'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+57:6  Warning: React Hook useEffect has a missing dependency: 'filterSubmissions'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/DataView/Overview/Project/DetailPage/EcoCharts.tsx
+310:6  Warning: React Hook useMemo has a missing dependency: 'createEcoTabItem'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/DataView/Overview/Project/DeveloperRegionChart.tsx
+100:30  Warning: Replace `item` with `(item)`  prettier/prettier
+195:70  Warning: Insert `⏎················`  prettier/prettier
+196:1  Warning: Delete `··`  prettier/prettier
+261:31  Warning: Replace `item` with `(item)`  prettier/prettier
+276:38  Warning: Replace `region` with `(region)`  prettier/prettier
+293:6  Warning: React Hook useEffect has missing dependencies: 'getValidMapData', 'i18n.language', and 't'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/DataView/Overview/Project/hooks/useUserDetail.ts
+395:6  Warning: React Hook useEffect has missing dependencies: 'extractUserDetailFromApiResponse', 'parseEcoChartsData', and 'parseUserDetail'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/DataView/Overview/Project/index.tsx
+55:6  Warning: React Hook useEffect has a missing dependency: 'loadProjectData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/DataView/Overview/index.tsx
+15:57  Warning: Replace `project` with `(project)`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/CiOverview/dashboard/dashboard.js
+11:14  Warning: Replace `·{name:'稳定性',···ask:'构建结果可信吗?'` with `{·name:·'稳定性',·ask:·'构建结果可信吗?'·`  prettier/prettier
+12:16  Warning: Replace `name:'效率',·····ask:'反馈够快吗?'` with `·name:·'效率',·ask:·'反馈够快吗?'·`  prettier/prettier
+13:15  Warning: Replace `{name:'交互体验',·ask:'开发者顺畅吗?'` with `·{·name:·'交互体验',·ask:·'开发者顺畅吗?'·`  prettier/prettier
+14:9  Warning: Replace `······{name:'成本',·····ask:'算力花得值吗?'}` with `{·name:·'成本',·ask:·'算力花得值吗?'·},`  prettier/prettier
+16:18  Warning: Replace `stability:'稳定性',·efficiency:'效率',·interaction:'交互体验',·cost:'成本'` with `⏎··stability:·'稳定性',⏎··efficiency:·'效率',⏎··interaction:·'交互体验',⏎··cost:·'成本',⏎`  prettier/prettier
+17:30  Warning: Replace `'efficiency','interaction',` with `·'efficiency',·'interaction',·`  prettier/prettier
+18:20  Warning: Replace `'稳定性':'stability','效率':'efficiency','交互体验':'interaction','成本':'cost'` with `⏎··稳定性:·'stability',⏎··效率:·'efficiency',⏎··交互体验:·'interaction',⏎··成本:·'cost',⏎`  prettier/prettier
+19:16  Warning: Replace `known:'根因已核',·partial:'部分已核(含推测)',·guide:'分析指引',·pending:'待人工判读'` with `⏎··known:·'根因已核',⏎··partial:·'部分已核(含推测)',⏎··guide:·'分析指引',⏎··pending:·'待人工判读',⏎`  prettier/prettier
+23:22  Warning: Replace `'ok','全部',` with `·'ok',·'全部',·`  prettier/prettier
+24:4  Warning: Replace `'日志按步骤下载(download_log,ZIP·分文件)','ok','行级根因、Flaky·用例级、缓存命中率、冒烟分型','—(需个人令牌)'` with `⏎····'日志按步骤下载(download_log,ZIP·分文件)',⏎····'ok',⏎····'行级根因、Flaky·用例级、缓存命中率、冒烟分型',⏎····'—(需个人令牌)',⏎··`  prettier/prettier
+25:22  Warning: Replace `'ok','PR·转绿时长、失败修复时长、CI·阻塞·PR',` with `·'ok',·'PR·转绿时长、失败修复时长、CI·阻塞·PR',·`  prettier/prettier
+26:4  Warning: Replace `'run·保留期(≥7·天,07-11·首·run·仍在)','ok','趋势连续性','持续核查;验证仓自建落库兜底'` with `⏎····'run·保留期(≥7·天,07-11·首·run·仍在)',⏎····'ok',⏎····'趋势连续性',⏎····'持续核查;验证仓自建落库兜底',⏎··`  prettier/prettier
+27:4  Warning: Replace `'执行机·API·权限(仓库管理员令牌,07-18)','ok','org·runner-groups·可查(1·组·modelarts_runner)','—'` with `⏎····'执行机·API·权限(仓库管理员令牌,07-18)',⏎····'ok',⏎····'org·runner-groups·可查(1·组·modelarts_runner)',⏎····'—',⏎··`  prettier/prettier
+28:4  Warning: Replace `'资源池容量数据','no','利用率分母缺;NPU·执行机为·ModelArts·动态注册(常态列表空)','配额数据需团队提供'` with `⏎····'资源池容量数据',⏎····'no',⏎····'利用率分母缺;NPU·执行机为·ModelArts·动态注册(常态列表空)',⏎····'配额数据需团队提供',⏎··`  prettier/prettier
+29:4  Warning: Replace `'排队时长字段(pause_time·恒·0)','no','排队时长(现用近似口径)、挂死·vs·排队判别','待提交需求'` with `⏎····'排队时长字段(pause_time·恒·0)',⏎····'no',⏎····'排队时长(现用近似口径)、挂死·vs·排队判别',⏎····'待提交需求',⏎··`  prettier/prettier
+30:13  Warning: Replace `'no','无效机时构成(抢占/人工/超时不可分)',` with `·'no',·'无效机时构成(抢占/人工/超时不可分)',·`  prettier/prettier
+31:4  Warning: Replace `'执行耗时字段数据质量(execute_cost_time·有负值)','no','已弃用,统一实际耗时(结束−开始)','待提交数据质量单'` with `⏎····'执行耗时字段数据质量(execute_cost_time·有负值)',⏎····'no',⏎····'已弃用,统一实际耗时(结束−开始)',⏎····'待提交数据质量单',⏎··`  prettier/prettier
+32:4  Warning: Replace `'失败信息含·UT·域/编译变体名;父节点透传子失败','no','失败信息可读性、机器人回帖精度','待提交需求'` with `⏎····'失败信息含·UT·域/编译变体名;父节点透传子失败',⏎····'no',⏎····'失败信息可读性、机器人回帖精度',⏎····'待提交需求',⏎··`  prettier/prettier
+33:4  Warning: Replace `'重跑标志·/·计费口径','no','Flaky·精判、成本货币化(现用机时)','待提交需求'` with `⏎····'重跑标志·/·计费口径',⏎····'no',⏎····'Flaky·精判、成本货币化(现用机时)',⏎····'待提交需求',⏎··`  prettier/prettier
+34:4  Warning: Replace `'stage/job·名不被内容审查误遮蔽','no','阶段归因(矩阵中单列呈现)','待提交需求']` with `⏎····'stage/job·名不被内容审查误遮蔽',⏎····'no',⏎····'阶段归因(矩阵中单列呈现)',⏎····'待提交需求',⏎··],`  prettier/prettier
+68:20  Warning: Replace `·grain·=·'daily',·day·=·null,·dim·=·'stability',` with `⏎··grain·=·'daily',⏎··day·=·null,⏎··dim·=·'stability',⏎·`  prettier/prettier
+70:22  Warning: Replace `·const·d=D();·const·dt=(day·&&·d.boards[day])?day:d.days[d.days.length-1];·return·[dt,·d.boards[dt]];·` with `⏎··const·d·=·D();⏎··const·dt·=·day·&&·d.boards[day]·?·day·:·d.days[d.days.length·-·1];⏎··return·[dt,·d.boards[dt]];⏎`  prettier/prettier
+71:18  Warning: Replace `r·=>·(r===` with `(r)·=>·(r·===·`  prettier/prettier
+72:19  Warning: Replace `id)·=>` with `·id)·=>⏎·`  prettier/prettier
+73:13  Warning: Replace `·=·(r,n)··=>` with `=·(r,·n)·=>⏎·`  prettier/prettier
+76:13  Warning: Replace `s·=>·String(s==null?'':` with `(s)·=>·String(s·==·null·?·''·:·`  prettier/prettier
+77:13  Warning: Replace `x·=>·x==null·?·'—'·:·(typeof·x==='object'·?·esc(x.v)+(x.demo?'<span·class="demo">示</span>':'')·:·esc(x)` with `(x)·=>⏎··x·==·null⏎····?·'—'⏎····:·typeof·x·===·'object'⏎····?·esc(x.v)·+·(x.demo·?·'<span·class="demo">示</span>'·:·'')⏎····:·esc(x`  prettier/prettier
+78:14  Warning: Replace `s·=>·s==null·?·'—'·:·(s>=120·?·(s/60).toFixed(1)+'·min'·:·s+'·s')` with `(s)·=>⏎··s·==·null·?·'—'·:·s·>=·120·?·(s·/·60).toFixed(1)·+·'·min'·:·s·+·'·s'`  prettier/prettier
+79:16  Warning: Replace `{·if(x==null)·return·null;·if(typeof·x==='object')·x=x.v;·const·m=String(x).replace(/,/g,'').match(/-?\d+(\.\d+)?/);·return·m?parseFloat(m[0]):null;·` with `·{⏎··if·(x·==·null)·return·null;⏎··if·(typeof·x·===·'object')·x·=·x.v;⏎··const·m·=·String(x)⏎····.replace(/,/g,·'')⏎····.match(/-?\d+(\.\d+)?/);⏎··return·m·?·parseFloat(m[0])·:·null;⏎`  prettier/prettier
+80:19  Warning: Replace `{·const·v=a.filter(x=>x!=null).slice().sort((p,q)=>p-q);·if(!v.length)·return·null;·const·m=Math.floor(v.length/2);·return·v.length%2?v[m]:(v[m-1]+v[m])/2;·` with `·{⏎··const·v·=·a⏎····.filter((x)·=>·x·!=·null)⏎····.slice()⏎····.sort((p,·q)·=>·p·-·q);⏎··if·(!v.length)·return·null;⏎··const·m·=·Math.floor(v.length·/·2);⏎··return·v.length·%·2·?·v[m]·:·(v[m·-·1]·+·v[m])·/·2;⏎`  prettier/prettier
+81:13  Warning: Replace `a·=>·a.reduce((p,q)=>p+(q||0),` with `(a)·=>·a.reduce((p,·q)·=>·p·+·(q·||·0),·`  prettier/prettier
+82:18  Warning: Replace `k)·=>·(b.dims||[]).find(d=>d.key===k)·||·{vals:[]` with `·k)·=>·(b.dims·||·[]).find((d)·=>·d.key·===·k)·||·{·vals:·[]·`  prettier/prettier
+83:17  Warning: Replace `k,label){·const·d=dimOf(b,k);·const·f=(d.vals||[]).find(v=>v[0].indexOf(label)>=0);·return·f?num(f[1]):null;·` with `·k,·label)·{⏎··const·d·=·dimOf(b,·k);⏎··const·f·=·(d.vals·||·[]).find((v)·=>·v[0].indexOf(label)·>=·0);⏎··return·f·?·num(f[1])·:·null;⏎`  prettier/prettier
+84:20  Warning: Replace `label)·=>·{·const·f=(b.meta||[]).find(m=>m[0].indexOf(label)>=0);·return·f?num(f[1]):null;·` with `·label)·=>·{⏎··const·f·=·(b.meta·||·[]).find((m)·=>·m[0].indexOf(label)·>=·0);⏎··return·f·?·num(f[1])·:·null;⏎`  prettier/prettier
+85:15  Warning: Replace `x·=>·x==null?'—':(Number.isInteger(x)?x:` with `(x)·=>·(x·==·null·?·'—'·:·Number.isInteger(x)·?·x·:·`  prettier/prettier
+88:41  Warning: Insert `·`  prettier/prettier
+89:5  Warning: Replace `(first==null·||·last==null·||·first===last)·return·{cls:'flat',·arrow:'→',·word:'持平',·txt:''` with `·(first·==·null·||·last·==·null·||·first·===·last)⏎····return·{·cls:·'flat',·arrow:·'→',·word:·'持平',·txt:·''·`  prettier/prettier
+90:18  Warning: Replace `>first,` with `·>·first,⏎···`  prettier/prettier
+91:14  Warning: Replace `·first!==0·?·Math.round((last-first)/Math.abs(first)*` with `⏎····first·!==·0·?·Math.round(((last·-·first)·/·Math.abs(first))·*·`  prettier/prettier
+92:11  Warning: Replace `cls:worse?'bad':'good',·arrow:up?'▲':'▼',·word:worse?'恶化':` with `⏎····cls:·worse·?·'bad'·:·'good',⏎····arrow:·up·?·'▲'·:·'▼',⏎····word:·worse·?·'恶化'·:·`  prettier/prettier
+93:9  Warning: Replace `(up?'+':'')+(pct!=null?pct+'%':(last-first).toFixed(1))` with `⏎······(up·?·'+'·:·'')·+·(pct·!=·null·?·pct·+·'%'·:·(last·-·first).toFixed(1)),⏎··`  prettier/prettier
+95:17  Warning: Replace `a·=>·a.find(v=>v!=null·&&·v!==` with `(a)·=>·a.find((v)·=>·v·!=·null·&&·v·!==·`  prettier/prettier
+96:13  Warning: Replace `··=·a·=>·[...a].reverse().find(v=>v!=null·&&·v!==` with `·=·(a)·=>·[...a].reverse().find((v)·=>·v·!=·null·&&·v·!==·`  prettier/prettier
+99:22  Warning: Insert `·`  prettier/prettier
+100:13  Warning: Replace `=` with `·=·`  prettier/prettier
+101:11  Warning: Insert `⏎···`  prettier/prettier
+102:22  Warning: Replace `dt=>metaNum(d.boards[dt],` with `(dt)·=>·metaNum(d.boards[dt],·`  prettier/prettier
+103:10  Warning: Replace `···days.map(dt=>pick(d.boards[dt],'stability','Action·平台失败率')` with `·days.map((dt)·=>⏎······pick(d.boards[dt],·'stability',·'Action·平台失败率')⏎····`  prettier/prettier
+104:12  Warning: Replace `·days.map(dt=>pick(d.boards[dt],'cost',` with `days.map((dt)·=>·pick(d.boards[dt],·'cost',·`  prettier/prettier
+105:10  Warning: Replace `···days.map(dt=>pick(d.boards[dt],'efficiency',` with `days.map((dt)·=>·pick(d.boards[dt],·'efficiency',·`  prettier/prettier
+106:12  Warning: Replace `·days.map(dt=>pick(d.boards[dt],'interaction',` with `days.map((dt)·=>·pick(d.boards[dt],·'interaction',·`  prettier/prettier
+107:12  Warning: Replace `·days.map(dt=>pick(d.boards[dt],'cost','机时(全部池)'))` with `days.map((dt)·=>·pick(d.boards[dt],·'cost',·'机时(全部池)')),⏎·`  prettier/prettier
+111:75  Warning: Insert `·`  prettier/prettier
+112:12  Warning: Replace `=series.map(v=>v==null?0:v),·W=260,H=74,pL=6,pR=6,pT=10,pB=` with `·=·series.map((v)·=>·(v·==·null·?·0·:·v)),⏎····W·=·260,⏎····H·=·74,⏎····pL·=·6,⏎····pR·=·6,⏎····pT·=·10,⏎····pB·=·`  prettier/prettier
+113:11  Warning: Replace `=Math.max(...pts,0.0001),·mn=Math.min(...pts,` with `·=·Math.max(...pts,·0.0001),⏎····mn·=·Math.min(...pts,·`  prettier/prettier
+114:10  Warning: Replace `=i=>pL+i*(W-pL-pR)/((pts.length-1)||` with `·=·(i)·=>·pL·+·(i·*·(W·-·pL·-·pR))·/·(pts.length·-·1·||·`  prettier/prettier
+115:10  Warning: Replace `=v=>pT+(H-pT-pB)*(1-(v-mn)/((mx-mn)||` with `·=·(v)·=>·pT·+·(H·-·pT·-·pB)·*·(1·-·(v·-·mn)·/·(mx·-·mn·||·`  prettier/prettier
+116:13  Warning: Replace `=pts.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1))` with `·=·pts⏎····.map((v,·i)·=>·(i·?·'L'·:·'M')·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1))⏎····`  prettier/prettier
+117:13  Warning: Replace `=`M${x(0)},${y(mn)}·`+pts.map((v,i)=>'L'+x(i).toFixed(1)+','+y(v).toFixed(1)).join('·')+`·L${x(pts.length-` with `·=⏎····`M${x(0)},${y(mn)}·`·+⏎····pts.map((v,·i)·=>·'L'·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1)).join('·')·+⏎····`·L${x(pts.length·-·`  prettier/prettier
+118:14  Warning: Replace `=series.find(v=>v!=null),·last=[...series].reverse().find(v=>v!=` with `·=·series.find((v)·=>·v·!=·null),⏎····last·=·[...series].reverse().find((v)·=>·v·!=·`  prettier/prettier
+119:11  Warning: Replace `=delta(first,·last,·lowerBetter!==` with `·=·delta(first,·last,·lowerBetter·!==·`  prettier/prettier
+120:19  Warning: Replace `!=` with `·!=·`  prettier/prettier
+121:12  Warning: Replace `='g'+Math.random().toString(36).slice(2,` with `·=·'g'·+·Math.random().toString(36).slice(2,·`  prettier/prettier
+123:46  Warning: Replace `title)}</span><span·class="t-now">${now}<span·class="mini">·${esc(unit||''` with `⏎······title⏎····)}</span><span·class="t-now">${now}<span·class="mini">·${esc(⏎····unit·||·''⏎··`  prettier/prettier
+125:94  Warning: Replace `title` with `⏎····title⏎··`  prettier/prettier
+129:33  Warning: Replace `-1)}"·cy="${y(last==null?mn:last` with `·-·1)}"·cy="${y(⏎····last·==·null·?·mn·:·last⏎··`  prettier/prettier
+130:13  Warning: Replace `.map((d,i)=>`<text·x="${x(i)}"·y="${H-4}"·font-size="8.5"·fill="var(--muted)"·text-anchor="${i===0?'start':(i===days.length-1?'end':'middle')}">${esc(d.slice(5))}</text>`)` with `⏎········.map(⏎··········(d,·i)·=>⏎············`<text·x="${x(i)}"·y="${⏎··············H·-·4⏎············}"·font-size="8.5"·fill="var(--muted)"·text-anchor="${⏎··············i·===·0·?·'start'·:·i·===·days.length·-·1·?·'end'·:·'middle'⏎············}">${esc(d.slice(5))}</text>`⏎········)⏎········`  prettier/prettier
+132:72  Warning: Replace `di.cls}">${di.arrow}·${di.txt?di.txt+'·':` with `⏎······di.cls⏎····}">${di.arrow}·${di.txt·?·di.txt·+·'·'·:·`  prettier/prettier
+137:25  Warning: Insert `·`  prettier/prettier
+138:10  Warning: Replace `=` with `·=·`  prettier/prettier
+139:15  Warning: Replace `[['流水线失败率','完结·run·里失败的比例',s.finish,'%','var(--critical)',true` with `·[⏎······[⏎········'流水线失败率',⏎········'完结·run·里失败的比例',⏎········s.finish,⏎········'%',⏎········'var(--critical)',⏎········true,⏎······`  prettier/prettier
+140:7  Warning: Replace `·········['平台故障占比','失败里属平台自身故障的比例',s.plat,'%','var(--critical)',true]` with `[⏎········'平台故障占比',⏎········'失败里属平台自身故障的比例',⏎········s.plat,⏎········'%',⏎········'var(--critical)',⏎········true,⏎······],⏎····`  prettier/prettier
+141:16  Warning: Replace `[['流水线时长(中位)','开发者等一次结果的典型时长',s.dur,'min','var(--series)',true]` with `·[⏎······[⏎········'流水线时长(中位)',⏎········'开发者等一次结果的典型时长',⏎········s.dur,⏎········'min',⏎········'var(--series)',⏎········true,⏎······],⏎····`  prettier/prettier
+142:17  Warning: Replace `[['被·CI·卡住的·PR','被失败流水线阻塞的·PR·数',s.block,'个','var(--series-2)',true]` with `·[⏎······[⏎········'被·CI·卡住的·PR',⏎········'被失败流水线阻塞的·PR·数',⏎········s.block,⏎········'个',⏎········'var(--series-2)',⏎········true,⏎······],⏎····`  prettier/prettier
+143:10  Warning: Replace `[['无效机时','浪费在非代码失败上的算力',s.waste,'机时','var(--warning)',true]` with `·[⏎······[⏎········'无效机时',⏎········'浪费在非代码失败上的算力',⏎········s.waste,⏎········'机时',⏎········'var(--warning)',⏎········true`  prettier/prettier
+144:7  Warning: Replace `····['每日机时','当日·CI·总算力消耗(观察量)',s.hours,'机时','var(--warning)',false]]` with `],⏎······[⏎········'每日机时',⏎········'当日·CI·总算力消耗(观察量)',⏎········s.hours,⏎········'机时',⏎········'var(--warning)',⏎········false,⏎······],⏎····],`  prettier/prettier
+146:15  Warning: Replace `||[]).map(a=>miniChart(a[0],a[1],a[2],s.days,a[3],a[4],a[5])` with `·||·[]).map((a)·=>⏎····miniChart(a[0],·a[1],·a[2],·s.days,·a[3],·a[4],·a[5])⏎··`  prettier/prettier
+149:23  Warning: Insert `·`  prettier/prettier
+150:10  Warning: Replace `=940,H=200,padL=40,padB=30,padT=24,pts=t.pts,mx=Math.max(...pts)*1.15||` with `·=·940,⏎····H·=·200,⏎····padL·=·40,⏎····padB·=·30,⏎····padT·=·24,⏎····pts·=·t.pts,⏎····mx·=·Math.max(...pts)·*·1.15·||·`  prettier/prettier
+151:10  Warning: Replace `=i=>padL+i*(W-padL-20)/((pts.length-1)||1),·y=v=>padT+(H-padT-padB)*(1-v/` with `·=·(i)·=>·padL·+·(i·*·(W·-·padL·-·20))·/·(pts.length·-·1·||·1),⏎····y·=·(v)·=>·padT·+·(H·-·padT·-·padB)·*·(1·-·v·/·`  prettier/prettier
+152:8  Warning: Replace `=`<svg·viewBox="0·0·${W}·${H}"·role="img"·aria-label="${esc(t.title` with `·=·`<svg·viewBox="0·0·${W}·${H}"·role="img"·aria-label="${esc(⏎····t.title⏎··`  prettier/prettier
+153:4  Warning: Replace `+=`<text·x="${padL}"·y="14"·font-size="12.5"·font-weight="600"·fill="var(--ink-2)">${esc(t.title` with `·+=·`<text·x="${padL}"·y="14"·font-size="12.5"·font-weight="600"·fill="var(--ink-2)">${esc(⏎····t.title⏎··`  prettier/prettier
+154:6  Warning: Replace `(const·g·of·[0,Math.round(mx/2),` with `·(const·g·of·[0,·Math.round(mx·/·2),·`  prettier/prettier
+155:6  Warning: Replace `+=`<line·x1="${padL}"·y1="${y(g)}"·x2="${W-10}"·y2="${y(g)}"·stroke="var(--grid)"/><text·x="${padL-6}"·y="${y(g)+4` with `·+=·`<line·x1="${padL}"·y1="${y(g)}"·x2="${W·-·10}"·y2="${y(⏎······g⏎····)}"·stroke="var(--grid)"/><text·x="${padL·-·6}"·y="${⏎······y(g)·+·4⏎····`  prettier/prettier
+156:5  Warning: Replace `(t.anno){·const·ax=` with `·(t.anno)·{⏎····const·ax·=·`  prettier/prettier
+157:6  Warning: Replace `+=`<line·x1="${ax}"·y1="${padT}"·x2="${ax}"·y2="${H-padB` with `·+=·`<line·x1="${ax}"·y1="${padT}"·x2="${ax}"·y2="${⏎······H·-·padB⏎····`  prettier/prettier
+158:6  Warning: Replace `+=`<text·x="${Math.min(ax+6,W-330)}"·y="${padT+12}"·font-size="11"·fill="var(--good-text)"·font-weight="600">▼·${esc(t.anno.label)}</text>`;` with `·+=·`<text·x="${Math.min(ax·+·6,·W·-·330)}"·y="${⏎······padT·+·12⏎····}"·font-size="11"·fill="var(--good-text)"·font-weight="600">▼·${esc(⏎······t.anno.label⏎····)}</text>`;⏎·`  prettier/prettier
+159:13  Warning: Replace `=pts.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1))` with `·=·pts⏎····.map((v,·i)·=>·(i·?·'L'·:·'M')·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1))⏎····`  prettier/prettier
+160:4  Warning: Replace `+=` with `·+=·`  prettier/prettier
+161:18  Warning: Replace `i)=>{s+=`<circle·cx="${x(i)}"·cy="${y(v)}"·r="3.5"·fill="var(--series)"/><text·x="${x(i)}"·y="${y(v)-8}"·font-size="10.5"·fill="var(--ink-2)"·text-anchor="middle">${v}</text><text·x="${x(i)}"·y="${H-padB+16}"·font-size="10.5"·fill="var(--muted)"·text-anchor="middle">${esc(t.days[i])}</text>`;` with `·i)·=>·{⏎····s·+=·`<circle·cx="${x(i)}"·cy="${y(⏎······v⏎····)}"·r="3.5"·fill="var(--series)"/><text·x="${x(i)}"·y="${⏎······y(v)·-·8⏎····}"·font-size="10.5"·fill="var(--ink-2)"·text-anchor="middle">${v}</text><text·x="${x(⏎······i⏎····)}"·y="${⏎······H·-·padB·+·16⏎····}"·font-size="10.5"·fill="var(--muted)"·text-anchor="middle">${esc(⏎······t.days[i]⏎····)}</text>`;⏎··`  prettier/prettier
+162:4  Warning: Replace `+=` with `·+=·`  prettier/prettier
+167:48  Warning: Insert `·`  prettier/prettier
+168:11  Warning: Replace `=Math.max(...trend,` with `·=·Math.max(...trend,·`  prettier/prettier
+169:13  Warning: Replace `=trend.map((v,i)=>`<i·title="${esc(tdays[i])}:${v}"·data-day="${esc(tdays[i])}"${dk?`·data-dim="${dk}"`:''}·style="height:${v?Math.max(3,Math.round(v/mx*24)):2}px${v?'':';background:var(--grid)'}"></i>`)` with `·=·trend⏎····.map(⏎······(v,·i)·=>⏎········`<i·title="${esc(tdays[i])}:${v}"·data-day="${esc(tdays[i])}"${⏎··········dk·?·`·data-dim="${dk}"`·:·''⏎········}·style="height:${v·?·Math.max(3,·Math.round((v·/·mx)·*·24))·:·2}px${⏎··········v·?·''·:·';background:var(--grid)'⏎········}"></i>`⏎····)⏎····`  prettier/prettier
+171:38  Warning: Replace `?'·click':''}"·title="${clickable?'点击某天跳转到日级观测':''` with `·?·'·click'·:·''}"·title="${⏎····clickable·?·'点击某天跳转到日级观测'·:·''⏎··`  prettier/prettier
+173:23  Warning: Replace `{·const·el=ev.target.closest('i[data-day]');·if(!el)·return;·gotoDay(el.getAttribute('data-day'),·el.getAttribute('data-dim'));·` with `·{⏎··const·el·=·ev.target.closest('i[data-day]');⏎··if·(!el)·return;⏎··gotoDay(el.getAttribute('data-day'),·el.getAttribute('data-dim'));⏎`  prettier/prettier
+174:29  Warning: Replace `{·const·di=delta(firstNZ(trend)??null,·lastNZ(trend)??null,·true);·return·`<span·class="tverd·${di.cls}">${di.word}</span>`;·` with `·{⏎··const·di·=·delta(firstNZ(trend)·??·null,·lastNZ(trend)·??·null,·true);⏎··return·`<span·class="tverd·${di.cls}">${di.word}</span>`;⏎`  prettier/prettier
+177:22  Warning: Insert `·`  prettier/prettier
+178:8  Warning: Replace `='<tr><th·class="rowh"·rowspan="2">阶段</th>'+m.groups.map(g=>`<th·colspan="${g.mechs.length}"·style="text-align:center">${esc(g.g)}</th>`).join('')+` with `·=⏎····'<tr><th·class="rowh"·rowspan="2">阶段</th>'·+⏎····m.groups⏎······.map(⏎········(g)·=>⏎··········`<th·colspan="${g.mechs.length}"·style="text-align:center">${esc(⏎············g.g⏎··········)}</th>`⏎······)⏎······.join('')·+⏎····`  prettier/prettier
+179:4  Warning: Replace `+='<tr>'+m.groups.map(g=>g.mechs.map(mm=>`<th·style="text-align:center">${esc(mm)}</th>`).join('')).join('')+` with `·+=⏎····'<tr>'·+⏎····m.groups⏎······.map((g)·=>⏎········g.mechs⏎··········.map((mm)·=>·`<th·style="text-align:center">${esc(mm)}</th>`)⏎··········.join('')⏎······)⏎······.join('')·+⏎····`  prettier/prettier
+180:6  Warning: Replace `(const·st·of·m.stages){·const·row=m.cells[st]||{};·const·tot=Object.values(row).reduce((a,b)=>a+b,` with `·(const·st·of·m.stages)·{⏎····const·row·=·m.cells[st]·||·{};⏎····const·tot·=·Object.values(row).reduce((a,·b)·=>·a·+·b,·`  prettier/prettier
+181:6  Warning: Replace `+=`<tr><th·class="rowh">${esc(st)}</th>`+m.groups.map(g=>g.mechs.map(mm=>{·const·v=row[mm]||` with `·+=⏎······`<tr><th·class="rowh">${esc(st)}</th>`·+⏎······m.groups⏎········.map((g)·=>⏎··········g.mechs⏎············.map((mm)·=>·{⏎··············const·v·=·row[mm]·||·`  prettier/prettier
+182:1  Warning: Replace `······const·cl=v?(g.cls==='Action·平台失败'?'hot':(g.cls==='待定'?'warm':'cool')):'';·return·`<td·class="${cl}">${v||'·'}</td>`;}).join('')).join('')+`<td·class="num"><b>${tot||'·'}</b></td></tr>`;` with `··············const·cl·=·v⏎················?·g.cls·===·'Action·平台失败'⏎··················?·'hot'⏎··················:·g.cls·===·'待定'⏎··················?·'warm'⏎··················:·'cool'⏎················:·'';⏎··············return·`<td·class="${cl}">${v·||·'·'}</td>`;⏎············})⏎············.join('')⏎········)⏎········.join('')·+⏎······`<td·class="num"><b>${tot·||·'·'}</b></td></tr>`;⏎·`  prettier/prettier
+183:106  Warning: Replace `m.note` with `⏎····m.note⏎··`  prettier/prettier
+186:21  Warning: Insert `·`  prettier/prettier
+187:13  Warning: Replace `=m.rows.map(e=>{·const·dev=e.dev_pct==null?'—':(e.dev_pct>0?'+':'')+e.dev_pct+` with `·=·m.rows⏎····.map((e)·=>·{⏎······const·dev·=⏎········e.dev_pct·==·null·?·'—'·:·(e.dev_pct·>·0·?·'+'·:·'')·+·e.dev_pct·+·`  prettier/prettier
+188:1  Warning: Replace `····const·warn=e.dev_pct!=null&&e.dev_pct>=50?'·style="color:var(--critical-text);font-weight:700"':` with `······const·warn·=⏎········e.dev_pct·!=·null·&&·e.dev_pct·>=·50⏎··········?·'·style="color:var(--critical-text);font-weight:700"'⏎··········:·`  prettier/prettier
+189:1  Warning: Replace `····return·`<tr><td>${esc(e.stage)}</td><td·class="num">${mmss(e.med_s)}</td><td·class="num">${mmss(e.p90_s)}</td><td·class="num">${mmss(e.base_med_s)}</td><td·class="num"${warn}>${dev}</td><td·class="num">${e.over_n}</td><td·class="num">${e.total_min}</td><td·class="num">${e.n}</td></tr>`;})` with `······return·`<tr><td>${esc(e.stage)}</td><td·class="num">${mmss(⏎········e.med_s⏎······)}</td><td·class="num">${mmss(e.p90_s)}</td><td·class="num">${mmss(⏎········e.base_med_s⏎······)}</td><td·class="num"${warn}>${dev}</td><td·class="num">${⏎········e.over_n⏎······}</td><td·class="num">${e.total_min}</td><td·class="num">${⏎········e.n⏎······}</td></tr>`;⏎····})⏎····`  prettier/prettier
+190:295  Warning: Replace `m.note` with `⏎····m.note⏎··`  prettier/prettier
+192:22  Warning: Insert `·`  prettier/prettier
+193:13  Warning: Replace `={'有效':'有效(成功·run)','代码失败消耗':'代码失败消耗(拦截成本)','平台失败废弃':'平台失败废弃','待定':'待定','取消占用':'取消占用'` with `·=·{⏎····有效:·'有效(成功·run)',⏎····代码失败消耗:·'代码失败消耗(拦截成本)',⏎····平台失败废弃:·'平台失败废弃',⏎····待定:·'待定',⏎····取消占用:·'取消占用',⏎··`  prettier/prettier
+194:8  Warning: Replace `='<tr><th·class="rowh">阶段</th>'+m.cols.map(c=>`<th·style="text-align:center">${esc(disp[c]||c)}</th>`).join('')+` with `·=⏎····'<tr><th·class="rowh">阶段</th>'·+⏎····m.cols⏎······.map((c)·=>·`<th·style="text-align:center">${esc(disp[c]·||·c)}</th>`)⏎······.join('')·+⏎····`  prettier/prettier
+195:4  Warning: Replace `+=m.rows.map(r=>{·const·tot=m.cols.reduce((a,c)=>a+(r.cells[c]||0),` with `·+=·m.rows⏎····.map((r)·=>·{⏎······const·tot·=·m.cols.reduce((a,·c)·=>·a·+·(r.cells[c]·||·0),·`  prettier/prettier
+196:5  Warning: Replace `return·`<tr><th·class="rowh">${esc(r.stage)}</th>`+m.cols.map(c=>{·const·v=Math.round(r.cells[c]||` with `··return·(⏎········`<tr><th·class="rowh">${esc(r.stage)}</th>`·+⏎········m.cols⏎··········.map((c)·=>·{⏎············const·v·=·Math.round(r.cells[c]·||·`  prettier/prettier
+197:1  Warning: Replace `······const·cl=v?(c==='平台失败废弃'||c==='取消占用'?'hot':(c==='待定'?'warm':'')):'';·return·`<td·class="${cl}">${v||'·'}</td>`;}).join('')+`<td·class="num"><b>${Math.round(tot)}</b></td></tr>`;})` with `············const·cl·=·v⏎··············?·c·===·'平台失败废弃'·||·c·===·'取消占用'⏎················?·'hot'⏎················:·c·===·'待定'⏎················?·'warm'⏎················:·''⏎··············:·'';⏎············return·`<td·class="${cl}">${v·||·'·'}</td>`;⏎··········})⏎··········.join('')·+⏎········`<td·class="num"><b>${Math.round(tot)}</b></td></tr>`⏎······);⏎····})⏎····`  prettier/prettier
+198:11  Warning: Replace `=m.cols.reduce((a,c)=>a+(m.total[c]||0),` with `·=·m.cols.reduce((a,·c)·=>·a·+·(m.total[c]·||·0),·`  prettier/prettier
+199:4  Warning: Replace `+=`<tr><th·class="rowh">合计</th>`+m.cols.map(c=>`<td><b>${Math.round(m.total[c]||0)}</b></td>`).join('')+` with `·+=⏎····`<tr><th·class="rowh">合计</th>`·+⏎····m.cols⏎······.map((c)·=>·`<td><b>${Math.round(m.total[c]·||·0)}</b></td>`)⏎······.join('')·+⏎····`  prettier/prettier
+200:106  Warning: Replace `m.note` with `⏎····m.note⏎··`  prettier/prettier
+202:22  Warning: Insert `·`  prettier/prettier
+203:11  Warning: Replace `=pb.root||{},·im=pb.impact||{},·prc=` with `·=·pb.root·||·{},⏎····im·=·pb.impact·||·{},⏎····prc·=·`  prettier/prettier
+204:11  Warning: Replace `||[]).forEach(r=>{if(r.pr)prc[r.pr]=(prc[r.pr]||0)+1;` with `·||·[]).forEach((r)·=>·{⏎····if·(r.pr)·prc[r.pr]·=·(prc[r.pr]·||·0)·+·1;⏎··`  prettier/prettier
+205:13  Warning: Replace `=(pb.runs||[]).map(r=>{·const·dup=r.pr&&prc[r.pr]>` with `·=·(pb.runs·||·[])⏎····.map((r)·=>·{⏎······const·dup·=·r.pr·&&·prc[r.pr]·>·`  prettier/prettier
+206:1  Warning: Replace `····return·`<tr${dup?'·class="dup"':''}><td><a·href="${runURL(repo,r.id` with `······return·`<tr${dup·?·'·class="dup"'·:·''}><td><a·href="${runURL(⏎········repo,⏎········r.id⏎······`  prettier/prettier
+207:13  Warning: Replace `r.pr?`<a·href="${prURL(repo,r.pr)}"·target="_blank"·rel="noopener">${esc(r.pr)}</a>${dup?`·<span·class="mini">×${prc[r.pr]}</span>`:''}`:'—'` with `⏎········r.pr⏎··········?·`<a·href="${prURL(⏎··············repo,⏎··············r.pr⏎············)}"·target="_blank"·rel="noopener">${esc(r.pr)}</a>${⏎··············dup·?·`·<span·class="mini">×${prc[r.pr]}</span>`·:·''⏎············}`⏎··········:·'—'⏎······`  prettier/prettier
+208:33  Warning: Replace `||'—'}</td><td>${esc(r.stage)||'—'}${r.job?'·/·'+esc(r.job):''}</td><td·class="mini">${esc(r.msg)}</td></tr>`;})` with `·||·'—'}</td><td>${esc(r.stage)·||·'—'}${⏎········r.job·?·'·/·'·+·esc(r.job)·:·''⏎······}</td><td·class="mini">${esc(r.msg)}</td></tr>`;⏎····})⏎····`  prettier/prettier
+209:40  Warning: Replace `==='P0'?'·open':` with `·===·'P0'·?·'·open'·:·`  prettier/prettier
+210:48  Warning: Replace `pb.pri` with `⏎····pb.pri⏎··`  prettier/prettier
+211:36  Warning: Replace `||0}·run···${im.prs||0}·PR${im.streak_days>1?`···持续第·${im.streak_days}·天(窗口累计·${im.window_total}·起)`:''}${im.wasted_min?`···关联机时·${(im.wasted_min/60).toFixed(1)}·机时`:''` with `·||·0}·run···${im.prs·||·0}·PR${⏎····im.streak_days·>·1⏎······?·`···持续第·${im.streak_days}·天(窗口累计·${im.window_total}·起)`⏎······:·''⏎··}${⏎····im.wasted_min·?·`···关联机时·${(im.wasted_min·/·60).toFixed(1)}·机时`·:·''⏎··`  prettier/prettier
+212:7  Warning: Replace `(im.cross&&im.cross.length)?`<div·class="meta">跨维度影响:${im.cross.map(esc).join(';')}</div>`:''` with `⏎······im.cross·&&·im.cross.length⏎········?·`<div·class="meta">跨维度影响:${im.cross.map(esc).join(';')}</div>`⏎········:·''⏎····`  prettier/prettier
+213:55  Warning: Replace `rt.status||'pending'}">${RSTAT[rt.status]||` with `⏎······rt.status·||·'pending'⏎····}">${RSTAT[rt.status]·||·`  prettier/prettier
+214:37  Warning: Replace `esc(rt.cause)||'机理知识库暂无条目——根因待人工判读,不做推测。'` with `⏎········esc(rt.cause)·||·'机理知识库暂无条目——根因待人工判读,不做推测。'⏎······`  prettier/prettier
+215:9  Warning: Replace `(rt.evidence&&rt.evidence.length)?`<div·style="margin-top:4px"><b>已核证据</b><ul>${rt.evidence.map(e=>`<li>${esc(e)}</li>`).join('')}</ul></div>`:''` with `⏎········rt.evidence·&&·rt.evidence.length⏎··········?·`<div·style="margin-top:4px"><b>已核证据</b><ul>${rt.evidence⏎··············.map((e)·=>·`<li>${esc(e)}</li>`)⏎··············.join('')}</ul></div>`⏎··········:·''⏎······`  prettier/prettier
+216:9  Warning: Replace `rt.guess?`<div·style="margin-top:4px"><b>推测(未核)</b>:${esc(rt.guess)}</div>`:''` with `⏎········rt.guess⏎··········?·`<div·style="margin-top:4px"><b>推测(未核)</b>:${esc(⏎··············rt.guess⏎············)}</div>`⏎··········:·''⏎······`  prettier/prettier
+217:49  Warning: Replace `esc(rt.action)||'—'` with `⏎········esc(rt.action)·||·'—'⏎······`  prettier/prettier
+221:23  Warning: Replace `dg)` with `·dg)·`  prettier/prettier
+222:5  Warning: Replace `=dg||` with `·=·dg·||·`  prettier/prettier
+223:5  Warning: Replace `(key==='stability')·return·`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>机理(二级)</th><th·class="num">当日失败·run</th></tr>${Object.entries(dg.mech||{}).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<tr><td>${esc(k)}</td><td·class="num">${v}</td></tr>`)` with `·(key·===·'stability')⏎····return·`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>机理(二级)</th><th·class="num">当日失败·run</th></tr>${Object.entries(⏎······dg.mech·||·{}⏎····)⏎······.sort((a,·b)·=>·b[1]·-·a[1])⏎······.map(([k,·v])·=>·`<tr><td>${esc(k)}</td><td·class="num">${v}</td></tr>`)⏎······`  prettier/prettier
+224:5  Warning: Replace `(key==='efficiency')·return·`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>阶段</th><th·class="num">实际耗时·中位</th><th·class="num">样本·run</th></tr>${(dg.stage_bill||[]).map(b=>`<tr><td>${esc(b.stage)}</td><td·class="num">${b.med_s!=null?(b.med_s/60).toFixed(1)+'·min':'—'}</td><td·class="num">${b.n}</td></tr>`).join('')}</tbody></table></div>`` with `·(key·===·'efficiency')⏎····return·(⏎······`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>阶段</th><th·class="num">实际耗时·中位</th><th·class="num">样本·run</th></tr>${(⏎········dg.stage_bill·||·[]⏎······)⏎········.map(⏎··········(b)·=>⏎············`<tr><td>${esc(b.stage)}</td><td·class="num">${⏎··············b.med_s·!=·null·?·(b.med_s·/·60).toFixed(1)·+·'·min'·:·'—'⏎············}</td><td·class="num">${b.n}</td></tr>`⏎········)⏎········.join('')}</tbody></table></div>`·`  prettier/prettier
+225:1  Warning: Replace `····`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>最耗时·job(成功·run,n≥3)</th><th>阶段</th><th·class="num">中位耗时</th></tr>${(dg.top_jobs||[]).map(t=>`<tr><td>${esc(t.job)}</td><td>${esc(t.stage)}</td><td·class="num">${(t.med_s/60).toFixed(1)}·min</td></tr>`).join('')}</tbody></table></div>`` with `······`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>最耗时·job(成功·run,n≥3)</th><th>阶段</th><th·class="num">中位耗时</th></tr>${(⏎········dg.top_jobs·||·[]⏎······)⏎········.map(⏎··········(t)·=>⏎············`<tr><td>${esc(t.job)}</td><td>${esc(⏎··············t.stage⏎············)}</td><td·class="num">${(t.med_s·/·60).toFixed(1)}·min</td></tr>`⏎········)⏎········.join('')}</tbody></table></div>`⏎····)`  prettier/prettier
+226:5  Warning: Replace `(key==='interaction')·return·`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>首次失败耗时···按责任方</th><th·class="num">中位</th></tr>${Object.entries(dg.ttff_by_owner||{}).map(([k,v])=>`<tr><td>${esc(k)}</td><td·class="num">${mmss(v)}</td></tr>`).join('')}</tbody></table></div>`` with `·(key·===·'interaction')⏎····return·(⏎······`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>首次失败耗时···按责任方</th><th·class="num">中位</th></tr>${Object.entries(⏎········dg.ttff_by_owner·||·{}⏎······)⏎········.map(⏎··········([k,·v])·=>⏎············`<tr><td>${esc(k)}</td><td·class="num">${mmss(v)}</td></tr>`⏎········)⏎········.join('')}</tbody></table></div>`·`  prettier/prettier
+227:1  Warning: Replace `····`<p·class="mini"·style="margin:6px·0·0">重试失败率·${dg.retry&&dg.retry.rate!=null?dg.retry.rate+'%':'—'}(滚动·7·日,n=${dg.retry?dg.retry.n:'—'})——紧跟失败的重跑仍失败的占比。</p>`` with `······`<p·class="mini"·style="margin:6px·0·0">重试失败率·${⏎········dg.retry·&&·dg.retry.rate·!=·null·?·dg.retry.rate·+·'%'·:·'—'⏎······}(滚动·7·日,n=${⏎········dg.retry·?·dg.retry.n·:·'—'⏎······})——紧跟失败的重跑仍失败的占比。</p>`⏎····)`  prettier/prettier
+228:5  Warning: Replace `(key==='cost')·return·`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>资源池</th><th·class="num">当日机时(min)</th></tr>${(dg.pools||[]).map(p=>`<tr><td>${esc(p[0])}</td><td·class="num">${p[1]}</td></tr>`)` with `·(key·===·'cost')⏎····return·`<div·class="scroll-x"><table·style="margin-top:8px"><tbody><tr><th>资源池</th><th·class="num">当日机时(min)</th></tr>${(⏎······dg.pools·||·[]⏎····)⏎······.map((p)·=>·`<tr><td>${esc(p[0])}</td><td·class="num">${p[1]}</td></tr>`)⏎······`  prettier/prettier
+232:27  Warning: Insert `·`  prettier/prettier
+233:5  Warning: Replace `(k===` with `·(k·===·`  prettier/prettier
+234:5  Warning: Replace `(k===` with `·(k·===·`  prettier/prettier
+235:5  Warning: Replace `(k===` with `·(k·===·`  prettier/prettier
+236:11  Warning: Replace `=src.diag&&` with `·=·src.diag·&&·`  prettier/prettier
+237:10  Warning: Replace ``<p·class="mini">交互体验无独立失败矩阵——定位落在「多快知道失败·/·是否需要重试」。被卡·PR·多源于稳定性维度的平台故障拦截。</p>`` with `(⏎····`<p·class="mini">交互体验无独立失败矩阵——定位落在「多快知道失败·/·是否需要重试」。被卡·PR·多源于稳定性维度的平台故障拦截。</p>`·`  prettier/prettier
+238:8  Warning: Replace `?diagHTML('interaction',dg):'<p·class="mini">周汇总交互细分见体验得分卡「本周·vs·上周」及稳定性定位表。</p>')` with `⏎······?·diagHTML('interaction',·dg)⏎······:·'<p·class="mini">周汇总交互细分见体验得分卡「本周·vs·上周」及稳定性定位表。</p>')⏎··)`  prettier/prettier
+244:21  Warning: Insert `·`  prettier/prettier
+245:10  Warning: Replace `=D(),·days=d.days,·w=` with `·=·D(),⏎····days·=·d.days,⏎····w·=·`  prettier/prettier
+246:13  Warning: Replace `=days.map(dt=>metaNum(d.boards[dt],'run')),·fails=days.map(dt=>metaNum(d.boards[dt],` with `·=·days.map((dt)·=>·metaNum(d.boards[dt],·'run')),⏎····fails·=·days.map((dt)·=>·metaNum(d.boards[dt],·`  prettier/prettier
+247:15  Warning: Replace `=sum(runs),·totFail=sum(fails),·failRate=totRun?totFail/totRun*100:` with `·=·sum(runs),⏎····totFail·=·sum(fails),⏎····failRate·=·totRun·?·(totFail·/·totRun)·*·100·:·`  prettier/prettier
+248:10  Warning: Replace `=` with `·=·`  prettier/prettier
+249:16  Warning: Replace `=median(s.plat),·totWaste=` with `·=·median(s.plat),⏎····totWaste·=·`  prettier/prettier
+250:18  Warning: Replace `=w.probs.filter(p=>/^仍活跃/.test(p.status)&&p.pri!=='P2'` with `·=·w.probs.filter(⏎····(p)·=>·/^仍活跃/.test(p.status)·&&·p.pri·!==·'P2'⏎··`  prettier/prettier
+251:14  Warning: Replace `=w.probs.some(p=>p.pri==='P0'&&` with `·=·w.probs.some((p)·=>·p.pri·===·'P0'·&&·`  prettier/prettier
+252:14  Warning: Replace `=w.probs.filter(p=>` with `·=·w.probs.filter((p)·=>·`  prettier/prettier
+253:17  Warning: Replace `=w.probs.filter(p=>` with `·=·w.probs.filter((p)·=>·`  prettier/prettier
+254:14  Warning: Replace `=CAP.filter(c=>c[1]===` with `·=·CAP.filter((c)·=>·c[1]·===·`  prettier/prettier
+255:11  Warning: Replace `=w.matrices.cost,·wmGt=wm.cols.reduce((a,c)=>a+(wm.total[c]||0),` with `·=·w.matrices.cost,⏎····wmGt·=·wm.cols.reduce((a,·c)·=>·a·+·(wm.total[c]·||·0),·`  prettier/prettier
+256:19  Warning: Replace `=wmGt?Math.round(((wm.total['平台失败废弃']||0)+(wm.total['取消占用']||0))/wmGt*100):` with `·=·wmGt⏎····?·Math.round(⏎········(((wm.total['平台失败废弃']·||·0)·+·(wm.total['取消占用']·||·0))·/⏎··········wmGt)·*⏎··········100⏎······)⏎····:·`  prettier/prettier
+257:13  Warning: Replace `=firstNZ(s.block),·blkL=` with `·=·firstNZ(s.block),⏎····blkL·=·`  prettier/prettier
+258:14  Warning: Replace `=hasP0?'crit':(activeP01>0||(platMed!=null&&platMed>=40)?'warn':'good')` with `·=·hasP0⏎····?·'crit'⏎····:·activeP01·>·0·||·(platMed·!=·null·&&·platMed·>=·40)⏎····?·'warn'⏎····:·'good'`  prettier/prettier
+259:18  Warning: Replace `={crit:'需重点关注',warn:'需关注',good:'总体平稳'}[level` with `·=·{·crit:·'需重点关注',·warn:·'需关注',·good:·'总体平稳'·}[⏎····level⏎··`  prettier/prettier
+260:18  Warning: Replace `·level===` with `⏎····level·===·`  prettier/prettier
+261:1  Warning: Insert `··`  prettier/prettier
+262:1  Warning: Replace `····:·`主要拖累来自·<b>平台侧故障</b>——约占全部失败·<b>${platMed!=null?platMed.toFixed(0):'—'}%</b>,连带卡住约·<b>${blkL!=null?blkL:'—'}·个·PR</b>、浪费约·<b>${totWaste.toFixed(0` with `······:·`主要拖累来自·<b>平台侧故障</b>——约占全部失败·<b>${⏎··········platMed·!=·null·?·platMed.toFixed(0)·:·'—'⏎········}%</b>,连带卡住约·<b>${⏎··········blkL·!=·null·?·blkL·:·'—'⏎········}·个·PR</b>、浪费约·<b>${totWaste.toFixed(⏎··········0⏎········`  prettier/prettier
+263:13  Warning: Replace `=` with `·=·`  prettier/prettier
+264:6  Warning: Replace `'流水线失败率',·failRate.toFixed(1)+'%',·`全窗·${totFail}/${totRun}·run···平台故障占·${platMed!=null?platMed.toFixed(0):'—'}%`,·failRate>=30,·null` with `⏎······'流水线失败率',⏎······failRate.toFixed(1)·+·'%',⏎······`全窗·${totFail}/${totRun}·run···平台故障占·${⏎········platMed·!=·null·?·platMed.toFixed(0)·:·'—'⏎······}%`,⏎······failRate·>=·30,⏎······null,⏎····`  prettier/prettier
+265:6  Warning: Replace `'被·CI·卡住的·PR',·(blkL!=null?blkL:'—'),·`窗口·${blk0!=null?blk0:'—'}·→·${blkL!=null?blkL:'—'}·个`,·(blk0!=null&&blkL!=null&&blkL>blk0),·null` with `⏎······'被·CI·卡住的·PR',⏎······blkL·!=·null·?·blkL·:·'—',⏎······`窗口·${blk0·!=·null·?·blk0·:·'—'}·→·${blkL·!=·null·?·blkL·:·'—'}·个`,⏎······blk0·!=·null·&&·blkL·!=·null·&&·blkL·>·blk0,⏎······null,⏎····`  prettier/prettier
+266:6  Warning: Replace `'无效机时(可回收)',·totWaste.toFixed(0),·`占总机时约·${wasteShare}%`,·wasteShare>=20,·null` with `⏎······'无效机时(可回收)',⏎······totWaste.toFixed(0),⏎······`占总机时约·${wasteShare}%`,⏎······wasteShare·>=·20,⏎······null,⏎····`  prettier/prettier
+267:6  Warning: Replace `'在跟踪的问题',·activeP01,·`活跃·P0/P1···已消退·${faded}···待回填·${backfill}`,·activeP01>0,·'probs'` with `⏎······'在跟踪的问题',⏎······activeP01,⏎······`活跃·P0/P1···已消退·${faded}···待回填·${backfill}`,⏎······activeP01·>·0,⏎······'probs',⏎····`  prettier/prettier
+268:6  Warning: Replace `'平台能力就绪',·capOk+'·/·'+CAP.length,·`观测性缺口·=·对平台的需求`,·false,·'cap']` with `⏎······'平台能力就绪',⏎······capOk·+·'·/·'·+·CAP.length,⏎······`观测性缺口·=·对平台的需求`,⏎······false,⏎······'cap',⏎····],`  prettier/prettier
+270:11  Warning: Replace `=` with `·=·`  prettier/prettier
+271:54  Warning: Replace `days.length` with `⏎····days.length⏎··`  prettier/prettier
+276:56  Warning: Replace `.map(k=>{·const·on=k[4]&&ovsel===` with `⏎······.map((k)·=>·{⏎········const·on·=·k[4]·&&·ovsel·===·`  prettier/prettier
+277:1  Warning: Replace `······return·`<div·class="kpi${k[4]?'·kpi-sel':''}${on?'·on':''}"${k[4]?`·onclick="setOv('${k[4]}')"`:''` with `········return·`<div·class="kpi${k[4]·?·'·kpi-sel'·:·''}${on·?·'·on'·:·''}"${⏎··········k[4]·?·`·onclick="setOv('${k[4]}')"`·:·''⏎········`  prettier/prettier
+278:35  Warning: Replace `k[4]?`<span·class="kpi-caret">${on?'▴':'▾'}</span>`:''` with `⏎··········k[4]·?·`<span·class="kpi-caret">${on·?·'▴'·:·'▾'}</span>`·:·''⏎········`  prettier/prettier
+279:30  Warning: Replace `?'·bad':''}">${k[1]}</div><div·class="k-s">${k[2]}</div></div>`;})` with `·?·'·bad'·:·''}">${k[1]}</div><div·class="k-s">${⏎··········k[2]⏎········}</div></div>`;⏎······})⏎······`  prettier/prettier
+281:5  Warning: Replace `(ovsel==='probs')·html+=` with `·(ovsel·===·'probs')·html·+=·`  prettier/prettier
+282:10  Warning: Replace `(ovsel==='cap')·html+=` with `·(ovsel·===·'cap')·html·+=·`  prettier/prettier
+287:22  Warning: Insert `·`  prettier/prettier
+288:18  Warning: Replace `=w.probs.filter(p=>/^仍活跃/.test(p.status)&&p.pri!=='P2'` with `·=·w.probs.filter(⏎····(p)·=>·/^仍活跃/.test(p.status)·&&·p.pri·!==·'P2'⏎··`  prettier/prettier
+289:14  Warning: Replace `=w.probs.filter(p=>` with `·=·w.probs.filter((p)·=>·`  prettier/prettier
+290:17  Warning: Replace `=w.probs.filter(p=>` with `·=·w.probs.filter((p)·=>·`  prettier/prettier
+291:14  Warning: Replace `={P0:0,P1:1,P2:2` with `·=·{·P0:·0,·P1:·1,·P2:·2·`  prettier/prettier
+292:14  Warning: Replace `=w.probs.slice().sort((a,b)=>(order[a.pri]-order[b.pri])||(b.runs-a.runs)` with `·=·w.probs⏎····.slice()⏎····.sort((a,·b)·=>·order[a.pri]·-·order[b.pri]·||·b.runs·-·a.runs`  prettier/prettier
+301:12  Warning: Replace `.map(p=>{·const·st=/^仍活跃/.test(p.status)?'st-active':(/待回填/.test(p.status)?'st-backfill':'st-faded');·const·dk=KEYBYNAME[p.dim]||` with `⏎······.map((p)·=>·{⏎········const·st·=·/^仍活跃/.test(p.status)⏎··········?·'st-active'⏎··········:·/待回填/.test(p.status)⏎··········?·'st-backfill'⏎··········:·'st-faded';⏎········const·dk·=·KEYBYNAME[p.dim]·||·`  prettier/prettier
+302:1  Warning: Replace `······return·`<tr><td><span·class="pri·pri-${p.pri}">${p.pri` with `········return·`<tr><td><span·class="pri·pri-${p.pri}">${⏎··········p.pri⏎········`  prettier/prettier
+303:32  Warning: Replace `p.stages?`·<span·class="mini">${esc(p.stages)}</span>`:''` with `⏎··········p.stages·?·`·<span·class="mini">${esc(p.stages)}</span>`·:·''⏎········`  prettier/prettier
+304:61  Warning: Replace `p.days_hit` with `⏎··········p.days_hit⏎········`  prettier/prettier
+305:31  Warning: Replace `p.tdays,true,dk)}·${trendVerdict(p.trend)}</td><td><span·class="stbadge·${st}">${esc(p.status)}</span></td></tr>`;})` with `·p.tdays,·true,·dk)}·${trendVerdict(⏎··········p.trend⏎········)}</td><td><span·class="stbadge·${st}">${esc(⏎··········p.status⏎········)}</span></td></tr>`;⏎······})⏎······`  prettier/prettier
+311:25  Warning: Insert `·`  prettier/prettier
+313:80  Warning: Replace `CAP.length` with `⏎····CAP.length⏎··`  prettier/prettier
+314:120  Warning: Replace `capOk/CAP.length*100` with `⏎········(capOk·/·CAP.length)·*·100⏎······`  prettier/prettier
+316:15  Warning: Replace `c=>`<tr><td>${esc(c[0])}</td><td·class="cap-${c[1]}">${c[1]==='ok'?'具备':(c[1]==='wip'?'进行中':'缺失/脏数据')}</td><td·class="mini">${esc(c[2])}</td><td·class="mini">${esc(c[3])}</td></tr>`` with `⏎······(c)·=>⏎········`<tr><td>${esc(c[0])}</td><td·class="cap-${c[1]}">${⏎··········c[1]·===·'ok'·?·'具备'·:·c[1]·===·'wip'·?·'进行中'·:·'缺失/脏数据'⏎········}</td><td·class="mini">${esc(c[2])}</td><td·class="mini">${esc(⏎··········c[3]⏎········)}</td></tr>`⏎····`  prettier/prettier
+324:23  Warning: Replace `{` with `·{⏎·`  prettier/prettier
+325:20  Warning: Replace `grain==='daily'?'on':''` with `⏎····grain·===·'daily'·?·'on'·:·''⏎··`  prettier/prettier
+326:20  Warning: Replace `grain==='weekly'?'on':''}"·onclick="setGrain('weekly')">周级</button></span>`;·` with `⏎····grain·===·'weekly'·?·'on'·:·''⏎··}"·onclick="setGrain('weekly')">周级</button></span>`;⏎`  prettier/prettier
+328:27  Warning: Insert `·`  prettier/prettier
+329:12  Warning: Replace `=DIM[x.key]?DIM[x.key].ask:` with `·=·DIM[x.key]·?·DIM[x.key].ask·:·`  prettier/prettier
+330:37  Warning: Replace `dim===x.key?'·sel':''` with `⏎····dim·===·x.key·?·'·sel'·:·''⏎··`  prettier/prettier
+331:62  Warning: Replace `x.probn?`<span·class="probn">${x.toppri?x.toppri+'·':''}${x.probn}·问题</span>`:''` with `⏎····x.probn⏎······?·`<span·class="probn">${x.toppri·?·x.toppri·+·'·'·:·''}${⏎··········x.probn⏎········}·问题</span>`⏎······:·''⏎··`  prettier/prettier
+333:17  Warning: Replace `.slice(0,3).map(v=>`<li><span>${esc(v[0])}</span><b>${fmt(v[1])}</b></li>`)` with `⏎······.slice(0,·3)⏎······.map((v)·=>·`<li><span>${esc(v[0])}</span><b>${fmt(v[1])}</b></li>`)⏎······`  prettier/prettier
+334:7  Warning: Replace `x.note?`<div·class="mini"·style="margin-top:5px">⚠·${esc(x.note)}</div>`:''` with `⏎······x.note⏎········?·`<div·class="mini"·style="margin-top:5px">⚠·${esc(x.note)}</div>`⏎········:·''⏎····`  prettier/prettier
+337:31  Warning: Insert `·`  prettier/prettier
+338:12  Warning: Replace `=` with `·=·`  prettier/prettier
+339:5  Warning: Replace `(!r)·return·`<div·class="dim${dim===k?'·sel':''}"·onclick="setDim('${k}')"><div·class="dn"><span·class="dot"></span>${DIMNAME[k]}</div><div·class="ask">${esc(ask` with `·(!r)⏎····return·`<div·class="dim${⏎······dim·===·k·?·'·sel'·:·''⏎····}"·onclick="setDim('${k}')"><div·class="dn"><span·class="dot"></span>${⏎······DIMNAME[k]⏎····}</div><div·class="ask">${esc(⏎······ask⏎····`  prettier/prettier
+340:11  Warning: Replace `=` with `·=·`  prettier/prettier
+341:13  Warning: Replace `=di.cls==='bad'?'red':(di.cls==='good'?'green':'yellow')` with `·=⏎····di.cls·===·'bad'·?·'red'·:·di.cls·===·'good'·?·'green'·:·'yellow'`  prettier/prettier
+342:38  Warning: Replace `dim===k?'·sel':''` with `⏎····dim·===·k·?·'·sel'·:·''⏎··`  prettier/prettier
+343:48  Warning: Replace `DIMNAME[k]` with `⏎······DIMNAME[k]⏎····`  prettier/prettier
+348:9  Warning: Replace `r[4]?`<li><span·class="mini"·style="font-weight:400">${esc(r[4])}</span></li>`:''` with `⏎········r[4]⏎··········?·`<li><span·class="mini"·style="font-weight:400">${esc(⏎··············r[4]⏎············)}</span></li>`⏎··········:·''⏎······`  prettier/prettier
+353:21  Warning: Insert `·`  prettier/prettier
+354:10  Warning: Replace `=D(),·s=` with `·=·D(),⏎····s·=·`  prettier/prettier
+355:5  Warning: Replace `(!DIM[dim])·dim=` with `·(!DIM[dim])·dim·=·`  prettier/prettier
+356:11  Warning: Replace `=` with `·=·`  prettier/prettier
+357:5  Warning: Replace `(grain==='daily')` with `·(grain·===·'daily')·`  prettier/prettier
+358:15  Warning: Replace `dd]=` with `·dd]·=·`  prettier/prettier
+360:9  Warning: Replace `+=`<section·class="card"><h2>体验得分···日级···${esc(dd.date` with `·+=·`<section·class="card"><h2>体验得分···日级···${esc(⏎······dd.date⏎····`  prettier/prettier
+361:114  Warning: Replace `.map(x=>`<button·class="${x===dt?'on':''}"·onclick="setDay('${x}')">${x.slice(5)}</button>`)` with `⏎········.map(⏎··········(x)·=>⏎············`<button·class="${⏎··············x·===·dt·?·'on'·:·''⏎············}"·onclick="setDay('${x}')">${x.slice(5)}</button>`⏎········)⏎········`  prettier/prettier
+362:46  Warning: Replace `||[]).map(m=>`${esc(m[0])}·<b>${fmt(m[1])}</b>`)` with `·||·[])⏎··········.map((m)·=>·`${esc(m[0])}·<b>${fmt(m[1])}</b>`)⏎··········`  prettier/prettier
+363:34  Warning: Replace `.map(scoreCardDaily)` with `⏎········.map(scoreCardDaily)⏎········`  prettier/prettier
+365:17  Warning: Replace `=dimTrends(dim,` with `·=·dimTrends(dim,·`  prettier/prettier
+366:9  Warning: Replace `+=`<section·class="card"><h2>关键指标趋势···${DIMNAME[dim]` with `·+=·`<section·class="card"><h2>关键指标趋势···${⏎······DIMNAME[dim]⏎····`  prettier/prettier
+367:32  Warning: Replace `charts.length?charts.join(''):'<div·class="empty">该维度暂无逐日趋势序列。</div>'` with `⏎········charts.length⏎··········?·charts.join('')⏎··········:·'<div·class="empty">该维度暂无逐日趋势序列。</div>'⏎······`  prettier/prettier
+369:16  Warning: Replace `=(dd.problems||[]).filter(p=>p.dimkey===` with `·=·(dd.problems·||·[]).filter((p)·=>·p.dimkey·===·`  prettier/prettier
+370:13  Warning: Replace `=dd.dims.find(x=>x.key===` with `·=·dd.dims.find((x)·=>·x.key·===·`  prettier/prettier
+371:17  Warning: Replace `=plist.length?` with `·=·plist.length⏎······?·`  prettier/prettier
+372:8  Warning: Replace ``<div·class="empty">${sd&&sd.note?`${DIMNAME[dim]}·今日无新增问题;状态「${sd.word}」原因:${esc(sd.note)}。`:`${DIMNAME[dim]}·今日无需处理事项。`` with `·`<div·class="empty">${⏎··········sd·&&·sd.note⏎············?·`${DIMNAME[dim]}·今日无新增问题;状态「${sd.word}」原因:${esc(⏎················sd.note⏎··············)}。`⏎············:·`${DIMNAME[dim]}·今日无需处理事项。`⏎········`  prettier/prettier
+373:16  Warning: Replace `=(dd.metrics[dim]||[]).map(r=>[DIMNAME[dim],` with `·=·(dd.metrics[dim]·||·[]).map((r)·=>·[DIMNAME[dim],·`  prettier/prettier
+374:9  Warning: Replace `+=`<section·class="card"><h2>问题定位···日级···${DIMNAME[dim]` with `·+=·`<section·class="card"><h2>问题定位···日级···${⏎······DIMNAME[dim]⏎····`  prettier/prettier
+380:16  Warning: Replace `.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td·class="num"><b>${fmt(r[2])}</b></td><td·class="num">${fmt(r[3])}</td><td>${esc(r[4])}</td><td·class="mini">${esc(r[5])}</td></tr>`)` with `⏎··········.map(⏎············(r)·=>⏎··············`<tr><td>${esc(r[0])}</td><td>${esc(⏎················r[1]⏎··············)}</td><td·class="num"><b>${fmt(⏎················r[2]⏎··············)}</b></td><td·class="num">${fmt(r[3])}</td><td>${esc(⏎················r[4]⏎··············)}</td><td·class="mini">${esc(r[5])}</td></tr>`⏎··········)⏎··········`  prettier/prettier
+385:25  Warning: Insert `·`  prettier/prettier
+389:12  Warning: Replace `=` with `·=·`  prettier/prettier
+390:19  Warning: Replace `={};·w.dimcmp.forEach(r=>{·const·k=KEYBYNAME[r[0]];·if(k)·cmpByKey[k]=r;` with `·=·{};⏎····w.dimcmp.forEach((r)·=>·{⏎······const·k·=·KEYBYNAME[r[0]];⏎······if·(k)·cmpByKey[k]·=·r;⏎···`  prettier/prettier
+392:9  Warning: Replace `+=`<section·class="card"><h2>体验得分···周级···${esc(w.period` with `·+=·`<section·class="card"><h2>体验得分···周级···${esc(⏎······w.period⏎····`  prettier/prettier
+393:39  Warning: Replace `k=>scoreCardWeekly(k,cmpByKey[k])` with `(k)·=>⏎········scoreCardWeekly(k,·cmpByKey[k])⏎······`  prettier/prettier
+395:17  Warning: Replace `=dimTrends(dim,` with `·=·dimTrends(dim,·`  prettier/prettier
+396:9  Warning: Replace `+=`<section·class="card"><h2>关键指标趋势···${DIMNAME[dim]` with `·+=·`<section·class="card"><h2>关键指标趋势···${⏎······DIMNAME[dim]⏎····`  prettier/prettier
+397:32  Warning: Replace `charts.length?charts.join(''):'<div·class="empty">该维度暂无逐日趋势序列。</div>'` with `⏎········charts.length⏎··········?·charts.join('')⏎··········:·'<div·class="empty">该维度暂无逐日趋势序列。</div>'⏎······`  prettier/prettier
+399:13  Warning: Replace `=w.probs.filter(p=>p.dim===` with `·=·w.probs.filter((p)·=>·p.dim·===·`  prettier/prettier
+400:14  Warning: Replace `=w.dimcmp.find(r=>r[0]===` with `·=·w.dimcmp.find((r)·=>·r[0]·===·`  prettier/prettier
+401:9  Warning: Replace `+=`<section·class="card"><h2>问题定位···周级···${DIMNAME[dim]` with `·+=·`<section·class="card"><h2>问题定位···周级···${⏎······DIMNAME[dim]⏎····`  prettier/prettier
+404:11  Warning: Replace `wp.length?` with `⏎··········wp.length⏎············?·`  prettier/prettier
+405:13  Warning: Replace `.map(p=>{·const·st=/^仍活跃/.test(p.status)?`<b·style="color:var(--critical-text)">${esc(p.status)}</b>`:` with `⏎··········.map((p)·=>·{⏎············const·st·=·/^仍活跃/.test(p.status)⏎··············?·`<b·style="color:var(--critical-text)">${esc(p.status)}</b>`⏎··············:·`  prettier/prettier
+406:1  Warning: Replace `··········return·`<tr><td><span·class="pri·pri-${p.pri}">${p.pri}</span></td><td><b>${esc(p.kb)}</b>${p.stages?`·<span·class="mini">${esc(p.stages)}</span>`:''` with `············return·`<tr><td><span·class="pri·pri-${p.pri}">${⏎··············p.pri⏎············}</span></td><td><b>${esc(p.kb)}</b>${⏎··············p.stages·?·`·<span·class="mini">${esc(p.stages)}</span>`·:·''⏎············`  prettier/prettier
+407:65  Warning: Replace `p.days_hit` with `⏎··············p.days_hit⏎············`  prettier/prettier
+408:35  Warning: Replace `p.tdays,true,dim)}·${trendVerdict(p.trend)}</td><td>${st}</td><td·class="mini">${esc(p.action)}·<br>→·${esc(p.dest)}</td></tr>`;})` with `·p.tdays,·true,·dim)}·${trendVerdict(⏎··············p.trend⏎············)}</td><td>${st}</td><td·class="mini">${esc(p.action)}·<br>→·${esc(⏎··············p.dest⏎············)}</td></tr>`;⏎··········})⏎··········`  prettier/prettier
+409:32  Warning: Replace `:`<div·class="empty">${DIMNAME[dim]}·本周无跟踪问题。</div>`` with `⏎············:·`<div·class="empty">${DIMNAME[dim]}·本周无跟踪问题。</div>`⏎········`  prettier/prettier
+410:11  Warning: Replace `cmp?`<p·class="mini"·style="margin-top:8px">环比:${esc(cmp[1])}·本周·<b>${fmt(cmp[2])}</b>···上周·${fmt(cmp[3])}${cmp[4]?'···'+esc(cmp[4]):''}</p>`:''` with `⏎··········cmp⏎············?·`<p·class="mini"·style="margin-top:8px">环比:${esc(⏎················cmp[1]⏎··············)}·本周·<b>${fmt(cmp[2])}</b>···上周·${fmt(cmp[3])}${⏎················cmp[4]·?·'···'·+·esc(cmp[4])·:·''⏎··············}</p>`⏎············:·''⏎········`  prettier/prettier
+414:25  Warning: Insert `·`  prettier/prettier
+418:9  Warning: Replace `+=` with `·+=·`  prettier/prettier
+419:9  Warning: Replace `w.imps.length?w.imps.map(m=>`<div·class="imp·${m.p==='P1'?'p1':''}"><div·class="rt"><span·class="prio">${m.p}</span>${esc(m.id` with `⏎········w.imps.length⏎··········?·w.imps⏎··············.map(⏎················(m)·=>·`<div·class="imp·${⏎··················m.p·===·'P1'·?·'p1'·:·''⏎················}"><div·class="rt"><span·class="prio">${m.p}</span>${esc(⏎··················m.id⏎················`  prettier/prettier
+420:48  Warning: Replace `m.cls)}</div><div><b>Owner</b>${esc(m.owner)}</div><div><b>证据(本周实测)</b>${esc(m.ev` with `⏎··········m.cls⏎········)}</div><div><b>Owner</b>${esc(⏎··················m.owner⏎················)}</div><div><b>证据(本周实测)</b>${esc(⏎··················m.ev⏎················`  prettier/prettier
+421:58  Warning: Replace `m.stOn?'on':''}">${esc(m.st)}</span></div></div>`)` with `⏎··········m.stOn·?·'on'·:·''⏎········}">${esc(m.st)}</span></div></div>`⏎··············)⏎··············`  prettier/prettier
+422:7  Warning: Replace `:'<div·class="empty">本周无·P0/P1·问题,无改进行动。</div>'` with `····:·'<div·class="empty">本周无·P0/P1·问题,无改进行动。</div>'⏎······`  prettier/prettier
+423:9  Warning: Replace `+=` with `·+=·`  prettier/prettier
+425:9  Warning: Replace `+=` with `·+=·`  prettier/prettier
+426:83  Warning: Replace `.map(c=>`<th>${esc(c)}</th>`)` with `⏎········.map((c)·=>·`<th>${esc(c)}</th>`)⏎········`  prettier/prettier
+427:20  Warning: Replace `.map(r=>`<tr>${r.map((c,i)=>`<td·class="${i>0?'num':''}">${fmt(c)}</td>`).join('')}</tr>`)` with `⏎········.map(⏎··········(r)·=>⏎············`<tr>${r⏎··············.map((c,·i)·=>·`<td·class="${i·>·0·?·'num'·:·''}">${fmt(c)}</td>`)⏎··············.join('')}</tr>`⏎········)⏎········`  prettier/prettier
+428:51  Warning: Replace `w.bill.note` with `⏎········w.bill.note⏎······`  prettier/prettier
+429:9  Warning: Replace `+=` with `·+=·`  prettier/prettier
+430:9  Warning: Replace `w.backfill.length?` with `⏎········w.backfill.length⏎··········?·`  prettier/prettier
+431:19  Warning: Replace `.map(p=>`<tr><td><b>${esc(p.kb)}</b></td><td>${esc(p.dim)}</td><td·class="num">${p.runs}</td><td·class="num">${esc(p.first)}</td><td>${esc(p.status)}</td><td·class="mini">${esc(p.action)}</td></tr>`)` with `⏎········.map(⏎··········(p)·=>⏎············`<tr><td><b>${esc(p.kb)}</b></td><td>${esc(⏎··············p.dim⏎············)}</td><td·class="num">${p.runs}</td><td·class="num">${esc(⏎··············p.first⏎············)}</td><td>${esc(p.status)}</td><td·class="mini">${esc(⏎··············p.action⏎············)}</td></tr>`⏎········)⏎········`  prettier/prettier
+432:30  Warning: Replace `:'<div·class="empty"·style="margin-top:8px">本周无待回填条目。</div>'` with `⏎··········:·'<div·class="empty"·style="margin-top:8px">本周无待回填条目。</div>'⏎······`  prettier/prettier
+442:24  Warning: Insert `·`  prettier/prettier
+443:10  Warning: Replace `=D(),·days=d.days,·w=d.weekly,·last=d.boards[days[days.length-1]],·s=` with `·=·D(),⏎····days·=·d.days,⏎····w·=·d.weekly,⏎····last·=·d.boards[days[days.length·-·1]],⏎····s·=·`  prettier/prettier
+444:16  Warning: Replace `=median(s.plat),·durMed=median(s.dur),·totWaste=` with `·=·median(s.plat),⏎····durMed·=·median(s.dur),⏎····totWaste·=·`  prettier/prettier
+445:14  Warning: Replace `={P0:0,P1:1,P2:2` with `·=·{·P0:·0,·P1:·1,·P2:·2·`  prettier/prettier
+446:14  Warning: Replace `=w.probs.slice().sort((a,b)=>(order[a.pri]-order[b.pri])||(b.runs-a.runs)` with `·=·w.probs⏎····.slice()⏎····.sort((a,·b)·=>·order[a.pri]·-·order[b.pri]·||·b.runs·-·a.runs`  prettier/prettier
+447:16  Warning: Replace `=probs.find(p=>p.dim==='稳定性'&&(p.pri==='P0'||p.pri==='P1'))||` with `·=⏎····probs.find(⏎······(p)·=>·p.dim·===·'稳定性'·&&·(p.pri·===·'P0'·||·p.pri·===·'P1')⏎····)·||·`  prettier/prettier
+448:16  Warning: Replace `=w.probs.find(p=>p.dim===` with `·=·w.probs.find((p)·=>·p.dim·===·`  prettier/prettier
+449:11  Warning: Replace `=w.matrices.cost,·wmGt=wm.cols.reduce((a,c)=>a+(wm.total[c]||0),` with `·=·w.matrices.cost,⏎····wmGt·=·wm.cols.reduce((a,·c)·=>·a·+·(wm.total[c]·||·0),·`  prettier/prettier
+450:19  Warning: Replace `=wmGt?Math.round(((wm.total['平台失败废弃']||0)+(wm.total['取消占用']||0))/wmGt*100):` with `·=·wmGt⏎····?·Math.round(⏎········(((wm.total['平台失败废弃']·||·0)·+·(wm.total['取消占用']·||·0))·/⏎··········wmGt)·*⏎··········100⏎······)⏎····:·`  prettier/prettier
+451:13  Warning: Replace `=firstNZ(s.block),·blkL=` with `·=·firstNZ(s.block),⏎····blkL·=·`  prettier/prettier
+452:17  Warning: Replace `=w.probs.filter(p=>` with `·=·w.probs.filter((p)·=>·`  prettier/prettier
+453:17  Warning: Replace `=metaNum(last,` with `·=·metaNum(last,·`  prettier/prettier
+454:17  Warning: Replace `=` with `·=·`  prettier/prettier
+455:6  Warning: Replace `'crit',` with `⏎······'crit',⏎······`  prettier/prettier
+456:24  Warning: Replace `platMed!=null?platMed.toFixed(0):'—'}%</b>;头号机理「${esc(topStab.kb)}」累计·<b>${topStab.runs}·run·/·${topStab.prs` with `⏎········platMed·!=·null·?·platMed.toFixed(0)·:·'—'⏎······}%</b>;头号机理「${esc(topStab.kb)}」累计·<b>${topStab.runs}·run·/·${⏎········topStab.prs⏎······`  prettier/prettier
+458:28  Warning: Replace `||'按机理知识库根因治理')}·→·${esc(topStab.dest||'基础设施团队')}`` with `·||·'按机理知识库根因治理')}·→·${esc(⏎········topStab.dest·||·'基础设施团队'⏎······)}`,⏎····`  prettier/prettier
+459:6  Warning: Replace `'warn',` with `⏎······'warn',⏎······`  prettier/prettier
+460:39  Warning: Replace `0` with `⏎········0⏎······`  prettier/prettier
+462:51  Warning: Insert `,⏎····`  prettier/prettier
+463:6  Warning: Replace `'warn',` with `⏎······'warn',⏎······`  prettier/prettier
+464:30  Warning: Replace `blk0!=null?blk0:'—'}</b>·升至最新·<b>${blkL!=null?blkL:'—'}</b>·个${(blk0!=null&&blkL!=null&&blkL>blk0)?'(持续累积)':''` with `⏎········blk0·!=·null·?·blk0·:·'—'⏎······}</b>·升至最新·<b>${blkL·!=·null·?·blkL·:·'—'}</b>·个${⏎········blk0·!=·null·&&·blkL·!=·null·&&·blkL·>·blk0·?·'(持续累积)'·:·''⏎······`  prettier/prettier
+466:47  Warning: Insert `,⏎····`  prettier/prettier
+467:6  Warning: Replace `'good',` with `⏎······'good',⏎······`  prettier/prettier
+468:23  Warning: Replace `durMed!=null?durMed.toFixed(1):'—'}·min</b>,总体平稳;${effProb?`但「${esc(effProb.kb)}」${esc(effProb.stages||'')}耗时上浮(${esc(effProb.status)}),需连续观察。`:'无显著效率退化。'` with `⏎········durMed·!=·null·?·durMed.toFixed(1)·:·'—'⏎······}·min</b>,总体平稳;${⏎········effProb⏎··········?·`但「${esc(effProb.kb)}」${esc(effProb.stages·||·'')}耗时上浮(${esc(⏎··············effProb.status⏎············)}),需连续观察。`⏎··········:·'无显著效率退化。'⏎······`  prettier/prettier
+470:17  Warning: Replace `?'对超基线阶段持续观察,暂不立项·→·观察':'保持,无需动作'}`]` with `·?·'对超基线阶段持续观察,暂不立项·→·观察'·:·'保持,无需动作'}`,⏎····],`  prettier/prettier
+476:39  Warning: Replace `.map(f=>`<div·class="finding·${f[0]}"><div·class="f-t">${f[1]}</div><div·class="f-b">${f[2]}</div><div·class="f-ev">${f[3]}</div><div·class="f-act"><b>建议</b>·${f[4]}</div></div>`)` with `⏎········.map(⏎··········(f)·=>⏎············`<div·class="finding·${f[0]}"><div·class="f-t">${f[1]}</div><div·class="f-b">${f[2]}</div><div·class="f-ev">${f[3]}</div><div·class="f-act"><b>建议</b>·${f[4]}</div></div>`⏎········)⏎········`  prettier/prettier
+477:67  Warning: Replace `pendLast!=null?pendLast+'%':'—'` with `⏎········pendLast·!=·null·?·pendLast·+·'%'·:·'—'⏎······`  prettier/prettier
+484:22  Warning: Insert `·`  prettier/prettier
+485:10  Warning: Replace `=` with `·=·`  prettier/prettier
+486:49  Warning: Replace `='workflow:·'+` with `·=·'workflow:·'·+·`  prettier/prettier
+487:51  Warning: Replace `=repo==='runtime'?'on':` with `·=⏎····repo·===·'runtime'·?·'on'·:·`  prettier/prettier
+488:49  Warning: Replace `=repo==='opsnn'?'on':` with `·=·repo·===·'opsnn'·?·'on'·:·`  prettier/prettier
+489:5  Warning: Replace `(which==='all'||which==='top')·document.getElementById('sec-top').innerHTML=` with `·(which·===·'all'·||·which·===·'top')⏎····document.getElementById('sec-top').innerHTML·=·`  prettier/prettier
+490:5  Warning: Replace `(which==='all'||which==='mid')·document.getElementById('sec-mid').innerHTML=` with `·(which·===·'all'·||·which·===·'mid')⏎····document.getElementById('sec-mid').innerHTML·=·`  prettier/prettier
+491:5  Warning: Replace `(which==='all'||which==='bottom')·document.getElementById('sec-bottom').innerHTML=` with `·(which·===·'all'·||·which·===·'bottom')⏎····document.getElementById('sec-bottom').innerHTML·=·`  prettier/prettier
+494:18  Warning: Replace `{·paint('all');·` with `·{⏎··paint('all');⏎`  prettier/prettier
+495:20  Warning: Replace `{·repo=r;·grain='daily';·day=null;·ovsel='probs';·dim=board()[1].default_dim||'stability';·paint('all');·` with `·{⏎··repo·=·r;⏎··grain·=·'daily';⏎··day·=·null;⏎··ovsel·=·'probs';⏎··dim·=·board()[1].default_dim·||·'stability';⏎··paint('all');⏎`  prettier/prettier
+496:18  Warning: Replace `{·ovsel·=·(ovsel===k)·?·null·:·k;·paint('top');·` with `·{⏎··ovsel·=·ovsel·===·k·?·null·:·k;⏎··paint('top');⏎`  prettier/prettier
+497:21  Warning: Replace `{·grain=g;·paint('mid');·` with `·{⏎··grain·=·g;⏎··paint('mid');⏎`  prettier/prettier
+498:20  Warning: Replace `{·day=dt;·grain='daily';·paint('mid');·` with `·{⏎··day·=·dt;⏎··grain·=·'daily';⏎··paint('mid');⏎`  prettier/prettier
+499:19  Warning: Replace `{·if(DIM[k])·dim=k;·paint('mid');·` with `·{⏎··if·(DIM[k])·dim·=·k;⏎··paint('mid');⏎`  prettier/prettier
+500:25  Warning: Replace `{·if(!D().boards[dt])·return;·grain='daily';·day=dt;·if(dk&&DIM[dk])·dim=dk;` with `·{⏎··if·(!D().boards[dt])·return;⏎··grain·=·'daily';⏎··day·=·dt;⏎··if·(dk·&&·DIM[dk])·dim·=·dk;⏎·`  prettier/prettier
+501:11  Warning: Replace `=document.getElementById('sec-mid');·if(el)·el.scrollIntoView({behavior:'smooth',block:'start'});·` with `·=·document.getElementById('sec-mid');⏎··if·(el)·el.scrollIntoView({·behavior:·'smooth',·block:·'start'·});⏎`  prettier/prettier
+502:23  Warning: Replace `{·const·r=document.documentElement;·const·cur=r.getAttribute('data-theme')||·(matchMedia('(prefers-color-scheme:dark)').matches?'dark':` with `·{⏎··const·r·=·document.documentElement;⏎··const·cur·=⏎····r.getAttribute('data-theme')·||⏎····(matchMedia('(prefers-color-scheme:dark)').matches·?·'dark'·:·`  prettier/prettier
+503:13  Warning: Replace `=cur==='dark'?'light':'dark';·r.setAttribute('data-theme',next);·localStorage.setItem('cogito-theme',` with `·=·cur·===·'dark'·?·'light'·:·'dark';⏎··r.setAttribute('data-theme',·next);⏎··localStorage.setItem('cogito-theme',·`  prettier/prettier
+504:50  Warning: Replace `=next==='dark'?'☀':'☾';·` with `·=·next·===·'dark'·?·'☀'·:·'☾';⏎`  prettier/prettier
+507:21  Warning: Replace `{·const·h=`${repo}/${grain}/${dim}${grain==='daily'&&day?'/'+day:''}`;·if(location.hash.slice(1)!==h)·history.replaceState(null,'','#'+h);·` with `·{⏎··const·h·=·`${repo}/${grain}/${dim}${⏎····grain·===·'daily'·&&·day·?·'/'·+·day·:·''⏎··}`;⏎··if·(location.hash.slice(1)·!==·h)·history.replaceState(null,·'',·'#'·+·h);⏎`  prettier/prettier
+508:20  Warning: Replace `{·const·p=` with `·{⏎··const·p·=·`  prettier/prettier
+509:5  Warning: Replace `(p[0]&&DATA[p[0]])·repo=` with `·(p[0]·&&·DATA[p[0]])·repo·=·`  prettier/prettier
+510:5  Warning: Replace `(p[1]==='daily'||p[1]==='weekly')·grain=` with `·(p[1]·===·'daily'·||·p[1]·===·'weekly')·grain·=·`  prettier/prettier
+511:5  Warning: Replace `(p[2]&&DIM[p[2]])·dim=` with `·(p[2]·&&·DIM[p[2]])·dim·=·`  prettier/prettier
+512:5  Warning: Replace `(grain==='daily'&&p[3]&&D().boards[p[3]])·day=` with `·(grain·===·'daily'·&&·p[3]·&&·D().boards[p[3]])·day·=·`  prettier/prettier
+513:5  Warning: Replace `(!DIM[dim])·dim=board()[1].default_dim||'stability';·` with `·(!DIM[dim])·dim·=·board()[1].default_dim·||·'stability';⏎`  prettier/prettier
+516:10  Warning: Replace `(){·const·t=localStorage.getItem('cogito-theme');·if(t){·document.documentElement.setAttribute('data-theme',t);` with `·()·{⏎··const·t·=·localStorage.getItem('cogito-theme');⏎··if·(t)·{⏎····document.documentElement.setAttribute('data-theme',·t);⏎·`  prettier/prettier
+517:12  Warning: Replace `=document.getElementById('themebtn');·if(btn){·const·cur=t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');·btn.textContent=cur==='dark'?'☀':'☾';` with `·=·document.getElementById('themebtn');⏎··if·(btn)·{⏎····const·cur·=⏎······t·||⏎······(matchMedia('(prefers-color-scheme:dark)').matches·?·'dark'·:·'light');⏎····btn.textContent·=·cur·===·'dark'·?·'☀'·:·'☾';⏎·`  prettier/prettier
+518:14  Warning: Replace `·render();·` with `⏎··render();⏎`  prettier/prettier
+519:38  Warning: Replace `()=>{·readHash();·render();·` with `·()·=>·{⏎··readHash();⏎··render();⏎`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/CiOverview/dashboard/overview.js
+15:18  Warning: Replace `r` with `(r)`  prettier/prettier
+16:26  Warning: Insert `⏎·`  prettier/prettier
+17:13  Warning: Replace `·=·(r,·n)··=>` with `=·(r,·n)·=>⏎·`  prettier/prettier
+33:33  Warning: Insert `,`  prettier/prettier
+35:27  Warning: Replace `c` with `(c)`  prettier/prettier
+40:44  Warning: Insert `,`  prettier/prettier
+44:13  Warning: Replace `s` with `(s)`  prettier/prettier
+45:13  Warning: Replace `x·=>·{·if·(x·==·null)·return·null;·if·(typeof·x·===·'object')·x·=·x.v;·const·m·=·String(x).replace(/,/g,·'').match(/-?\d+(\.\d+)?/);·return·m·?·parseFloat(m[0])·:·null;·` with `(x)·=>·{⏎··if·(x·==·null)·return·null;⏎··if·(typeof·x·===·'object')·x·=·x.v;⏎··const·m·=·String(x)⏎····.replace(/,/g,·'')⏎····.match(/-?\d+(\.\d+)?/);⏎··return·m·?·parseFloat(m[0])·:·null;⏎`  prettier/prettier
+46:13  Warning: Replace `a` with `(a)`  prettier/prettier
+47:19  Warning: Replace `{·const·v·=·a.filter(x·=>·x·!=·null).slice().sort((p,·q)·=>·p·-·q);·if·(!v.length)·return·null;·const·m·=·Math.floor(v.length·/·2);·return·v.length·%·2·?·v[m]·:·(v[m·-·1]·+·v[m])·/·2;·` with `·{⏎··const·v·=·a⏎····.filter((x)·=>·x·!=·null)⏎····.slice()⏎····.sort((p,·q)·=>·p·-·q);⏎··if·(!v.length)·return·null;⏎··const·m·=·Math.floor(v.length·/·2);⏎··return·v.length·%·2·?·v[m]·:·(v[m·-·1]·+·v[m])·/·2;⏎`  prettier/prettier
+48:15  Warning: Replace `x·=>·x·==·null·?·'—'·:·(` with `(x)·=>·(x·==·null·?·'—'·:·`  prettier/prettier
+49:14  Warning: Replace `s·=>·s·==·null·?·'—'·:·(s·>=·120·?·(s·/·60).toFixed(1)·+·'·min'·:·s·+·'·s')` with `(s)·=>⏎··s·==·null·?·'—'·:·s·>=·120·?·(s·/·60).toFixed(1)·+·'·min'·:·s·+·'·s'`  prettier/prettier
+50:45  Warning: Replace `d` with `(d)`  prettier/prettier
+51:27  Warning: Replace `{·const·d·=·dimOf(b,·k);·const·f·=·(d.vals·||·[]).find(v·=>·v[0].indexOf(label)·>=·0);·return·f·?·num(f[1])·:·null;·` with `·{⏎··const·d·=·dimOf(b,·k);⏎··const·f·=·(d.vals·||·[]).find((v)·=>·v[0].indexOf(label)·>=·0);⏎··return·f·?·num(f[1])·:·null;⏎`  prettier/prettier
+52:32  Warning: Replace `·const·f·=·(b.meta·||·[]).find(m·=>·m[0].indexOf(label)·>=·0);·return·f·?·num(f[1])·:·null;·` with `⏎··const·f·=·(b.meta·||·[]).find((m)·=>·m[0].indexOf(label)·>=·0);⏎··return·f·?·num(f[1])·:·null;⏎`  prettier/prettier
+53:17  Warning: Replace `a·=>·a.find(v` with `(a)·=>·a.find((v)`  prettier/prettier
+54:14  Warning: Replace `·=·a·=>·[...a].reverse().find(v` with `=·(a)·=>·[...a].reverse().find((v)`  prettier/prettier
+55:13  Warning: Replace `··=·(w,·label)·=>·(w.dimcmp·||·[]).find(r` with `·=·(w,·label)·=>⏎··(w.dimcmp·||·[]).find((r)`  prettier/prettier
+58:41  Warning: Insert `·`  prettier/prettier
+59:55  Warning: Insert `⏎···`  prettier/prettier
+60:27  Warning: Insert `⏎···`  prettier/prettier
+61:14  Warning: Replace `·first·!==·0·?·Math.round((last·-·first)·/·Math.abs(first)` with `⏎····first·!==·0·?·Math.round(((last·-·first)·/·Math.abs(first))`  prettier/prettier
+62:11  Warning: Replace `·cls:·worse·?·'bad'·:·'good',·arrow:·up·?·'▲'·:·'▼',` with `⏎····cls:·worse·?·'bad'·:·'good',⏎····arrow:·up·?·'▲'·:·'▼',⏎···`  prettier/prettier
+63:9  Warning: Replace `·(up·?·'+'·:·'')·+·(pct·!=·null·?·pct·+·'%'·:·(last·-·first).toFixed(1))` with `⏎······(up·?·'+'·:·'')·+·(pct·!=·null·?·pct·+·'%'·:·(last·-·first).toFixed(1)),⏎·`  prettier/prettier
+67:22  Warning: Insert `·`  prettier/prettier
+69:11  Warning: Insert `⏎···`  prettier/prettier
+70:10  Warning: Replace `··days.map(dt·=>·metaNum(d.boards[dt],·'当日·run')·??·metaNum(d.boards[dt],·'run')` with `days.map(⏎······(dt)·=>·metaNum(d.boards[dt],·'当日·run')·??·metaNum(d.boards[dt],·'run')⏎····`  prettier/prettier
+71:10  Warning: Replace `··days.map(dt` with `·days.map((dt)`  prettier/prettier
+72:11  Warning: Replace `·days.map(dt·=>·pick(d.boards[dt],·'stability',·'Action·平台失败率')` with `days.map((dt)·=>⏎······pick(d.boards[dt],·'stability',·'Action·平台失败率')⏎····`  prettier/prettier
+73:21  Warning: Replace `dt` with `(dt)`  prettier/prettier
+74:10  Warning: Replace `··days.map(dt` with `days.map((dt)`  prettier/prettier
+75:21  Warning: Replace `dt` with `(dt)`  prettier/prettier
+76:21  Warning: Replace `dt·=>·pick(d.boards[dt],·'cost',·'机时(全部池)'))` with `(dt)·=>·pick(d.boards[dt],·'cost',·'机时(全部池)')),⏎·`  prettier/prettier
+80:75  Warning: Insert `·`  prettier/prettier
+81:26  Warning: Replace `v·=>·v·==·null·?·0·:·v),·W·=·260,·H·=·66,·pL·=·6,·pR·=·6,·pT·=·8,` with `(v)·=>·(v·==·null·?·0·:·v)),⏎····W·=·260,⏎····H·=·66,⏎····pL·=·6,⏎····pR·=·6,⏎····pT·=·8,⏎···`  prettier/prettier
+82:39  Warning: Insert `⏎···`  prettier/prettier
+83:13  Warning: Replace `i·=>·pL·+·i·*·(W·-·pL·-·pR)·/·((pts.length·-·1)` with `(i)·=>·pL·+·(i·*·(W·-·pL·-·pR))·/·(pts.length·-·1`  prettier/prettier
+84:13  Warning: Replace `v·=>·pT·+·(H·-·pT·-·pB)·*·(1·-·(v·-·mn)·/·((mx·-·mn)` with `(v)·=>·pT·+·(H·-·pT·-·pB)·*·(1·-·(v·-·mn)·/·(mx·-·mn`  prettier/prettier
+85:19  Warning: Replace `.map((v,·i)·=>·(i·?·'L'·:·'M')·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1))` with `⏎····.map((v,·i)·=>·(i·?·'L'·:·'M')·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1))⏎····`  prettier/prettier
+86:15  Warning: Replace `·`M${x(0)},${y(mn)}·`·+·pts.map((v,·i)·=>·'L'·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1)).join('·')·+` with `⏎····`M${x(0)},${y(mn)}·`·+⏎····pts.map((v,·i)·=>·'L'·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1)).join('·')·+⏎···`  prettier/prettier
+87:29  Warning: Replace `v·=>·v·!=·null),·last·=·[...series].reverse().find(v` with `(v)·=>·v·!=·null),⏎····last·=·[...series].reverse().find((v)`  prettier/prettier
+92:46  Warning: Replace `title)}</span><span·class="t-now">${now}<span·class="mini">·${esc(unit·||·''` with `⏎······title⏎····)}</span><span·class="t-now">${now}<span·class="mini">·${esc(⏎····unit·||·''⏎··`  prettier/prettier
+94:94  Warning: Replace `title` with `⏎····title⏎··`  prettier/prettier
+98:49  Warning: Replace `last·==·null·?·mn·:·last` with `⏎····last·==·null·?·mn·:·last⏎··`  prettier/prettier
+99:13  Warning: Replace `.map((d,·i)·=>·`<text·x="${x(i)}"·y="${H·-·4}"·font-size="8"·fill="var(--muted)"·text-anchor="${i·===·0·?·'start'·:·(i·===·days.length·-·1·?·'end'·:·'middle')}">${esc(d.slice(5))}</text>`)` with `⏎········.map(⏎··········(d,·i)·=>⏎············`<text·x="${x(i)}"·y="${⏎··············H·-·4⏎············}"·font-size="8"·fill="var(--muted)"·text-anchor="${⏎··············i·===·0·?·'start'·:·i·===·days.length·-·1·?·'end'·:·'middle'⏎············}">${esc(d.slice(5))}</text>`⏎········)⏎········`  prettier/prettier
+101:72  Warning: Replace `di.cls` with `⏎······di.cls⏎····`  prettier/prettier
+106:47  Warning: Insert `·`  prettier/prettier
+107:26  Warning: Replace `v·=>·v·==·null·?·0·:·v),·W·=·150,` with `(v)·=>·(v·==·null·?·0·:·v)),⏎····W·=·150,⏎···`  prettier/prettier
+108:39  Warning: Insert `⏎···`  prettier/prettier
+109:13  Warning: Replace `i·=>·i·*·W·/·((pts.length·-·1)` with `(i)·=>·(i·*·W)·/·(pts.length·-·1`  prettier/prettier
+110:13  Warning: Replace `v·=>·3·+·(H·-·6)·*·(1·-·(v·-·mn)·/·((mx·-·mn)` with `(v)·=>·3·+·(H·-·6)·*·(1·-·(v·-·mn)·/·(mx·-·mn`  prettier/prettier
+111:19  Warning: Replace `.map((v,·i)·=>·(i·?·'L'·:·'M')·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1))` with `⏎····.map((v,·i)·=>·(i·?·'L'·:·'M')·+·x(i).toFixed(1)·+·','·+·y(v).toFixed(1))⏎····`  prettier/prettier
+112:43  Warning: Replace `v` with `(v)`  prettier/prettier
+115:47  Warning: Replace `last·==·null·?·mn·:·last` with `⏎····last·==·null·?·mn·:·last⏎··`  prettier/prettier
+121:24  Warning: Insert `·`  prettier/prettier
+122:21  Warning: Replace `·w·=·d.weekly,` with `⏎····w·=·d.weekly,⏎···`  prettier/prettier
+123:29  Warning: Insert `⏎···`  prettier/prettier
+124:29  Warning: Replace `totFail·/·totRun` with `(totFail·/·totRun)`  prettier/prettier
+125:34  Warning: Replace `·totWaste·=·sum(s.waste),` with `⏎····totWaste·=·sum(s.waste),⏎···`  prettier/prettier
+126:33  Warning: Insert `⏎···`  prettier/prettier
+127:30  Warning: Insert `⏎···`  prettier/prettier
+128:26  Warning: Replace `·?·Math.round(((wm.total['平台失败废弃']·||·0)·+·(wm.total['取消占用']·||·0))·/·wmGt·*·100)` with `⏎····?·Math.round(⏎········(((wm.total['平台失败废弃']·||·0)·+·(wm.total['取消占用']·||·0))·/⏎··········wmGt)·*⏎··········100⏎······)⏎···`  prettier/prettier
+129:36  Warning: Replace `p·=>·/^仍活跃/.test(p.status)·&&·p.pri·!==·'P2'` with `⏎····(p)·=>·/^仍活跃/.test(p.status)·&&·p.pri·!==·'P2'⏎··`  prettier/prettier
+130:29  Warning: Replace `(p` with `((p)`  prettier/prettier
+131:22  Warning: Replace `·?·'crit'·:·(activeP01·>·0·||·(platMed·!=·null·&&·platMed·>=·40)·?·'warn'·:·'good')` with `⏎····?·'crit'⏎····:·activeP01·>·0·||·(platMed·!=·null·&&·platMed·>=·40)⏎····?·'warn'⏎····:·'good'`  prettier/prettier
+132:11  Warning: Replace `·r,·slug:·repoSlug(r),·workflow:·d.workflow,·days:·d.days,·s,` with `⏎····r,⏎····slug:·repoSlug(r),⏎····workflow:·d.workflow,⏎····days:·d.days,⏎····s,⏎···`  prettier/prettier
+133:12  Warning: Replace `·totFail,·failRate,·platMed,·totWaste,·wasteShare,·durMed,·blk0,` with `⏎····totFail,⏎····failRate,⏎····platMed,⏎····totWaste,⏎····wasteShare,⏎····durMed,⏎····blk0,⏎···`  prettier/prettier
+134:15  Warning: Replace `·hasP0,` with `⏎····hasP0,⏎···`  prettier/prettier
+139:17  Warning: Replace `d.boards[d.days[d.days.length·-·1]],·'interaction',·'重试失败率')` with `⏎······d.boards[d.days[d.days.length·-·1]],⏎······'interaction',⏎······'重试失败率'⏎····),⏎·`  prettier/prettier
+144:21  Warning: Insert `·`  prettier/prettier
+145:29  Warning: Replace `·SUM.forEach(x·=>·x.days.forEach(dt` with `⏎··SUM.forEach((x)·=>·x.days.forEach((dt)`  prettier/prettier
+147:18  Warning: Replace `·SUM.forEach(x·=>·{·const·d·=·DATA[x.r];·map[x.r]·=·{};·x.days.forEach((dt,·i)·=>·{` with `⏎··SUM.forEach((x)·=>·{⏎····const·d·=·DATA[x.r];⏎····map[x.r]·=·{};⏎····x.days.forEach((dt,·i)·=>·{⏎·····`  prettier/prettier
+148:1  Warning: Replace `····run:·x.s.run[i],·fail:·x.s.fail[i],·plat:·x.s.plat[i],·waste:·x.s.waste[i],·block:·x.s.block[i],·hours:·x.s.hours[i]·};·});` with `········run:·x.s.run[i],⏎········fail:·x.s.fail[i],⏎········plat:·x.s.plat[i],⏎········waste:·x.s.waste[i],⏎········block:·x.s.block[i],⏎········hours:·x.s.hours[i],⏎······};⏎····});⏎·`  prettier/prettier
+149:23  Warning: Replace `·plat·=·[],·block·=·[],·waste·=·[],` with `⏎····plat·=·[],⏎····block·=·[],⏎····waste·=·[],⏎···`  prettier/prettier
+150:25  Warning: Insert `·`  prettier/prettier
+151:15  Warning: Replace `·F·=·0,·pw·=·0,·pf·=·0,·bk·=·0,·ws·=·0,·hr·=·0,` with `⏎······F·=·0,⏎······pw·=·0,⏎······pf·=·0,⏎······bk·=·0,⏎······ws·=·0,⏎······hr·=·0,⏎·····`  prettier/prettier
+152:25  Warning: Replace `{·const·c·=·map[x.r][dt];` with `·{⏎······const·c·=·map[x.r][dt];⏎·····`  prettier/prettier
+153:23  Warning: Insert `⏎·····`  prettier/prettier
+154:38  Warning: Replace `·pw·+=·c.plat·*·c.fail;·pf·+=·c.fail;` with `⏎········pw·+=·c.plat·*·c.fail;⏎········pf·+=·c.fail;⏎·····`  prettier/prettier
+155:29  Warning: Replace `·bk·+=·c.block;·anyBk·=·true;` with `⏎········bk·+=·c.block;⏎········anyBk·=·true;⏎·····`  prettier/prettier
+156:26  Warning: Replace `·hr·+=·c.hours·||·0;` with `⏎······hr·+=·c.hours·||·0;⏎···`  prettier/prettier
+157:25  Warning: Replace `F·/·R` with `(F·/·R)`  prettier/prettier
+160:32  Warning: Insert `⏎···`  prettier/prettier
+167:17  Warning: Replace `·=·sum(SUM.map(x` with `=·sum(SUM.map((x)`  prettier/prettier
+168:31  Warning: Replace `(x` with `((x)`  prettier/prettier
+169:33  Warning: Replace `totFailAll·/·totRunAll` with `(totFailAll·/·totRunAll)`  prettier/prettier
+170:30  Warning: Replace `·const·wsum·=·sum(SUM.map(x·=>·(x.platMed·||·0)·*·x.totFail));·return·totFailAll·?·wsum·/·totFailAll·:·null;·` with `⏎··const·wsum·=·sum(SUM.map((x)·=>·(x.platMed·||·0)·*·x.totFail));⏎··return·totFailAll·?·wsum·/·totFailAll·:·null;⏎`  prettier/prettier
+171:31  Warning: Replace `(x` with `((x)`  prettier/prettier
+172:33  Warning: Replace `x` with `(x)`  prettier/prettier
+173:30  Warning: Replace `x` with `(x)`  prettier/prettier
+175:17  Warning: Insert `⏎···`  prettier/prettier
+176:23  Warning: Replace `{·const·wm·=·x.w.matrices.cost,` with `·{⏎····const·wm·=·x.w.matrices.cost,⏎·····`  prettier/prettier
+177:66  Warning: Replace `·tot·+=·gt;` with `⏎····tot·+=·gt;⏎·`  prettier/prettier
+178:27  Warning: Replace `waste·/·tot` with `(waste·/·tot)`  prettier/prettier
+180:34  Warning: Replace `x` with `(x)`  prettier/prettier
+181:31  Warning: Replace `x·=>·x.level·===·'crit')·?·'crit'·:·(SUM.some(x·=>·x.level·===·'warn')·?·'warn'·:·'good')` with `(x)·=>·x.level·===·'crit')⏎··?·'crit'⏎··:·SUM.some((x)·=>·x.level·===·'warn')⏎··?·'warn'⏎··:·'good'`  prettier/prettier
+185:13  Warning: Replace `x·=>·x.w.probs.forEach(p·=>·ALL_PROBS.push(Object.assign({·repo:·x.r,·slug:·x.slug·},·p)))` with `(x)·=>⏎··x.w.probs.forEach((p)·=>⏎····ALL_PROBS.push(Object.assign({·repo:·x.r,·slug:·x.slug·},·p))⏎··)⏎`  prettier/prettier
+186:16  Warning: Replace `··=·p` with `=·(p)`  prettier/prettier
+187:15  Warning: Replace `···=·p` with `=·(p)`  prettier/prettier
+188:20  Warning: Replace `p` with `(p)`  prettier/prettier
+193:22  Warning: Insert `·`  prettier/prettier
+194:66  Warning: Replace `overallLevel` with `⏎····overallLevel⏎··`  prettier/prettier
+195:18  Warning: Insert `⏎···`  prettier/prettier
+196:1  Warning: Insert `··`  prettier/prettier
+197:1  Warning: Replace `····:·`主要拖累来自·<b>平台侧故障</b>——约占全部失败·<b>${platShareAll·!=·null·?·platShareAll.toFixed(0)·:·'—'}%</b>,连带卡住约·<b>${blockedAll}·个·PR</b>、浪费约·<b>${wasteAll.toFixed(0` with `······:·`主要拖累来自·<b>平台侧故障</b>——约占全部失败·<b>${⏎··········platShareAll·!=·null·?·platShareAll.toFixed(0)·:·'—'⏎········}%</b>,连带卡住约·<b>${blockedAll}·个·PR</b>、浪费约·<b>${wasteAll.toFixed(⏎··········0⏎········`  prettier/prettier
+198:23  Warning: Replace `AGG.failRate[0],·AGG.failRate[AGG.failRate.length·-·1],·true` with `⏎····AGG.failRate[0],⏎····AGG.failRate[AGG.failRate.length·-·1],⏎····true⏎··`  prettier/prettier
+199:13  Warning: Delete `·`  prettier/prettier
+201:17  Warning: Replace `di·=>·`<span·class="k-badge·${di.cls·===·'bad'·?·'up'·:·(di.cls·===·'good'·?·'down'·:·'flat')` with `(di)·=>⏎····`<span·class="k-badge·${⏎······di.cls·===·'bad'·?·'up'·:·di.cls·===·'good'·?·'down'·:·'flat'⏎····`  prettier/prettier
+203:6  Warning: Replace `'流水线失败率',·failRateAll.toFixed(1)·+·'%',·`全窗·${totFailAll}/${totRunAll}·run`,·failRateAll·>=·30,·badge(dFail)` with `⏎······'流水线失败率',⏎······failRateAll.toFixed(1)·+·'%',⏎······`全窗·${totFailAll}/${totRunAll}·run`,⏎······failRateAll·>=·30,⏎······badge(dFail),⏎····`  prettier/prettier
+204:6  Warning: Replace `'平台故障占比',·(platShareAll·!=·null·?·platShareAll.toFixed(0)·:·'—')·+·'%',·'失败里属平台自身故障',·platShareAll·>=·40,·''` with `⏎······'平台故障占比',⏎······(platShareAll·!=·null·?·platShareAll.toFixed(0)·:·'—')·+·'%',⏎······'失败里属平台自身故障',⏎······platShareAll·>=·40,⏎······'',⏎····`  prettier/prettier
+205:6  Warning: Replace `'被·CI·卡住的·PR',·blockedAll,·`窗口·${blocked0All}·→·${blockedAll}·个`,·blockedAll·>·blocked0All,·badge(dBlk)` with `⏎······'被·CI·卡住的·PR',⏎······blockedAll,⏎······`窗口·${blocked0All}·→·${blockedAll}·个`,⏎······blockedAll·>·blocked0All,⏎······badge(dBlk),⏎····`  prettier/prettier
+206:6  Warning: Replace `'无效机时(可回收)',·wasteAll.toFixed(0),·`占总机时约·${wasteShareAll}%`,·wasteShareAll·>=·20,·badge(dWaste)` with `⏎······'无效机时(可回收)',⏎······wasteAll.toFixed(0),⏎······`占总机时约·${wasteShareAll}%`,⏎······wasteShareAll·>=·20,⏎······badge(dWaste),⏎····`  prettier/prettier
+207:6  Warning: Replace `'在跟踪·P0/P1',·activeP01All,·`全仓活跃···已消退·${ALL_PROBS.filter(isFaded).length}`,·activeP01All·>·0,·''` with `⏎······'在跟踪·P0/P1',⏎······activeP01All,⏎······`全仓活跃···已消退·${ALL_PROBS.filter(isFaded).length}`,⏎······activeP01All·>·0,⏎······'',⏎····`  prettier/prettier
+208:6  Warning: Replace `'平台能力就绪',·CAP_OK·+·'·/·'·+·CAP.length,·'缺口即对平台的需求',·false,·'']` with `⏎······'平台能力就绪',⏎······CAP_OK·+·'·/·'·+·CAP.length,⏎······'缺口即对平台的需求',⏎······false,⏎······'',⏎····],`  prettier/prettier
+211:75  Warning: Replace `DATA.runtime.days.length}·日·/·ops-nn·${DATA.opsnn.days.length` with `⏎······DATA.runtime.days.length⏎····}·日·/·ops-nn·${⏎····DATA.opsnn.days.length⏎··`  prettier/prettier
+216:31  Warning: Replace `.map(k` with `⏎······.map(⏎········(k)`  prettier/prettier
+219:44  Warning: Replace `)` with `⏎······)⏎······`  prettier/prettier
+226:55  Warning: Insert `·`  prettier/prettier
+228:50  Warning: Replace `name` with `⏎······name⏎····`  prettier/prettier
+229:41  Warning: Replace `di·&&·di.cls·===·'bad'·?·'·bad'·:·''` with `⏎······di·&&·di.cls·===·'bad'·?·'·bad'·:·''⏎····`  prettier/prettier
+230:9  Warning: Replace `di·?·`<div·class="mr-d·${di.cls}">${di.arrow}·${di.txt·?·di.txt·+·'·'·:·''}${di.word}</div>`·:·''` with `⏎········di⏎··········?·`<div·class="mr-d·${di.cls}">${di.arrow}·${⏎··············di.txt·?·di.txt·+·'·'·:·''⏎············}${di.word}</div>`⏎··········:·''⏎······`  prettier/prettier
+233:23  Warning: Insert `·`  prettier/prettier
+234:39  Warning: Replace `p·=>·p.dim·===·'稳定性'·&&·isActive(p)` with `⏎····(p)·=>·p.dim·===·'稳定性'·&&·isActive(p)⏎··`  prettier/prettier
+235:14  Warning: Delete `·`  prettier/prettier
+237:14  Warning: Delete `··`  prettier/prettier
+238:31  Warning: Replace `x` with `(x)`  prettier/prettier
+239:41  Warning: Replace `x` with `(x)`  prettier/prettier
+240:29  Warning: Replace `x` with `(x)`  prettier/prettier
+241:25  Warning: Replace `·?·delta(ttffRepo.ttffPrev,·ttffRepo.ttffWeek,·true)` with `⏎····?·delta(ttffRepo.ttffPrev,·ttffRepo.ttffWeek,·true)⏎···`  prettier/prettier
+242:38  Warning: Replace `x` with `(x)`  prettier/prettier
+243:40  Warning: Replace `x` with `(x)`  prettier/prettier
+249:19  Warning: Replace `'平台故障占比',·'失败里属平台自身故障的比例(越低越好)',·platShareAll·!=·null·?·platShareAll.toFixed(0)·:·'—',·'%',·dPlat,·sparkline(AGG.plat,·'var(--critical)',·true)` with `⏎········'平台故障占比',⏎········'失败里属平台自身故障的比例(越低越好)',⏎········platShareAll·!=·null·?·platShareAll.toFixed(0)·:·'—',⏎········'%',⏎········dPlat,⏎········sparkline(AGG.plat,·'var(--critical)',·true)⏎······`  prettier/prettier
+250:19  Warning: Replace `'无效机时(可回收)',·'平台失败废弃+取消占用消耗的算力',·wasteAll.toFixed(0),·'机时',·dWaste,·sparkline(AGG.waste,·'var(--warning)',·true)` with `⏎········'无效机时(可回收)',⏎········'平台失败废弃+取消占用消耗的算力',⏎········wasteAll.toFixed(0),⏎········'机时',⏎········dWaste,⏎········sparkline(AGG.waste,·'var(--warning)',·true)⏎······`  prettier/prettier
+251:19  Warning: Replace `'流水线挂死(全仓周合计)',·'取消前占用·≥1h·的·run·数',·hangAll,·'起',·null,·''` with `⏎········'流水线挂死(全仓周合计)',⏎········'取消前占用·≥1h·的·run·数',⏎········hangAll,⏎········'起',⏎········null,⏎········''⏎······`  prettier/prettier
+252:19  Warning: Replace `'平台侧活跃问题',·'归属基础设施团队、仍活跃的稳定性问题',·platActive,·'项',·null,·''` with `⏎········'平台侧活跃问题',⏎········'归属基础设施团队、仍活跃的稳定性问题',⏎········platActive,⏎········'项',⏎········null,⏎········''⏎······`  prettier/prettier
+253:19  Warning: Replace `'平台可观测性就绪',·'缺口即向·GitCode·平台提交的需求台账',·CAP_OK·+·'·/·'·+·CAP.length,·'',·null,·`<span·class="matbar"·style="display:block"><i·style="width:${Math.round(CAP_OK·/·CAP.length·*·100)}%"></i></span>`` with `⏎········'平台可观测性就绪',⏎········'缺口即向·GitCode·平台提交的需求台账',⏎········CAP_OK·+·'·/·'·+·CAP.length,⏎········'',⏎········null,⏎········`<span·class="matbar"·style="display:block"><i·style="width:${Math.round(⏎··········(CAP_OK·/·CAP.length)·*·100⏎········)}%"></i></span>`⏎······`  prettier/prettier
+260:19  Warning: Replace `'被·CI·卡住的·PR',·'被失败流水线阻塞、未能转绿的·PR(全仓最新)',·blockedAll,·'个',·dBlk,·sparkline(AGG.block.map(v·=>·v·==·null·?·0·:·v),·'var(--series-2)',·true)` with `⏎········'被·CI·卡住的·PR',⏎········'被失败流水线阻塞、未能转绿的·PR(全仓最新)',⏎········blockedAll,⏎········'个',⏎········dBlk,⏎········sparkline(⏎··········AGG.block.map((v)·=>·(v·==·null·?·0·:·v)),⏎··········'var(--series-2)',⏎··········true⏎········)⏎······`  prettier/prettier
+261:19  Warning: Replace `'首次失败耗时(最差仓)',·'触发→首个失败·job·结束,越短越快知道"这次不行"',·ttffWorst·?·(ttffWorst·>=·120·?·(ttffWorst·/·60).toFixed(1)·+·'·min'·:·ttffWorst·+·'·s')·:·'—',·ttffRepo·?·'··'·+·ttffRepo.slug·:·'',·dTtff,·''` with `⏎········'首次失败耗时(最差仓)',⏎········'触发→首个失败·job·结束,越短越快知道"这次不行"',⏎········ttffWorst⏎··········?·ttffWorst·>=·120⏎············?·(ttffWorst·/·60).toFixed(1)·+·'·min'⏎············:·ttffWorst·+·'·s'⏎··········:·'—',⏎········ttffRepo·?·'··'·+·ttffRepo.slug·:·'',⏎········dTtff,⏎········''⏎······`  prettier/prettier
+262:19  Warning: Replace `'流水线时长中位(最长仓)',·'开发者等一次结果的典型时长',·durMax·?·durMax.toFixed(1)·:·'—',·'min',·null,·sparkline(AGG.failRate.map((_,·i)·=>·median(SUM.map(x·=>·x.s.dur[i]·??·null))·||·0),·'var(--series)',·true)` with `⏎········'流水线时长中位(最长仓)',⏎········'开发者等一次结果的典型时长',⏎········durMax·?·durMax.toFixed(1)·:·'—',⏎········'min',⏎········null,⏎········sparkline(⏎··········AGG.failRate.map(⏎············(_,·i)·=>·median(SUM.map((x)·=>·x.s.dur[i]·??·null))·||·0⏎··········),⏎··········'var(--series)',⏎··········true⏎········)⏎······`  prettier/prettier
+263:19  Warning: Replace `'重试失败率(最高仓)',·'紧跟失败的重跑仍失败的占比,越高越折腾',·retryMax·?·retryMax.toFixed(0)·:·'—',·'%',·null,·''` with `⏎········'重试失败率(最高仓)',⏎········'紧跟失败的重跑仍失败的占比,越高越折腾',⏎········retryMax·?·retryMax.toFixed(0)·:·'—',⏎········'%',⏎········null,⏎········''⏎······`  prettier/prettier
+264:19  Warning: Replace `'在跟踪的体验类问题',·'效率+交互体验维度、仍活跃的问题',·ALL_PROBS.filter(p·=>·(p.dim·===·'效率'·||·p.dim·===·'交互体验')·&&·isActive(p)).length,·'项',·null,·''` with `⏎········'在跟踪的体验类问题',⏎········'效率+交互体验维度、仍活跃的问题',⏎········ALL_PROBS.filter(⏎··········(p)·=>·(p.dim·===·'效率'·||·p.dim·===·'交互体验')·&&·isActive(p)⏎········).length,⏎········'项',⏎········null,⏎········''⏎······`  prettier/prettier
+274:22  Warning: Insert `·`  prettier/prettier
+275:31  Warning: Replace `p` with `(p)`  prettier/prettier
+276:45  Warning: Replace `·faded·=·ps.filter(isFaded).length,` with `⏎····faded·=·ps.filter(isFaded).length,⏎···`  prettier/prettier
+278:35  Warning: Replace `faded·/·total` with `(faded·/·total)`  prettier/prettier
+279:15  Warning: Replace `n·=>·total·?·(n·/·total·*·100).toFixed(1)·+·'%'·:·'0'` with `(n)·=>·(total·?·((n·/·total)·*·100).toFixed(1)·+·'%'·:·'0')`  prettier/prettier
+281:93  Warning: Replace `{·P0:·'完全阻塞',·P1:·'关键卡点',·P2:·'显著影响'·}[pri]` with `⏎····{·P0:·'完全阻塞',·P1:·'关键卡点',·P2:·'显著影响'·}[pri]⏎··`  prettier/prettier
+289:63  Warning: Replace `faded)}"></i><i·class="b-active"·style="width:${pct(active` with `⏎······faded⏎····)}"></i><i·class="b-active"·style="width:${pct(⏎····active⏎··`  prettier/prettier
+293:25  Warning: Insert `·`  prettier/prettier
+294:34  Warning: Insert `⏎···`  prettier/prettier
+295:46  Warning: Insert `⏎···`  prettier/prettier
+296:35  Warning: Replace `faded·/·total` with `(faded·/·total)`  prettier/prettier
+313:24  Warning: Insert `·`  prettier/prettier
+315:15  Warning: Replace `'流水线失败率',·'完结·run·里失败的比例(两仓合并)',·AGG.failRate,·AGG.days,·'%',·'var(--critical)',·true` with `⏎······'流水线失败率',⏎······'完结·run·里失败的比例(两仓合并)',⏎······AGG.failRate,⏎······AGG.days,⏎······'%',⏎······'var(--critical)',⏎······true⏎····`  prettier/prettier
+316:15  Warning: Replace `'平台故障占比',·'失败里属平台自身故障(失败数加权)',·AGG.plat,·AGG.days,·'%',·'var(--critical)',·true` with `⏎······'平台故障占比',⏎······'失败里属平台自身故障(失败数加权)',⏎······AGG.plat,⏎······AGG.days,⏎······'%',⏎······'var(--critical)',⏎······true⏎····`  prettier/prettier
+317:15  Warning: Replace `'被·CI·卡住的·PR',·'被失败流水线阻塞的·PR·数(两仓合计)',·AGG.block.map(v·=>·v·==·null·?·0·:·v),·AGG.days,·'个',·'var(--series-2)',·true` with `⏎······'被·CI·卡住的·PR',⏎······'被失败流水线阻塞的·PR·数(两仓合计)',⏎······AGG.block.map((v)·=>·(v·==·null·?·0·:·v)),⏎······AGG.days,⏎······'个',⏎······'var(--series-2)',⏎······true⏎····`  prettier/prettier
+318:15  Warning: Replace `'无效机时',·'浪费在非代码失败上的算力(两仓合计)',·AGG.waste,·AGG.days,·'机时',·'var(--warning)',·true` with `⏎······'无效机时',⏎······'浪费在非代码失败上的算力(两仓合计)',⏎······AGG.waste,⏎······AGG.days,⏎······'机时',⏎······'var(--warning)',⏎······true⏎····`  prettier/prettier
+319:15  Warning: Replace `'每日机时',·'当日·CI·总算力消耗,观察量(两仓合计)',·AGG.hours,·AGG.days,·'机时',·'var(--warning)',·false)` with `⏎······'每日机时',⏎······'当日·CI·总算力消耗,观察量(两仓合计)',⏎······AGG.hours,⏎······AGG.days,⏎······'机时',⏎······'var(--warning)',⏎······false⏎····),`  prettier/prettier
+328:25  Warning: Insert `·`  prettier/prettier
+329:25  Warning: Replace `x` with `(x)`  prettier/prettier
+330:61  Warning: Replace `x.level` with `⏎······x.level⏎····`  prettier/prettier
+331:29  Warning: Replace `·`<div·class="cmp-m"><div·class="m-l">${l}</div><div·class="m-v${bad·?·'·bad'·:·''` with `⏎······`<div·class="cmp-m"><div·class="m-l">${l}</div><div·class="m-v${⏎········bad·?·'·bad'·:·''⏎······`  prettier/prettier
+333:51  Warning: Replace `x.slug}</span><span·class="cmp-wf">${esc(x.workflow` with `⏎········x.slug⏎······}</span><span·class="cmp-wf">${esc(⏎······x.workflow⏎····`  prettier/prettier
+336:13  Warning: Replace `'平台故障占比',·(x.platMed·!=·null·?·x.platMed.toFixed(0)·:·'—')·+·'%',·x.platMed·>=·40` with `⏎··········'平台故障占比',⏎··········(x.platMed·!=·null·?·x.platMed.toFixed(0)·:·'—')·+·'%',⏎··········x.platMed·>=·40⏎········`  prettier/prettier
+337:13  Warning: Replace `'被·CI·卡住·PR',·(x.blkL·!=·null·?·x.blkL·:·'—'),·x.blk0·!=·null·&&·x.blkL·!=·null·&&·x.blkL·>·x.blk0` with `⏎··········'被·CI·卡住·PR',⏎··········x.blkL·!=·null·?·x.blkL·:·'—',⏎··········x.blk0·!=·null·&&·x.blkL·!=·null·&&·x.blkL·>·x.blk0⏎········`  prettier/prettier
+339:13  Warning: Replace `'流水线时长中位',·(x.durMed·!=·null·?·x.durMed.toFixed(1)·:·'—')·+·'·min',·false` with `⏎··········'流水线时长中位',⏎··········(x.durMed·!=·null·?·x.durMed.toFixed(1)·:·'—')·+·'·min',⏎··········false⏎········`  prettier/prettier
+342:71  Warning: Replace `x.days.length` with `⏎······x.days.length⏎····`  prettier/prettier
+343:46  Warning: Replace `x.r` with `⏎······x.r⏎····`  prettier/prettier
+353:26  Warning: Insert `·`  prettier/prettier
+355:37  Warning: Replace `.map(v·=>·`<i·style="height:${v·?·Math.max(3,·Math.round(v·/·mx·*·22))·:·2}px${v·?·''·:·';background:var(--grid)'}"></i>`)` with `⏎····.map(⏎······(v)·=>⏎········`<i·style="height:${v·?·Math.max(3,·Math.round((v·/·mx)·*·22))·:·2}px${⏎··········v·?·''·:·';background:var(--grid)'⏎········}"></i>`⏎····)⏎····`  prettier/prettier
+357:27  Warning: Insert `·`  prettier/prettier
+359:32  Warning: Replace `p` with `(p)`  prettier/prettier
+360:21  Warning: Replace `(order[a.pri]·-·order[b.pri])·||·(b.runs·-·a.runs))` with `order[a.pri]·-·order[b.pri]·||·b.runs·-·a.runs)⏎····`  prettier/prettier
+361:19  Warning: Insert `⏎···`  prettier/prettier
+362:19  Warning: Replace `.map(p` with `⏎····.map(⏎······(p)`  prettier/prettier
+366:30  Warning: Replace `p.stages·?·`·<span·class="mini">${esc(p.stages)}</span>`·:·''` with `⏎········p.stages·?·`·<span·class="mini">${esc(p.stages)}</span>`·:·''⏎······`  prettier/prettier
+370:57  Warning: Replace `p.dest·||·'—')}</td></tr>`)` with `⏎········p.dest·||·'—'⏎······)}</td></tr>`⏎····)⏎····`  prettier/prettier
+380:18  Warning: Insert `·`  prettier/prettier
+382:19  Warning: Replace `·renderRoles()·+·renderClosure()·+·renderTrends()·+·renderCompare()·+` with `⏎····renderRoles()·+⏎····renderClosure()·+⏎····renderTrends()·+⏎····renderCompare()·+⏎···`  prettier/prettier
+384:23  Warning: Insert `·`  prettier/prettier
+386:14  Warning: Replace `·r.getAttribute('data-theme')·||` with `⏎····r.getAttribute('data-theme')·||⏎···`  prettier/prettier
+388:38  Warning: Insert `⏎·`  prettier/prettier
+391:10  Warning: Replace `()` with `·()·`  prettier/prettier
+392:50  Warning: Insert `⏎·`  prettier/prettier
+394:11  Warning: Replace `{·const·cur·=·t·||·(matchMedia('(prefers-color-scheme:dark)').matches·?·'dark'·:·'light');·btn.textContent·=·cur·===·'dark'·?·'☀'·:·'☾';` with `·{⏎····const·cur·=⏎······t·||⏎······(matchMedia('(prefers-color-scheme:dark)').matches·?·'dark'·:·'light');⏎····btn.textContent·=·cur·===·'dark'·?·'☀'·:·'☾';⏎·`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/CiReport/DailyDrilldown.tsx
+35:38  Warning: Insert `⏎···········`  prettier/prettier
+44:23  Warning: Replace `rounded-[24px]·border·border-slate-200/80·bg-[linear-gradient(180deg,#fbfdff_0%,#f8fbff_100%)]·p-4·>md:p-5` with `>md:p-5·rounded-[24px]·border·border-slate-200/80·bg-[linear-gradient(180deg,#fbfdff_0%,#f8fbff_100%)]·p-4`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/DiagBlock.tsx
+104:37  Warning: Replace `·ttff_by_owner:·{},·retry:·{·rate:·null,·n:·0·}` with `⏎······ttff_by_owner:·{},⏎······retry:·{·rate:·null,·n:·0·},⏎···`  prettier/prettier
+130:50  Warning: Insert `⏎··········`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/DimComparison.tsx
+29:25  Warning: Replace `·value={r[2]}·className="font-semibold·text-slate-800"` with `⏎··················value={r[2]}⏎··················className="font-semibold·text-slate-800"⏎···············`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/ImprovementCandidates.tsx
+36:27  Warning: Replace `mt-3·grid·grid-cols-1·gap-3·>md:grid-cols-2` with `>md:grid-cols-2·mt-3·grid·grid-cols-1·gap-3`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/PlatformObservability.tsx
+145:18  Warning: Replace `·className={r.needWip·?·'font-medium·text-amber-600'·:·undefined}` with `⏎················className={r.needWip·?·'font-medium·text-amber-600'·:·undefined}⏎··············`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/ProblemPanel.tsx
+92:50  Warning: Insert `·建议动作。`  prettier/prettier
+93:9  Warning: Delete `建议动作。`  prettier/prettier
+97:57  Warning: Delete `·待定聚集·/`  prettier/prettier
+98:8  Warning: Insert `·待定聚集·/`  prettier/prettier
+174:23  Warning: Replace `⏎············key={k}⏎············summary={`${DIM_NAME[k]}···细分（诊断指标）`}⏎··········` with `·key={k}·summary={`${DIM_NAME[k]}···细分（诊断指标）`}`  prettier/prettier
+
+./src/modules/intelligent-analysis/DeveloperExperience/CiExperience/components/matrices.tsx
+160:25  Warning: Delete `··`  prettier/prettier
+
+./src/modules/intelligent-analysis/GovernancePlatform/Overview/Project/DetailPage/EcoCharts.tsx
+310:6  Warning: React Hook useMemo has unnecessary dependencies: 'chartRefs' and 'i18n.language'. Either exclude them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/GovernancePlatform/Overview/Project/hooks/useUserDetail.ts
+300:6  Warning: React Hook useEffect has missing dependencies: 'parseEcoChartsData' and 'parseUserDetail'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/Rust/components/LeaderboardPieChart.tsx
+160:6  Warning: React Hook useEffect has a missing dependency: 'type'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/UserJourney/OverviewDashboard/RepoProgressSection.tsx
+647:5  Warning: React Hook useMemo has a missing dependency: 'rw'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+683:5  Warning: React Hook useMemo has a missing dependency: 'rw'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+1694:9  Warning: The 'progressHeaderTitle' JSX element makes the dependencies of useMemo Hook (at line 2196) change on every render. To fix this, wrap the initialization of 'progressHeaderTitle' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+1694:9  Warning: The 'progressHeaderTitle' JSX element makes the dependencies of useMemo Hook (at line 2471) change on every render. To fix this, wrap the initialization of 'progressHeaderTitle' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+2578:6  Warning: React Hook useMemo has an unnecessary dependency: 'compareTeamNames'. Either exclude it or remove the dependency array. Outer scope values like 'compareTeamNames' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+2603:6  Warning: React Hook useMemo has an unnecessary dependency: 'compareTeamNames'. Either exclude it or remove the dependency array. Outer scope values like 'compareTeamNames' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+3173:5  Warning: React Hook useCallback has a missing dependency: 'renderBenchmarkTag'. Either include it or remove the dependency array. Outer scope values like 'compareTeamNames' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+3211:5  Warning: React Hook useMemo has unnecessary dependencies: 'currentTab', 'onOpenRepoIssues', and 'teamColumnWidths'. Either exclude them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/UserJourney/components/PageHeader.tsx
+137:9  Warning: The 'safeRegistry' logical expression could make the dependencies of useMemo Hook (at line 185) change on every render. To fix this, wrap the initialization of 'safeRegistry' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+137:9  Warning: The 'safeRegistry' logical expression could make the dependencies of useMemo Hook (at line 195) change on every render. To fix this, wrap the initialization of 'safeRegistry' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+137:9  Warning: The 'safeRegistry' logical expression could make the dependencies of useMemo Hook (at line 213) change on every render. To fix this, wrap the initialization of 'safeRegistry' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+137:9  Warning: The 'safeRegistry' logical expression could make the dependencies of useMemo Hook (at line 226) change on every render. To fix this, wrap the initialization of 'safeRegistry' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+137:9  Warning: The 'safeRegistry' logical expression could make the dependencies of useMemo Hook (at line 240) change on every render. To fix this, wrap the initialization of 'safeRegistry' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+137:9  Warning: The 'safeRegistry' logical expression could make the dependencies of useMemo Hook (at line 261) change on every render. To fix this, wrap the initialization of 'safeRegistry' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+
+./src/modules/intelligent-analysis/server/intelligentAnalysisNewDatasetCache.ts
+276:42  Warning: Replace `(r)·=>·getUserTypeFromRow(r)·===·'组织')` with `⏎······(r)·=>·getUserTypeFromRow(r)·===·'组织'`  prettier/prettier
+277:5  Warning: Replace `··` with `)`  prettier/prettier
+
+./src/modules/lab/model/Analyze/ChartPanel.tsx
+68:67  Warning: Replace `t-6·pb-10` with `b-10·pt-6`  prettier/prettier
+
+./src/modules/lab/model/Analyze/CommentDrawer/CommentInput.tsx
+94:18  Warning: The ref value 'boxRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'boxRef.current' to a variable inside the effect, and use that variable in the cleanup function.  react-hooks/exhaustive-deps
+
+./src/modules/lab/model/Analyze/CommentDrawer/CommentSection.tsx
+122:60  Warning: Replace `y-3·px-4` with `x-4·py-3`  prettier/prettier
+
+./src/modules/lab/model/Analyze/CommentDrawer/ImageItem.tsx
+39:35  Warning: Replace `top-0·right` with `right-0·top`  prettier/prettier
+
+./src/modules/lab/model/Analyze/CommunityRepos/index.tsx
+38:27  Warning: Replace `line-clamp-1·mt` with `mt-1·line-clamp`  prettier/prettier
+42:27  Warning: Replace `line-clamp-1·mt` with `mt-1·line-clamp`  prettier/prettier
+
+./src/modules/lab/model/Analyze/component/FixedCommentButton.tsx
+7:53  Warning: Replace `top-[200px]·right-0` with `right-0·top-[200px]`  prettier/prettier
+
+./src/modules/lab/model/Detail/DetailPage.tsx
+108:24  Warning: Replace `t-6·mb-2` with `b-2·mt-6`  prettier/prettier
+
+./src/modules/lab/model/Detail/ModelReport.tsx
+58:43  Warning: Replace `t-6·mb-2` with `b-2·mt-6`  prettier/prettier
+
+./src/modules/lab/model/Form/FormIsTotalScore.tsx
+37:25  Warning: Replace `line-clamp-1·text-secondary` with `text-secondary·line-clamp-1`  prettier/prettier
+52:25  Warning: Replace `line-clamp-1·text-secondary` with `text-secondary·line-clamp-1`  prettier/prettier
+
+./src/modules/lab/model/Form/FormMetric/SelectedItem.tsx
+23:23  Warning: Replace `min-h-24·flex` with `flex·min-h-24`  prettier/prettier
+
+./src/modules/lab/model/Form/FormWeight/index.tsx
+27:49  Warning: Replace `t·border-b·border-l` with `b·border-l·border-t`  prettier/prettier
+
+./src/modules/lab/model/My/CreatReport/CreatReportModal.tsx
+49:33  Warning: Replace `top-10·right` with `right-10·top`  prettier/prettier
+66:52  Warning: Replace `left-0·right-0·bottom` with `bottom-0·left-0·right`  prettier/prettier
+
+./src/modules/lab/model/My/index.tsx
+80:60  Warning: Replace `t-10·pb-4` with `b-4·pt-10`  prettier/prettier
+
+./src/modules/lab/model/Public/CreateGuide.tsx
+19:36  Warning: Replace `t-2·pl-4` with `l-4·pt-2`  prettier/prettier
+23:35  Warning: Replace `t-4·pl-10` with `l-10·pt-4`  prettier/prettier
+
+./src/modules/lab/model/Public/CreateModel.tsx
+19:36  Warning: Replace `t-2·pl-4` with `l-4·pt-2`  prettier/prettier
+23:35  Warning: Replace `t-4·pl-10` with `l-10·pt-4`  prettier/prettier
+
+./src/modules/lab/model/Public/PublicItem/MetricsName.tsx
+54:20  Warning: Replace `line-clamp-1·my` with `my-1·line-clamp`  prettier/prettier
+
+./src/modules/lab/model/Public/PublicItem/index.tsx
+29:22  Warning: Replace `line-clamp-1·text-slate-auto-900` with `text-slate-auto-900·line-clamp-1`  prettier/prettier
+37:23  Warning: Replace `line-clamp-2·my-1` with `my-1·line-clamp-2`  prettier/prettier
+
+./src/modules/lab/model/User/FormInvite.tsx
+79:41  Warning: Replace `r-0·md:mb-4` with `b-4·md:mr-0`  prettier/prettier
+113:23  Warning: Replace `in-w-28·ml-2·h-10` with `l-2·h-10·min-w-28`  prettier/prettier
+
+./src/modules/lab/model/User/FormUsersItem.tsx
+42:26  Warning: Replace `t-1·pr` with `r-1·pt`  prettier/prettier
+239:72  Warning: Replace `y-0.5·px-1` with `x-1.5·py-0`  prettier/prettier
+253:72  Warning: Replace `y-0.5·px-1` with `x-1.5·py-0`  prettier/prettier
+
+./src/modules/lab/model/User/SelectDrowBox.tsx
+60:38  Warning: Replace `t-0.5·mr-2` with `r-2·mt-0.5`  prettier/prettier
+78:38  Warning: Replace `t-0.5·mr-2` with `r-2·mt-0.5`  prettier/prettier
+
+./src/modules/lab/model/User/index.tsx
+79:60  Warning: Replace `t-10·pb-4` with `b-4·pt-10`  prettier/prettier
+
+./src/modules/lab/model/components/Banner/index.tsx
+22:21  Warning: Replace `right-28·bottom-0` with `bottom-0·right-28`  prettier/prettier
+36:14  Warning: Replace `line-clamp-3·mt-4·mb-4` with `mb-4·mt-4·line-clamp-3`  prettier/prettier
+
+./src/modules/lab/model/components/DataSetPanel/index.tsx
+47:25  Warning: Replace `r-2·mb-0.5` with `b-0.5·mr-2`  prettier/prettier
+59:18  Warning: Replace `line-clamp-1·mr-2` with `mr-2·line-clamp-1`  prettier/prettier
+104:44  Warning: Replace `t-4·pb` with `b-4·pt`  prettier/prettier
+
+./src/modules/lab/model/components/LabDataRadio.tsx
+14:9  Warning: The 'routeMap' object makes the dependencies of useCallback Hook (at line 26) change on every render. Move it inside the useCallback callback. Alternatively, wrap the initialization of 'routeMap' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+
+./src/modules/lab/model/components/LabNotice.tsx
+5:90  Warning: Replace `y-2·px-3` with `x-3·py-2`  prettier/prettier
+
+./src/modules/lab/model/components/MyModelsBanner/index.tsx
+18:22  Warning: Replace `right-28·bottom-0` with `bottom-0·right-28`  prettier/prettier
+
+./src/modules/lab/model/components/RepoCard.tsx
+90:34  Warning: Replace `top-2·right-3` with `right-3·top-2`  prettier/prettier
+
+./src/modules/lab/report/My/ReportItem/EditReportModal.tsx
+49:33  Warning: Replace `top-10·right` with `right-10·top`  prettier/prettier
+62:52  Warning: Replace `left-0·right-0·bottom` with `bottom-0·left-0·right`  prettier/prettier
+
+./src/modules/lab/report/My/index.tsx
+85:60  Warning: Replace `t-10·pb-8` with `b-8·pt-10`  prettier/prettier
+
+./src/modules/lab/report/components/ReportForm/FormDataSet/Modal/RepoCard.tsx
+52:24  Warning: Replace `y-2.5·px-4` with `x-4·py-2.5`  prettier/prettier
+
+./src/modules/lab/report/components/ReportForm/index.tsx
+33:6  Warning: React Hook useEffect has a missing dependency: 'edit'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/Community/CommunityOverview/Chart.tsx
+54:9  Warning: The 'initChart' function makes the dependencies of useEffect Hook (at line 158) change on every render. Move it inside the useEffect callback. Alternatively, wrap the definition of 'initChart' in its own useCallback() Hook.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/Community/SigCenter/MetricContributor/index.tsx
+17:9  Warning: The 'dataSource' array makes the dependencies of useMemo Hook (at line 342) change on every render. To fix this, wrap the initialization of 'dataSource' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/Contribute/CommunityContributions/RepoTable/CommitDetail.tsx
+199:28  Warning: Replace `t-6·mb-4` with `b-4·mt-6`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Graduate/EvaluationInfo/EvaluationBaseInfo/EditReport.tsx
+24:6  Warning: React Hook useEffect has missing dependencies: 'form', 'report', and 'tpcSoftwareSigId'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/HatchingTreatment/Graduate/EvaluationInfo/EvaluationDetail.tsx
+38:65  Warning: Replace `y-3·px-6` with `x-6·py-3`  prettier/prettier
+56:28  Warning: Replace `t-2·ml-4` with `l-4·mt-2`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Graduate/EvaluationInfo/EvaluationMerticList/index.tsx
+81:30  Warning: Replace `line-clamp-2·mt-1` with `mt-1·line-clamp-2`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Graduate/EvaluationInfo/MetricDrawer/RiskContent.tsx
+72:32  Warning: Replace `top-4·right` with `right-4·top`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Graduate/EvaluationInfo/MetricDrawer/index.tsx
+111:40  Warning: Replace `t-4·pb-1` with `b-1·pt-4`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Graduate/EvaluationInfo/store/RiskFetcher.tsx
+29:6  Warning: React Hook useEffect has a missing dependency: 'shortCode'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+33:6  Warning: React Hook useEffect has a missing dependency: 'shortCode'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/HatchingTreatment/Graduate/EvaluationInfo/store/useRiskStore.tsx
+7:29  Warning: Replace `typeof·riskEvent` with `(typeof·riskEvent)`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Graduate/GraduateTable/ProjectTable/EditApply.tsx
+22:6  Warning: React Hook useEffect has missing dependencies: 'form', 'incubationStartTime', 'name', and 'report'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/EvaluationInfo/EvaluationBaseInfo/EditReport.tsx
+23:6  Warning: React Hook useEffect has missing dependencies: 'form', 'report', and 'tpcSoftwareSigId'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/EvaluationInfo/EvaluationDetail.tsx
+37:65  Warning: Replace `y-3·px-6` with `x-6·py-3`  prettier/prettier
+66:28  Warning: Replace `t-2·ml-4` with `l-4·mt-2`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/EvaluationInfo/EvaluationMerticList/index.tsx
+86:30  Warning: Replace `line-clamp-2·mt-1` with `mt-1·line-clamp-2`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/EvaluationInfo/MetricDrawer/RiskContent.tsx
+69:32  Warning: Replace `top-4·right` with `right-4·top`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/EvaluationInfo/MetricDrawer/index.tsx
+138:40  Warning: Replace `t-4·pb-1` with `b-1·pt-4`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/HatchProject/Form.tsx
+191:37  Warning: Replace `t-1·ml-2` with `l-2·mt-1`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/HatchProject/index.tsx
+19:36  Warning: Replace `top-[26px]·right-6` with `right-6·top-[26px]`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/HatchReport/index.tsx
+19:36  Warning: Replace `top-[26px]·right-6` with `right-6·top-[26px]`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Hatch/HatchTable/ProjectTable/EditApply.tsx
+29:6  Warning: React Hook useEffect has missing dependencies: 'form', 'name', 'repoUrl', and 'report'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+190:31  Warning: Replace `t-1·ml-2` with `l-2·mt-1`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/EvaluationInfo/EvaluationBaseInfo/EditReport.tsx
+23:6  Warning: React Hook useEffect has missing dependencies: 'form', 'report', and 'tpcSoftwareSigId'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/EvaluationInfo/EvaluationDetail.tsx
+39:65  Warning: Replace `y-3·px-6` with `x-6·py-3`  prettier/prettier
+68:28  Warning: Replace `t-2·ml-4` with `l-4·mt-2`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/EvaluationInfo/EvaluationMerticList/index.tsx
+86:30  Warning: Replace `line-clamp-2·mt-1` with `mt-1·line-clamp-2`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/EvaluationInfo/MetricDrawer/RiskContent.tsx
+72:32  Warning: Replace `top-4·right` with `right-4·top`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/EvaluationInfo/MetricDrawer/index.tsx
+138:40  Warning: Replace `t-4·pb-1` with `b-1·pt-4`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/EvaluationInfo/store/RiskFetcher.tsx
+29:6  Warning: React Hook useEffect has a missing dependency: 'shortCode'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+33:6  Warning: React Hook useEffect has a missing dependency: 'shortCode'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/EvaluationInfo/store/useRiskStore.tsx
+7:29  Warning: Replace `typeof·riskEvent` with `(typeof·riskEvent)`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/SandboxProject/Form.tsx
+141:37  Warning: Replace `t-1·ml-2` with `l-2·mt-1`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/SandboxProject/index.tsx
+19:36  Warning: Replace `top-[26px]·right-6` with `right-6·top-[26px]`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/SandboxReport/index.tsx
+19:36  Warning: Replace `top-[26px]·right-6` with `right-6·top-[26px]`  prettier/prettier
+
+./src/modules/oh/DataView/HatchingTreatment/Sandbox/SandboxTable/ProjectTable/EditApply.tsx
+29:6  Warning: React Hook useEffect has missing dependencies: 'form', 'name', 'repoUrl', and 'report'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+132:31  Warning: Replace `t-1·ml-2` with `l-2·mt-1`  prettier/prettier
+
+./src/modules/oh/components/Pie.tsx
+60:6  Warning: React Hook useEffect has an unnecessary dependency: 'cardRef.current'. Either exclude it or remove the dependency array. Mutable values like 'cardRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+./src/modules/oh/components/SelectReport/MiniReportCard.tsx
+47:19  Warning: Replace `line-clamp-1·mt-4` with `mt-4·line-clamp-1`  prettier/prettier
+55:19  Warning: Replace `line-clamp-2·my-3` with `my-3·line-clamp-2`  prettier/prettier
+
+./src/modules/oh/components/SelectReport/SelectReportDialog.tsx
+33:32  Warning: Replace `r-8·mb-4` with `b-4·mr-8`  prettier/prettier
+
+./src/modules/oh/components/Upload.tsx
+102:9  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./src/modules/oh/store/RiskFetcher.tsx
+31:6  Warning: React Hook useEffect has a missing dependency: 'shortCode'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+35:6  Warning: React Hook useEffect has a missing dependency: 'shortCode'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/oh/store/useRiskStore.tsx
+7:29  Warning: Replace `typeof·riskEvent` with `(typeof·riskEvent)`  prettier/prettier
+
+./src/modules/os-board/Detail/components/AlertRuleDialog.tsx
+80:9  Warning: The 'selectableMetrics' logical expression could make the dependencies of useMemo Hook (at line 85) change on every render. To fix this, wrap the initialization of 'selectableMetrics' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+80:9  Warning: The 'selectableMetrics' logical expression could make the dependencies of useEffect Hook (at line 124) change on every render. To fix this, wrap the initialization of 'selectableMetrics' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+
+./src/modules/os-board/Detail/components/IssueResponsibleCell.tsx
+104:5  Warning: React Hook React.useCallback has a missing dependency: 'EMPTY_VALUE'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/os-board/Detail/components/IssueTable.tsx
+776:5  Warning: React Hook useMemo has missing dependencies: 'canManage' and 'dashboardIdentifier'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/os-board/Detail/components/MetricCard.tsx
+179:6  Warning: React Hook useMemo has a missing dependency: 't'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/os-board/Detail/components/ModelCard.tsx
+137:6  Warning: React Hook useMemo has an unnecessary dependency: 'dashboardId'. Either exclude it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/os-board/Detail/components/UserManageDialog.tsx
+99:14  Warning: Replace `⏎····size·===·'sm'⏎······?·'h-8·w-8·text-sm'⏎·····` with `·size·===·'sm'·?·'h-8·w-8·text-sm'`  prettier/prettier
+106:10  Warning: Replace `shrink-0·flex` with `flex·shrink-0`  prettier/prettier
+316:26  Warning: Replace `⏎····{·identifier:·ident·},⏎····{·enabled:·open·&&·!!ident·}⏎··` with `{·identifier:·ident·},·{·enabled:·open·&&·!!ident·}`  prettier/prettier
+404:32  Warning: Replace `h-[80vh]·w-[80vw]·border-2·border-black·bg-white·shadow·outline-0·flex·flex-col` with `flex·h-[80vh]·w-[80vw]·flex-col·border-2·border-black·bg-white·shadow·outline-0`  prettier/prettier
+529:37  Warning: Replace `t('common:toast.update_successful',·{·defaultValue:·'修改成功'·})` with `⏎························t('common:toast.update_successful',·{⏎··························defaultValue:·'修改成功',⏎························})⏎······················`  prettier/prettier
+545:37  Warning: Replace `t('common:toast.delete_successful',·{·defaultValue:·'删除成功'·})` with `⏎························t('common:toast.delete_successful',·{⏎··························defaultValue:·'删除成功',⏎························})⏎······················`  prettier/prettier
+
+./src/modules/os-selection/DataView/MyReports/ReportPage/EvaluationInfo/EvaluationDetail.tsx
+27:65  Warning: Replace `y-3·px-6` with `x-6·py-3`  prettier/prettier
+37:28  Warning: Replace `t-2·ml-4` with `l-4·mt-2`  prettier/prettier
+
+./src/modules/os-selection/DataView/MyReports/ReportPage/EvaluationInfo/EvaluationMerticList/index.tsx
+64:30  Warning: Replace `line-clamp-2·mt-1` with `mt-1·line-clamp-2`  prettier/prettier
+
+./src/modules/os-selection/DataView/MyReports/ReportPage/EvaluationInfo/EvaluationTopScore/Pie.tsx
+60:6  Warning: React Hook useEffect has an unnecessary dependency: 'cardRef.current'. Either exclude it or remove the dependency array. Mutable values like 'cardRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+./src/modules/os-selection/DataView/MyReports/ReportPage/index.tsx
+22:22  Warning: Replace `y-6·mx-auto` with `x-auto·my-6`  prettier/prettier
+
+./src/modules/os-selection/DataView/MyReports/ReportPage/store/useReportStore.tsx
+8:31  Warning: Replace `typeof·ReportEvent` with `(typeof·ReportEvent)`  prettier/prettier
+
+./src/modules/os-selection/DataView/Selection/AssessmentSection/index.tsx
+82:6  Warning: React Hook useEffect has a missing dependency: 'targetMap'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/os-selection/DataView/Selection/SoftwareCard/index.tsx
+24:30  Warning: Replace `top-3·right` with `right-3·top`  prettier/prettier
+49:23  Warning: Replace `line-clamp-1·my-2` with `my-2·line-clamp-1`  prettier/prettier
+
+./src/modules/os-situation/components/DependencywheelCommon.tsx
+330:6  Warning: React Hook useEffect has a missing dependency: 'data'. Either include it or remove the dependency array. If 'setOptions' needs the current value of 'data', you can also switch to useReducer instead of useState and read 'data' in the reducer.  react-hooks/exhaustive-deps
+
+./src/modules/settings/profile/ProfileForm.tsx
+242:26  Warning: Replace `l-10·mb` with `b-10·ml`  prettier/prettier
+
+./src/modules/submitProject/Form/InputFieldArray.tsx
+34:22  Warning: Replace `t-10·mb` with `b-10·mt`  prettier/prettier
+
+./src/modules/submitProject/Form/SelectRepoSource.tsx
+108:25  Warning: Replace `min-h-12·absolute·top-[50px]·left-0·right-0` with `absolute·left-0·right-0·top-[50px]·min-h-12`  prettier/prettier
+129:41  Warning: Replace `top-2·right` with `right-2·top`  prettier/prettier
+
+./src/modules/submitProject/FormCommunity/GovernanceRepository.tsx
+43:28  Warning: Replace `t-10·mb-4` with `b-4·mt-10`  prettier/prettier
+
+./src/modules/submitProject/FormCommunity/LogoUrlsSelect.tsx
+44:41  Warning: Replace `right-1.5·-bottom` with `bottom-1.5·-right`  prettier/prettier
+
+./src/modules/submitProject/FormCommunity/index.tsx
+112:32  Warning: Replace `t-10·mb-4` with `b-4·mt-10`  prettier/prettier
+
+./src/modules/submitProject/Misc/AddSelectPopover.tsx
+67:31  Warning: Replace `top-8·left-0` with `left-0·top-8`  prettier/prettier
+
+./src/modules/system-admin/DataView/Dashboard/ActiveUsersByRegionChart.tsx
+65:6  Warning: React Hook useEffect has a missing dependency: 'fallbackRegionData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/Dashboard/ChartSection.tsx
+203:6  Warning: React Hook useEffect has a missing dependency: 'processCurrentData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+212:6  Warning: React Hook useEffect has a missing dependency: 'getCurrentError'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+386:6  Warning: React Hook useEffect has missing dependencies: 'activeTab', 'getCurrentData', and 'getCurrentLoading'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+386:18  Warning: React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/Dashboard/DataHubCard.tsx
+103:6  Warning: React Hook useEffect has a missing dependency: 'fallbackApiData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+116:6  Warning: React Hook useEffect has a missing dependency: 'fallbackArchiveData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/Dashboard/DataHubUserUsageCard.tsx
+265:5  Warning: React Hook useMemo has a missing dependency: 'getApiOptions'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/Dashboard/HotSearchCard.tsx
+105:6  Warning: React Hook useEffect has a missing dependency: 'fallbackRepositoryData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+117:6  Warning: React Hook useEffect has a missing dependency: 'fallbackDeveloperData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/Dashboard/InsightChart.tsx
+84:6  Warning: React Hook useEffect has a missing dependency: 'fallbackInsightData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+99:6  Warning: React Hook useEffect has missing dependencies: 'fallbackInsightData' and 'processApiData'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/Dashboard/ServiceTrendChart.tsx
+104:6  Warning: React Hook useEffect has a missing dependency: 'processApiData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+111:6  Warning: React Hook useEffect has a missing dependency: 'trendData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/EcosystemEvaluationMonitor/CommunityTab/Overview.tsx
+175:27  Warning: The ref value 'platformChartRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'platformChartRef.current' to a variable inside the effect, and use that variable in the cleanup function.  react-hooks/exhaustive-deps
+259:25  Warning: The ref value 'updateChartRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'updateChartRef.current' to a variable inside the effect, and use that variable in the cleanup function.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/EcosystemEvaluationMonitor/QueueTab/QueueOverview.tsx
+49:1  Warning: Delete `····`  prettier/prettier
+60:30  Warning: Replace `now.getFullYear(),·now.getMonth()·-·1,·now.getDate()` with `⏎··········now.getFullYear(),⏎··········now.getMonth()·-·1,⏎··········now.getDate()⏎········`  prettier/prettier
+63:30  Warning: Replace `now.getFullYear(),·now.getMonth()·-·3,·now.getDate()` with `⏎··········now.getFullYear(),⏎··········now.getMonth()·-·3,⏎··········now.getDate()⏎········`  prettier/prettier
+66:30  Warning: Replace `now.getFullYear(),·now.getMonth()·-·6,·now.getDate()` with `⏎··········now.getFullYear(),⏎··········now.getMonth()·-·6,⏎··········now.getDate()⏎········`  prettier/prettier
+69:30  Warning: Replace `now.getFullYear()·-·1,·now.getMonth(),·now.getDate()` with `⏎··········now.getFullYear()·-·1,⏎··········now.getMonth(),⏎··········now.getDate()⏎········`  prettier/prettier
+72:30  Warning: Replace `now.getFullYear()·-·3,·now.getMonth(),·now.getDate()` with `⏎··········now.getFullYear()·-·3,⏎··········now.getMonth(),⏎··········now.getDate()⏎········`  prettier/prettier
+75:30  Warning: Replace `now.getFullYear()·-·5,·now.getMonth(),·now.getDate()` with `⏎··········now.getFullYear()·-·5,⏎··········now.getMonth(),⏎··········now.getDate()⏎········`  prettier/prettier
+81:30  Warning: Replace `now.getFullYear(),·now.getMonth()·-·1,·now.getDate()` with `⏎··········now.getFullYear(),⏎··········now.getMonth()·-·1,⏎··········now.getDate()⏎········`  prettier/prettier
+99:6  Warning: React Hook useMemo has a missing dependency: 'getActualDateRange'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/EcosystemEvaluationMonitor/RepositoryTab/Management.tsx
+77:1  Warning: Delete `····`  prettier/prettier
+81:7  Warning: Replace `'超过1个月'` with `超过1个月`  prettier/prettier
+82:7  Warning: Replace `'超过3个月'` with `超过3个月`  prettier/prettier
+83:7  Warning: Replace `'超过半年'` with `超过半年`  prettier/prettier
+84:7  Warning: Replace `'超过1年'` with `超过1年`  prettier/prettier
+86:1  Warning: Delete `····`  prettier/prettier
+686:23  Warning: Replace `'超过半年'` with `超过半年`  prettier/prettier
+689:28  Warning: Replace `apiDataMap[batchTimeCategory·as·keyof·typeof·apiDataMap]·||·0` with `(⏎······················apiDataMap[⏎························batchTimeCategory·as·keyof·typeof·apiDataMap⏎······················]·||·0⏎····················)`  prettier/prettier
+
+./src/modules/system-admin/DataView/EcosystemEvaluationMonitor/RepositoryTab/Overview.tsx
+175:27  Warning: The ref value 'platformChartRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'platformChartRef.current' to a variable inside the effect, and use that variable in the cleanup function.  react-hooks/exhaustive-deps
+259:25  Warning: The ref value 'updateChartRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'updateChartRef.current' to a variable inside the effect, and use that variable in the cleanup function.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/MonitorOverview/index.tsx
+44:9  Warning: The 'chartData' array makes the dependencies of useEffect Hook (at line 159) change on every render. Move it inside the useEffect callback. Alternatively, wrap the initialization of 'chartData' in its own useMemo() Hook.  react-hooks/exhaustive-deps
+
+./src/modules/system-admin/DataView/SelectionEvaluationTPCMonitor/QueueTab/QueueOverview.tsx
+42:1  Warning: Delete `····`  prettier/prettier
+53:30  Warning: Replace `now.getFullYear(),·now.getMonth()·-·1,·now.getDate()` with `⏎··········now.getFullYear(),⏎··········now.getMonth()·-·1,⏎··········now.getDate()⏎········`  prettier/prettier
+56:30  Warning: Replace `now.getFullYear(),·now.getMonth()·-·3,·now.getDate()` with `⏎··········now.getFullYear(),⏎··········now.getMonth()·-·3,⏎··········now.getDate()⏎········`  prettier/prettier
+59:30  Warning: Replace `now.getFullYear(),·now.getMonth()·-·6,·now.getDate()` with `⏎··········now.getFullYear(),⏎··········now.getMonth()·-·6,⏎··········now.getDate()⏎········`  prettier/prettier
+62:30  Warning: Replace `now.getFullYear()·-·1,·now.getMonth(),·now.getDate()` with `⏎··········now.getFullYear()·-·1,⏎··········now.getMonth(),⏎··········now.getDate()⏎········`  prettier/prettier
+65:30  Warning: Replace `now.getFullYear()·-·3,·now.getMonth(),·now.getDate()` with `⏎··········now.getFullYear()·-·3,⏎··········now.getMonth(),⏎··········now.getDate()⏎········`  prettier/prettier
+68:30  Warning: Replace `now.getFullYear()·-·5,·now.getMonth(),·now.getDate()` with `⏎··········now.getFullYear()·-·5,⏎··········now.getMonth(),⏎··········now.getDate()⏎········`  prettier/prettier
+74:30  Warning: Replace `now.getFullYear(),·now.getMonth()·-·1,·now.getDate()` with `⏎··········now.getFullYear(),⏎··········now.getMonth()·-·1,⏎··········now.getDate()⏎········`  prettier/prettier
+92:6  Warning: React Hook useMemo has a missing dependency: 'getActualDateRange'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+246:15  Warning: Replace `·style={{·display:·'flex',·justifyContent:·'space-between',·alignItems:·'center'·}}` with `⏎············style={{⏎··············display:·'flex',⏎··············justifyContent:·'space-between',⏎··············alignItems:·'center',⏎············}}⏎··········`  prettier/prettier
+272:13  Warning: Replace `·style={{·display:·'flex',·justifyContent:·'space-between',·alignItems:·'center'·}}` with `⏎··········style={{⏎············display:·'flex',⏎············justifyContent:·'space-between',⏎············alignItems:·'center',⏎··········}}⏎········`  prettier/prettier
+
+./src/pages/api/intelligent-analysis/projects/[dataset]/participant-details.ts
+113:7  Warning: Delete `··`  prettier/prettier
+125:9  Warning: Insert `··`  prettier/prettier
+126:1  Warning: Insert `··`  prettier/prettier
+131:1  Warning: Replace `········` with `··········`  prettier/prettier
+132:1  Warning: Insert `··`  prettier/prettier
+140:9  Warning: Insert `··`  prettier/prettier
+145:1  Warning: Insert `··`  prettier/prettier
+
+./src/pages/api/intelligent-analysis/projects/[dataset]/user-detail.ts
+150:14  Warning: Delete `·`  prettier/prettier
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Creating an optimized production build ...
+Browserslist: browsers data (caniuse-lite) is 9 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+warn - As of Tailwind CSS v3.3, the `@tailwindcss/line-clamp` plugin is now included by default.
+warn - Remove it from the `plugins` array in your configuration to eliminate this warning.
+
+[35m🌼 daisyUI components 2.52.0[0m [0m https://daisyui.com
+  [32m✔︎ Including:[0m [0m unstyled components, 1 themes
+  [32m❤︎ Support daisyUI: [0m https://opencollective.com/daisyui [0m
+  
+
+[35m🌼 daisyUI components 2.52.0[0m [0m https://daisyui.com
+  [32m✔︎ Including:[0m [0m unstyled components, 1 themes
+  [32m❤︎ Support daisyUI: [0m https://opencollective.com/daisyui [0m
+  
+
+warn - The `min-*` and `max-*` variants are not supported with a `screens` configuration containing objects.
+ ✓ Compiled successfully in 2.4min
+   Collecting page data ...
+Warning: You have opted-out of Automatic Static Optimization due to `getInitialProps` in `pages/_app`. This does not opt-out pages with `getStaticProps`
+Read more: https://nextjs.org/docs/messages/opt-out-auto-static-optimization
+
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                                                                     Size  First Load JS
+┌ ƒ /                                                                          79.8 kB         919 kB
+├   └ css/d601a8a0e71c3587.css                                                   183 B
+├   /_app                                                                          0 B         192 kB
+├ ƒ /404                                                                         470 B         195 kB
+├ ƒ /about                                                                       19 kB         278 kB
+├ ƒ /analyze                                                                     516 B         192 kB
+├ ƒ /analyze/[slugs]                                                             523 B         192 kB
+├ ƒ /analyze/insight/[slugs]                                                   1.52 kB         196 kB
+├ ƒ /api/development/proxy                                                         0 B         192 kB
+├ ƒ /api/intelligent-analysis/projects/[dataset]/developers                        0 B         192 kB
+├ ƒ /api/intelligent-analysis/projects/[dataset]/organizations                     0 B         192 kB
+├ ƒ /api/intelligent-analysis/projects/[dataset]/participant-details               0 B         192 kB
+├ ƒ /api/intelligent-analysis/projects/[dataset]/regions                           0 B         192 kB
+├ ƒ /api/intelligent-analysis/projects/[dataset]/user-detail                       0 B         192 kB
+├ ƒ /api/intelligent-analysis/rust/leaderboard/[type]                              0 B         192 kB
+├ ƒ /api/intelligent-analysis/rust/overview                                        0 B         192 kB
+├ ƒ /auth/email/verify/[status]                                                1.05 kB         257 kB
+├ ƒ /auth/signin                                                               2.38 kB         212 kB
+├ ƒ /collaboration                                                               25 kB         415 kB
+├   └ css/6647fdc80046d04d.css                                                   203 B
+├ ƒ /collection/[slug]                                                           470 B         192 kB
+├ ƒ /dataHub                                                                   67.9 kB         583 kB
+├ ƒ /developer/[platform]                                                        263 B         192 kB
+├ ƒ /developer/[platform]/[slugs]                                               138 kB         979 kB
+├ ƒ /explore                                                                     415 B         192 kB
+├ ƒ /intelligent-analysis                                                        264 B         192 kB
+├ ƒ /intelligent-analysis/[org]/community-experience                           1.21 kB         221 kB
+├ ƒ /intelligent-analysis/[org]/community-experience/overview                    697 B         193 kB
+├ ƒ /intelligent-analysis/[org]/community-experience/repo-management             483 B         525 kB
+├ ƒ /intelligent-analysis/[org]/community-experience/task-management             481 B         512 kB
+├ ƒ /intelligent-analysis/[org]/experience/[experienceType]                      416 B        4.86 MB
+├ ƒ /intelligent-analysis/[org]/experience/issue-contribution/repo-management    501 B         525 kB
+├ ƒ /intelligent-analysis/[org]/experience/overview                              690 B         193 kB
+├ ƒ /intelligent-analysis/community-experience                                  1.2 kB         221 kB
+├ ƒ /intelligent-analysis/community-experience/overview                          630 B         193 kB
+├ ƒ /intelligent-analysis/community-experience/repo-management                   480 B         525 kB
+├ ƒ /intelligent-analysis/community-experience/task-management                   476 B         512 kB
+├ ƒ /intelligent-analysis/experience/[experienceType]                            405 B        4.86 MB
+├ ƒ /intelligent-analysis/experience/issue-contribution/repo-management          497 B         525 kB
+├ ƒ /intelligent-analysis/experience/overview                                    667 B         193 kB
+├ ƒ /intelligent-analysis/governance-platform                                  5.69 kB         259 kB
+├ ƒ /intelligent-analysis/governance-platform-new                              7.08 kB         236 kB
+├ ƒ /intelligent-analysis/governance-platform-new/[project]                    2.48 kB         226 kB
+├ ƒ /intelligent-analysis/governance-platform/[project]                        3.76 kB         256 kB
+├ ƒ /intelligent-analysis/my-submissions                                       18.3 kB         493 kB
+├ ƒ /intelligent-analysis/overview                                             7.97 kB         325 kB
+├ ƒ /intelligent-analysis/overview/[project]                                   6.22 kB         323 kB
+├ ƒ /intelligent-analysis/rust                                                  295 kB        1.11 MB
+├ ƒ /intelligent-analysis/submit-project                                       46.1 kB         464 kB
+├ ƒ /intelligent-analysis/user-journey                                         95.4 kB         650 kB
+├ ƒ /lab                                                                       14.7 kB         400 kB
+├ ƒ /lab/model/[model]/detail                                                  15.9 kB         866 kB
+├ ƒ /lab/model/[model]/edit                                                    1.61 kB         404 kB
+├ ƒ /lab/model/[model]/user                                                      497 B         418 kB
+├ ƒ /lab/model/[model]/version/[version]/analyze/[slugs]                       2.17 kB         226 kB
+├ ƒ /lab/model/[model]/version/[version]/edit                                  1.77 kB         404 kB
+├ ƒ /lab/model/[model]/version/create                                          1.63 kB         404 kB
+├ ƒ /lab/model/create                                                          1.09 kB         404 kB
+├ ƒ /lab/model/invite/confirm                                                  8.95 kB         275 kB
+├ ƒ /lab/model/my                                                              7.03 kB         925 kB
+├ ƒ /lab/report/[model]/detail                                                 2.49 kB         226 kB
+├ ƒ /lab/report/[model]/edit                                                   1.61 kB         404 kB
+├ ƒ /lab/report/[model]/user                                                     496 B         418 kB
+├ ƒ /lab/report/my                                                              6.5 kB         919 kB
+├ ƒ /oh                                                                          594 B         193 kB
+├ ƒ /os-board                                                                  12.3 kB         432 kB
+├ ƒ /os-board/dashboard/[id]                                                   1.57 kB         196 kB
+├ ƒ /os-board/dashboard/create                                                 17.6 kB         343 kB
+├ ƒ /os-selection                                                              30.1 kB         539 kB
+├ ƒ /os-selection/report                                                       30.3 kB         693 kB
+├ ƒ /os-situation                                                              6.19 kB         230 kB
+├   └ css/8a68f35318b40682.css                                                   201 B
+├ ƒ /os-situation/metrics/[metric]                                              129 kB         873 kB
+├ ƒ /settings/profile                                                          22.2 kB         552 kB
+├ ƒ /settings/subscribe                                                        20.6 kB         433 kB
+├ ƒ /submit-your-project                                                       4.38 kB         347 kB
+├ ƒ /submit-your-project/community                                             38.3 kB         378 kB
+└ ƒ /system-admin                                                                497 B         192 kB
++ First Load JS shared by all                                                   219 kB
+  ├ chunks/framework-61462047d5366177.js                                       57.5 kB
+  ├ chunks/main-9dd6149122fdc4e5.js                                            40.5 kB
+  ├ chunks/pages/_app-ad7febb8fbf2d40e.js                                      89.6 kB
+  ├ css/d082060715b96576.css                                                   26.6 kB
+  └ other shared chunks (total)                                                4.34 kB
+
+ƒ Middleware                                                                   32.8 kB
+
+ƒ  (Dynamic)  server-rendered on demand
+
+Done in 318.47s.
