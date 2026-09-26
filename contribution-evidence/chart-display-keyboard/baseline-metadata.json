@@ -1,0 +1,9 @@
+{
+  "fetched_at": "2026-09-26T02:00:29.850219+00:00",
+  "base": "d709b1898549c5ab4091302a4c26f45bbe198c66",
+  "source_sha256": {
+    "apps/web/src/modules/analyze/components/NavBar/ChartDisplaySetting.tsx": "d4d6eb649172150a25668a53594f2fa499ed31b92ed1eaac050e3114b3e1acd6",
+    "apps/web/src/modules/analyze/store/chartUserSetting.ts": "77ab0ff390854858748d7584d56ddd8e0a729414c7ee77d591924ed447b31b24"
+  },
+  "production_worktree_clean": true
+}

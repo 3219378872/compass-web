@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-09-26T02:20:59.251898+00:00",
+  "base": "d709b1898549c5ab4091302a4c26f45bbe198c66",
+  "branch": "fix/chart-display-keyboard",
+  "node": "v18.20.8",
+  "sha256": {
+    "apps/web/src/modules/analyze/components/NavBar/ChartDisplaySetting.tsx": "28f3ebda5a576ff0abb9e8b451bfe9f6c4d184cb1ecb5f75d1802e8b56621b9c",
+    "apps/web/src/modules/analyze/components/NavBar/ChartDisplaySetting.test.tsx": "08372a975f5c4506fe4e5e099167d5bcafabd23d4b5f17b3ccac5e9862c215ab"
+  },
+  "issue": "https://github.com/oss-compass/compass-web/issues/438",
+  "tests": "28 suites / 119 tests passed",
+  "browser": "English and Chinese actual component tests passed",
+  "build": "Node 18 yarn build passed; exit 0; 343.77 seconds",
+  "implementation_commit": "23c027a85c5f331b587bebe9a84269bcf8176197",
+  "gate_log_provenance": "Full Jest and production build logs were captured before the implementation commit from the identical implementation/test source content; SHA256 values were checked against this commit. Browser and targeted regression evidence were rerun from the implementation commit.",
+  "tested_commit": "626ef827df99f7450558efe6be3dd968fea156f2",
+  "implementation_tree": "999c8b9db0383998dd1368340fd96fc51647309d",
+  "tested_tree": "999c8b9db0383998dd1368340fd96fc51647309d",
+  "signoff_note": "The signed PR head and the tested commit have identical trees. Existing test results are retained without rerunning solely for the metadata change."
+}

@@ -1,0 +1,37 @@
+yarn run v1.22.22
+$ yarn workspace @oss-compass/web test:ci --runInBand --runTestsByPath src/modules/analyze/components/NavBar/ChartDisplaySetting.test.tsx
+$ jest --ci --runInBand --runTestsByPath src/modules/analyze/components/NavBar/ChartDisplaySetting.test.tsx
+  console.error
+    `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      51 |
+      52 |   function mount(onSubmit = jest.fn()) {
+    > 53 |     render(
+         |           ^
+      54 |       <I18nextProvider i18n={i18n}>
+      55 |         <form onSubmit={onSubmit}>
+      56 |           <ChartDisplaySetting />
+
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../../compass-agent/node_modules/react-dom/cjs/react-dom-test-utils.development.js:19:17)
+      at ../../../compass-agent/node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../../compass-agent/node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../../compass-agent/node_modules/@testing-library/react/dist/pure.js:246:10)
+      at mount (src/modules/analyze/components/NavBar/ChartDisplaySetting.test.tsx:53:11)
+      at Object.mount (src/modules/analyze/components/NavBar/ChartDisplaySetting.test.tsx:69:21)
+
+PASS src/modules/analyze/components/NavBar/ChartDisplaySetting.test.tsx
+  chart display toggles (en)
+    ✓ exposes localized toggle names and the enabled state of each option (150 ms)
+    ✓ updates the corresponding setting, pressed state and persistence without submitting a form (97 ms)
+    ✓ keeps the percentage option pressed while one-point scoring is disabled (62 ms)
+  chart display toggles (zh)
+    ✓ exposes localized toggle names and the enabled state of each option (45 ms)
+    ✓ updates the corresponding setting, pressed state and persistence without submitting a form (46 ms)
+    ✓ keeps the percentage option pressed while one-point scoring is disabled (51 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        1.511 s
+Ran all test suites within paths "src/modules/analyze/components/NavBar/ChartDisplaySetting.test.tsx".
+Done in 5.12s.

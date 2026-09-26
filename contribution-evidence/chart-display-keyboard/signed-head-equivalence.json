@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-09-26T02:29:00.480456+00:00",
+  "tested_commit": "626ef827df99f7450558efe6be3dd968fea156f2",
+  "signed_pr_head": "23c027a85c5f331b587bebe9a84269bcf8176197",
+  "tested_tree": "999c8b9db0383998dd1368340fd96fc51647309d",
+  "signed_pr_tree": "999c8b9db0383998dd1368340fd96fc51647309d",
+  "identical_trees": true,
+  "pr": "https://github.com/oss-compass/compass-web/pull/439",
+  "note": "Git tree equality was checked locally. Browser JSON and regression logs preserve the commit that was actually tested."
+}

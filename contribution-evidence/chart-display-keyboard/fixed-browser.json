@@ -1,0 +1,452 @@
+{
+  "label": "fixed",
+  "sourceCommit": "626ef827df99f7450558efe6be3dd968fea156f2",
+  "upstreamBase": "d709b1898549c5ab4091302a4c26f45bbe198c66",
+  "browserVersion": "151.0.7922.34",
+  "observedAt": "2026-09-26T02:25:22.179Z",
+  "boundary": "Isolated real ChartDisplaySetting component with real React, Valtio chartUserSetting store, localStorage, translations and SVGs. Native before/after buttons are harness scaffolding. No report route, chart rendering, NavbarSetting popover, API, or backend is exercised.",
+  "results": [
+    {
+      "lang": "en",
+      "initial": {
+        "showAvg": false,
+        "showMedian": false,
+        "onePointSys": false,
+        "repoType": "software-artifact",
+        "yAxisScale": true
+      },
+      "domBefore": [
+        {
+          "tag": "BUTTON",
+          "text": "averageShow average",
+          "tabIndex": 0,
+          "role": null,
+          "pressed": "false"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "medianShow median",
+          "tabIndex": 0,
+          "role": null,
+          "pressed": "false"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "number-100Percentage system",
+          "tabIndex": 0,
+          "role": null,
+          "pressed": "true"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "yAxisY-axis Scaling",
+          "tabIndex": 0,
+          "role": null,
+          "pressed": "true"
+        }
+      ],
+      "ariaBefore": "- region \"Chart options\":\n  - text: Charts Display\n  - button \"Show average\"\n  - button \"Show median\"\n  - button \"Percentage system\" [pressed]\n  - button \"Y-axis Scaling\" [pressed]",
+      "firstTab": {
+        "id": "",
+        "tag": "BUTTON",
+        "text": "averageShow average"
+      },
+      "keyboardState": {
+        "showAvg": false,
+        "showMedian": false,
+        "onePointSys": false,
+        "repoType": "software-artifact",
+        "yAxisScale": true
+      },
+      "keyboardSteps": [
+        {
+          "index": 0,
+          "setting": "showAvg",
+          "focus": {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px"
+          },
+          "afterEnter": {
+            "showAvg": true,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          },
+          "afterSpace": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          }
+        },
+        {
+          "index": 1,
+          "setting": "showMedian",
+          "focus": {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px"
+          },
+          "afterEnter": {
+            "showAvg": false,
+            "showMedian": true,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          },
+          "afterSpace": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          }
+        },
+        {
+          "index": 2,
+          "setting": "onePointSys",
+          "focus": {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px"
+          },
+          "afterEnter": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": true,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          },
+          "afterSpace": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          }
+        },
+        {
+          "index": 3,
+          "setting": "yAxisScale",
+          "focus": {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px"
+          },
+          "afterEnter": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": false
+          },
+          "afterSpace": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          }
+        }
+      ],
+      "clicks": [
+        {
+          "showAvg": true,
+          "showMedian": false,
+          "onePointSys": false,
+          "repoType": "software-artifact",
+          "yAxisScale": true
+        },
+        {
+          "showAvg": true,
+          "showMedian": true,
+          "onePointSys": false,
+          "repoType": "software-artifact",
+          "yAxisScale": true
+        },
+        {
+          "showAvg": true,
+          "showMedian": true,
+          "onePointSys": true,
+          "repoType": "software-artifact",
+          "yAxisScale": true
+        },
+        {
+          "showAvg": true,
+          "showMedian": true,
+          "onePointSys": true,
+          "repoType": "software-artifact",
+          "yAxisScale": false
+        }
+      ],
+      "pointerState": {
+        "showAvg": true,
+        "showMedian": true,
+        "onePointSys": true,
+        "repoType": "software-artifact",
+        "yAxisScale": false
+      },
+      "persisted": {
+        "showAvg": true,
+        "showMedian": true,
+        "onePointSys": true,
+        "repoType": "software-artifact",
+        "yAxisScale": false
+      },
+      "afterReload": {
+        "showAvg": true,
+        "showMedian": true,
+        "onePointSys": true,
+        "repoType": "software-artifact",
+        "yAxisScale": false
+      },
+      "domAfterReload": [
+        {
+          "tag": "BUTTON",
+          "text": "averageShow average",
+          "tabIndex": 0,
+          "pressed": "true"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "medianShow median",
+          "tabIndex": 0,
+          "pressed": "true"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "number-100Percentage system",
+          "tabIndex": 0,
+          "pressed": "false"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "yAxisY-axis Scaling",
+          "tabIndex": 0,
+          "pressed": "false"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "lang": "zh",
+      "initial": {
+        "showAvg": false,
+        "showMedian": false,
+        "onePointSys": false,
+        "repoType": "software-artifact",
+        "yAxisScale": true
+      },
+      "domBefore": [
+        {
+          "tag": "BUTTON",
+          "text": "average显示平均数",
+          "tabIndex": 0,
+          "role": null,
+          "pressed": "false"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "median显示中位数",
+          "tabIndex": 0,
+          "role": null,
+          "pressed": "false"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "number-100百分制",
+          "tabIndex": 0,
+          "role": null,
+          "pressed": "true"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "yAxisY 轴缩放",
+          "tabIndex": 0,
+          "role": null,
+          "pressed": "true"
+        }
+      ],
+      "ariaBefore": "- region \"Chart options\":\n  - text: 图表显示\n  - button \"显示平均数\"\n  - button \"显示中位数\"\n  - button \"百分制\" [pressed]\n  - button \"Y 轴缩放\" [pressed]",
+      "firstTab": {
+        "id": "",
+        "tag": "BUTTON",
+        "text": "average显示平均数"
+      },
+      "keyboardState": {
+        "showAvg": false,
+        "showMedian": false,
+        "onePointSys": false,
+        "repoType": "software-artifact",
+        "yAxisScale": true
+      },
+      "keyboardSteps": [
+        {
+          "index": 0,
+          "setting": "showAvg",
+          "focus": {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px"
+          },
+          "afterEnter": {
+            "showAvg": true,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          },
+          "afterSpace": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          }
+        },
+        {
+          "index": 1,
+          "setting": "showMedian",
+          "focus": {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px"
+          },
+          "afterEnter": {
+            "showAvg": false,
+            "showMedian": true,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          },
+          "afterSpace": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          }
+        },
+        {
+          "index": 2,
+          "setting": "onePointSys",
+          "focus": {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px"
+          },
+          "afterEnter": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": true,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          },
+          "afterSpace": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          }
+        },
+        {
+          "index": 3,
+          "setting": "yAxisScale",
+          "focus": {
+            "outlineStyle": "solid",
+            "outlineWidth": "2px"
+          },
+          "afterEnter": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": false
+          },
+          "afterSpace": {
+            "showAvg": false,
+            "showMedian": false,
+            "onePointSys": false,
+            "repoType": "software-artifact",
+            "yAxisScale": true
+          }
+        }
+      ],
+      "clicks": [
+        {
+          "showAvg": true,
+          "showMedian": false,
+          "onePointSys": false,
+          "repoType": "software-artifact",
+          "yAxisScale": true
+        },
+        {
+          "showAvg": true,
+          "showMedian": true,
+          "onePointSys": false,
+          "repoType": "software-artifact",
+          "yAxisScale": true
+        },
+        {
+          "showAvg": true,
+          "showMedian": true,
+          "onePointSys": true,
+          "repoType": "software-artifact",
+          "yAxisScale": true
+        },
+        {
+          "showAvg": true,
+          "showMedian": true,
+          "onePointSys": true,
+          "repoType": "software-artifact",
+          "yAxisScale": false
+        }
+      ],
+      "pointerState": {
+        "showAvg": true,
+        "showMedian": true,
+        "onePointSys": true,
+        "repoType": "software-artifact",
+        "yAxisScale": false
+      },
+      "persisted": {
+        "showAvg": true,
+        "showMedian": true,
+        "onePointSys": true,
+        "repoType": "software-artifact",
+        "yAxisScale": false
+      },
+      "afterReload": {
+        "showAvg": true,
+        "showMedian": true,
+        "onePointSys": true,
+        "repoType": "software-artifact",
+        "yAxisScale": false
+      },
+      "domAfterReload": [
+        {
+          "tag": "BUTTON",
+          "text": "average显示平均数",
+          "tabIndex": 0,
+          "pressed": "true"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "median显示中位数",
+          "tabIndex": 0,
+          "pressed": "true"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "number-100百分制",
+          "tabIndex": 0,
+          "pressed": "false"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "yAxisY 轴缩放",
+          "tabIndex": 0,
+          "pressed": "false"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

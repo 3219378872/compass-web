@@ -1,0 +1,12 @@
+{
+  "implementation_commit": "626ef827df99f7450558efe6be3dd968fea156f2",
+  "checked_at": "2026-09-26T02:26:38.966089+00:00",
+  "browser_version": "151.0.7922.34",
+  "playwright_version": "1.62.1",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "results": "Both languages passed all assertions; no page errors. Portable script defaults resolved the independent evidence worktree correctly.",
+  "boundary": "Isolated real ChartDisplaySetting component with real React, Valtio chartUserSetting store, localStorage, translations and SVGs. Native before/after buttons are harness scaffolding. No report route, chart rendering, NavbarSetting popover, API, or backend is exercised."
+}
