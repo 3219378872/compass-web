@@ -1,0 +1,362 @@
+  console.error
+    `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      73 |   return {
+      74 |     queryClient,
+    > 75 |     ...render(
+         |              ^
+      76 |       <QueryClientProvider client={queryClient}>{element}</QueryClientProvider>
+      77 |     ),
+      78 |   };
+
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../../compass-agent/node_modules/react-dom/cjs/react-dom-test-utils.development.js:19:17)
+      at ../../../compass-agent/node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../../compass-agent/node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../../compass-agent/node_modules/@testing-library/react/dist/pure.js:246:10)
+      at renderWithQueries (src/common/components/OrgEdit/OrgInput.test.tsx:75:14)
+      at Object.renderWithQueries (src/common/components/OrgEdit/OrgInput.test.tsx:112:5)
+
+  console.error
+    Warning: `callback` is deprecated. Please return a promise instead.
+
+      at warning (../../../compass-agent/node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../../compass-agent/node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../../compass-agent/node_modules/rc-util/lib/warning.js:71:3)
+      at cloneRule.validator (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:173:30)
+      at Object.cloneRule.validator (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:62:40)
+      at ../../../compass-agent/node_modules/@rc-component/async-validator/lib/index.js:237:24
+      at ../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:121:5
+          at Array.forEach (<anonymous>)
+      at asyncParallelArray (../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:120:7)
+      at ../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:203:9
+          at Array.forEach (<anonymous>)
+      at ../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:198:16
+      at asyncMap (../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:184:17)
+      at Schema.validate (../../../compass-agent/node_modules/@rc-component/async-validator/lib/index.js:160:33)
+      at _callee2$ (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:82:44)
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:52:18
+      at Generator.<anonymous> (../../../compass-agent/node_modules/@babel/runtime/helpers/regenerator.js:52:51)
+      at Generator.next (../../../compass-agent/node_modules/@babel/runtime/helpers/regeneratorDefine.js:11:21)
+      at asyncGeneratorStep (../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12
+      at validateRule (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:37:24)
+      at ../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:250:14
+          at Array.map (<anonymous>)
+      at validateRules (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:249:36)
+      at _callee$ (../../../compass-agent/node_modules/rc-field-form/lib/Field.js:309:57)
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:52:18
+      at Generator.<anonymous> (../../../compass-agent/node_modules/@babel/runtime/helpers/regenerator.js:52:51)
+      at Generator.next (../../../compass-agent/node_modules/@babel/runtime/helpers/regeneratorDefine.js:11:21)
+      at asyncGeneratorStep (../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12
+
+FAIL src/common/components/OrgEdit/OrgInput.test.tsx (6.802 s)
+  organization input and form values
+    ✓ keeps an unchanged organization and dates when confirming (615 ms)
+    ✕ validates a cleared name instead of submitting the previous organization (1212 ms)
+    ✕ submits typed text even when matching suggestions have not been selected (456 ms)
+    ✓ keeps explicit suggestion selection working (447 ms)
+    ✕ reports free text immediately without waiting for autocomplete (12 ms)
+    ✕ submits current text while autocomplete is still pending (440 ms)
+    ✕ submits current text after autocomplete fails (431 ms)
+    ✕ does not overwrite newer text when an earlier empty search completes (528 ms)
+
+  ● organization input and form values › validates a cleared name instead of submitting the previous organization
+
+    expect(element).toHaveClass("ant-input-status-error")
+
+    Expected the element to have class:
+      ant-input-status-error
+    Received:
+      ant-input css-dev-only-do-not-override-mncuj7 ant-input-outlined ant-org-input
+
+    Ignored nodes: comments, script, style
+    [36m<html>[39m
+      [36m<head />[39m
+      [36m<body>[39m
+        [36m<div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"border-b border-[#E7E7E7] py-4"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"flex items-center justify-between"[39m
+            [36m>[39m
+              [36m<form[39m
+                [33mclass[39m=[32m"ant-form ant-form-horizontal css-dev-only-do-not-override-mncuj7 flex"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"ant-form-item mr-2 !mb-0 h-6 w-[160px] css-dev-only-do-not-override-mncuj7 ant-form-item-horizontal"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"ant-row ant-form-item-row css-dev-only-do-not-override-mncuj7"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"ant-col ant-form-item-control css-dev-only-do-not-override-mncuj7"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"ant-form-item-control-input"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"ant-form-item-control-input-content"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"h-full w-full group relative"[39m
+                          [36m>[39m
+                            [36m<input[39m
+                              [33mautocomplete[39m=[32m"off"[39m
+                              [33mclass[39m=[32m"ant-input css-dev-only-do-not-override-mncuj7 ant-input-outlined ant-org-input"[39m
+                              [33mplaceholder[39m=[32m"common:org_name"[39m
+                              [33mtype[39m=[32m"text"[39m
+                              [33mvalue[39m=[32m""[39m
+                            [36m/>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"absolute top-1.5 right-2 cursor-pointer text-[#CCCCCC]"[39m
+                            [36m/>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"ant-form-item !mb-0 h-6 w-[240px] css-dev-only-do-not-override-mncuj7 ant-form-item-horizontal"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"ant-row ant-form-item-row css-dev-only-do-not-override-mncuj7"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"ant-col ant-form-item-control css-dev-only-do-not-override-mncuj7"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"ant-form-item-control-input"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"ant-form-item-control-input-content"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"ant-picker ant-picker-range ant-picker-outlined css-dev-only-do-not-override-mncuj7 ant-org-input"[39m
+                          [36m>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"ant-picker-input"[39m
+                            [36m>[39m
+                              [36m<input[39m
+                                [33maria-invalid[39m=[32m"false"[39m
+                                [33mautocomplete[39m=[32m"off"[39m
+                                [33mdate-range[39m=[32m"start"[39m
+                                [33mplaceholder[39m=[32m"Start date"[39m
+                                [33mreadonly[39m=[32m""[39m
+                                [33msize[39m=[32m"12"[39m
+                                [33mvalue[39m=[32m"2020-01-01"[39m
+                              [36m/>[39m
+                            [36m</div>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"ant-picker-range-separator"[39m
+                            [36m>[39m
+                              [36m<span[39m
+                                [33maria-label[39m=[32m"to"[39m
+                                [33mclass[39m=[32m"ant-picker-separator"[39m
+                              [36m>[39m
+                                [36m<span[39m
+                                  [33maria-label[39m=[32m"swap-right"[39m
+                                  [33mclass[39m=[32m"anticon anticon-swap-right"[39m
+                                  [33mrole[39m=[32m"img"[39m
+                                [36m>[39m
+                                  [36m<svg[39m
+                                    [33maria-hidden[39m=[32m"true"[39m
+                                    [33mdata-icon[39m=[32m"swap-right"[39m
+                                    [33mfill[39m=[32m"currentColor"[39m
+                                    [33mfocusable[39m=[32m"false"[39m
+                                    [33mheight[39m=[32m"1em"[39m
+                                    [33mviewBox[39m=[32m"0 0 1024 1024"[39m
+                                    [33mwidth[39m=[32m"1em"[39m
+                                  [36m>[39m
+                                    [36m<path[39m
+                                      [33md[39m=[32m"M873.1 596.2l-164-208A32 32 0 00684 376h-64.8c-6.7 0-10.4 7.7-6.3 13l144.3 183H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h695.9c26.8 0 41.7-30.8 25.2-51.8z"[39m
+                                    [36m/>[39m
+                                  [36m</svg>[39m
+                                [36m</span>[39m
+                              [36m</span>[39m
+                            [36m</div>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"ant-picker-input"[39m
+                            [36m>[39m
+                              [36m<input[39m
+                                [33maria-invalid[39m=[32m"false"[39m
+                                [33mautocomplete[39m=[32m"off"[39m
+                                [33mdate-range[39m=[32m"end"[39m
+                                [33mplaceholder[39m=[32m"End date"[39m
+                                [33mreadonly[39m=[32m""[39m
+                                [33msize[39m=[32m"12"[39m
+                                [33mvalue[39m=[32m"2021-01-01"[39m
+                              [36m/>[39m
+                            [36m</div>[39m
+                            [36m<div[39m
+                              [33mclass[39m=[32m"ant-picker-active-bar"[39m
+                              [33mstyle[39m=[32m"position: absolute; width: 0px;"[39m
+                            [36m/>[39m
+                            [36m<span[39m
+                              [33mclass[39m=[32m"ant-picker-suffix"[39m
+                            [36m>[39m
+                              [36m<span[39m
+                                [33maria-label[39m=[32m"calend...
+
+      121 |
+      122 |     await waitFor(() =>
+    > 123 |       expect(nameInput()).toHaveClass('ant-input-status-error')
+          |                           ^
+      124 |     );
+      125 |     expect(mutations()).toHaveLength(0);
+      126 |   });
+
+      at toHaveClass (src/common/components/OrgEdit/OrgInput.test.tsx:123:27)
+      at runWithExpensiveErrorDiagnosticsDisabled (../../../compass-agent/node_modules/@testing-library/dom/dist/config.js:47:12)
+      at checkCallback (../../../compass-agent/node_modules/@testing-library/dom/dist/wait-for.js:127:77)
+      at checkRealTimersCallback (../../../compass-agent/node_modules/@testing-library/dom/dist/wait-for.js:121:16)
+      at Timeout.task [as _onTimeout] (../../../compass-agent/node_modules/jsdom/lib/jsdom/browser/Window.js:520:19)
+
+  ● organization input and form values › submits typed text even when matching suggestions have not been selected
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "organizations": Array [
+          Object {
+            "firstDate": "2020-01-01",
+            "lastDate": "2021-01-01",
+    -       "orgName": "New Org",
+    +       "orgName": "Original Org",
+          },
+        ],
+        "platform": "github",
+      }
+
+      100 | const expectSubmittedName = async (name: string) => {
+      101 |   await waitFor(() => expect(mutations()).toHaveLength(1));
+    > 102 |   expect(mutations()[0]).toEqual({
+          |                          ^
+      103 |     platform: 'github',
+      104 |     organizations: [
+      105 |       { orgName: name, firstDate: '2020-01-01', lastDate: '2021-01-01' },
+
+      at toEqual (src/common/components/OrgEdit/OrgInput.test.tsx:102:26)
+      at Object.<anonymous> (src/common/components/OrgEdit/OrgInput.test.tsx:135:5)
+
+  ● organization input and form values › reports free text immediately without waiting for autocomplete
+
+    expect(jest.fn()).toHaveBeenCalledTimes(expected)
+
+    Expected number of calls: 1
+    Received number of calls: 0
+
+      156 |     });
+      157 |
+    > 158 |     expect(onChange).toHaveBeenCalledTimes(1);
+          |                      ^
+      159 |     expect(onChange).toHaveBeenCalledWith('Unlisted Org');
+      160 |   });
+      161 |
+
+      at Object.toHaveBeenCalledTimes (src/common/components/OrgEdit/OrgInput.test.tsx:158:22)
+
+  ● organization input and form values › submits current text while autocomplete is still pending
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "organizations": Array [
+          Object {
+            "firstDate": "2020-01-01",
+            "lastDate": "2021-01-01",
+    -       "orgName": "Pending Org",
+    +       "orgName": "Original Org",
+          },
+        ],
+        "platform": "github",
+      }
+
+      100 | const expectSubmittedName = async (name: string) => {
+      101 |   await waitFor(() => expect(mutations()).toHaveLength(1));
+    > 102 |   expect(mutations()[0]).toEqual({
+          |                          ^
+      103 |     platform: 'github',
+      104 |     organizations: [
+      105 |       { orgName: name, firstDate: '2020-01-01', lastDate: '2021-01-01' },
+
+      at toEqual (src/common/components/OrgEdit/OrgInput.test.tsx:102:26)
+      at Object.<anonymous> (src/common/components/OrgEdit/OrgInput.test.tsx:172:5)
+
+  ● organization input and form values › submits current text after autocomplete fails
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "organizations": Array [
+          Object {
+            "firstDate": "2020-01-01",
+            "lastDate": "2021-01-01",
+    -       "orgName": "Offline Org",
+    +       "orgName": "Original Org",
+          },
+        ],
+        "platform": "github",
+      }
+
+      100 | const expectSubmittedName = async (name: string) => {
+      101 |   await waitFor(() => expect(mutations()).toHaveLength(1));
+    > 102 |   expect(mutations()[0]).toEqual({
+          |                          ^
+      103 |     platform: 'github',
+      104 |     organizations: [
+      105 |       { orgName: name, firstDate: '2020-01-01', lastDate: '2021-01-01' },
+
+      at toEqual (src/common/components/OrgEdit/OrgInput.test.tsx:102:26)
+      at Object.<anonymous> (src/common/components/OrgEdit/OrgInput.test.tsx:186:5)
+
+  ● organization input and form values › does not overwrite newer text when an earlier empty search completes
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+        "organizations": Array [
+          Object {
+            "firstDate": "2020-01-01",
+            "lastDate": "2021-01-01",
+    -       "orgName": "Latest Org",
+    +       "orgName": "Earlier Org",
+          },
+        ],
+        "platform": "github",
+      }
+
+      100 | const expectSubmittedName = async (name: string) => {
+      101 |   await waitFor(() => expect(mutations()).toHaveLength(1));
+    > 102 |   expect(mutations()[0]).toEqual({
+          |                          ^
+      103 |     platform: 'github',
+      104 |     organizations: [
+      105 |       { orgName: name, firstDate: '2020-01-01', lastDate: '2021-01-01' },
+
+      at toEqual (src/common/components/OrgEdit/OrgInput.test.tsx:102:26)
+      at Object.<anonymous> (src/common/components/OrgEdit/OrgInput.test.tsx:215:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 2 passed, 8 total
+Snapshots:   0 total
+Time:        7.264 s
+Ran all test suites matching /src\/common\/components\/OrgEdit\/OrgInput.test.tsx/i.

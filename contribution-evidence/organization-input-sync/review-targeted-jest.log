@@ -1,0 +1,86 @@
+jest-haste-map: Haste module naming collision: @oss-compass/web
+  The following files share their name; please adjust your hasteImpl:
+    * <rootDir>/package.json
+    * <rootDir>/.next/standalone/apps/web/package.json
+
+  console.error
+    `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      73 |   return {
+      74 |     queryClient,
+    > 75 |     ...render(
+         |              ^
+      76 |       <QueryClientProvider client={queryClient}>{element}</QueryClientProvider>
+      77 |     ),
+      78 |   };
+
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../../compass-agent/node_modules/react-dom/cjs/react-dom-test-utils.development.js:19:17)
+      at ../../../compass-agent/node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../../compass-agent/node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../../compass-agent/node_modules/@testing-library/react/dist/pure.js:246:10)
+      at renderWithQueries (src/common/components/OrgEdit/OrgInput.test.tsx:75:14)
+      at Object.renderWithQueries (src/common/components/OrgEdit/OrgInput.test.tsx:112:5)
+
+  console.error
+    Warning: `callback` is deprecated. Please return a promise instead.
+
+      at warning (../../../compass-agent/node_modules/rc-util/lib/warning.js:43:15)
+      at call (../../../compass-agent/node_modules/rc-util/lib/warning.js:64:5)
+      at warningOnce (../../../compass-agent/node_modules/rc-util/lib/warning.js:71:3)
+      at cloneRule.validator (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:173:30)
+      at Object.cloneRule.validator (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:62:40)
+      at ../../../compass-agent/node_modules/@rc-component/async-validator/lib/index.js:237:24
+      at ../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:121:5
+          at Array.forEach (<anonymous>)
+      at asyncParallelArray (../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:120:7)
+      at ../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:203:9
+          at Array.forEach (<anonymous>)
+      at ../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:198:16
+      at asyncMap (../../../compass-agent/node_modules/@rc-component/async-validator/lib/util.js:184:17)
+      at Schema.validate (../../../compass-agent/node_modules/@rc-component/async-validator/lib/index.js:160:33)
+      at _callee2$ (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:82:44)
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:52:18
+      at Generator.<anonymous> (../../../compass-agent/node_modules/@babel/runtime/helpers/regenerator.js:52:51)
+      at Generator.next (../../../compass-agent/node_modules/@babel/runtime/helpers/regeneratorDefine.js:11:21)
+      at asyncGeneratorStep (../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12
+      at validateRule (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:37:24)
+      at ../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:250:14
+          at Array.map (<anonymous>)
+      at validateRules (../../../compass-agent/node_modules/rc-field-form/lib/utils/validateUtil.js:249:36)
+      at _callee$ (../../../compass-agent/node_modules/rc-field-form/lib/Field.js:309:57)
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:52:18
+      at Generator.<anonymous> (../../../compass-agent/node_modules/@babel/runtime/helpers/regenerator.js:52:51)
+      at Generator.next (../../../compass-agent/node_modules/@babel/runtime/helpers/regeneratorDefine.js:11:21)
+      at asyncGeneratorStep (../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at ../../../compass-agent/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12
+
+  console.log
+    Failed: {
+      values: { orgName: '', date: [ [M], [M] ] },
+      errorFields: [ { name: [Array], errors: [Array], warnings: [] } ],
+      outOfDate: false
+    }
+
+      at log (src/common/components/OrgEdit/index.tsx:66:15)
+
+PASS src/common/components/OrgEdit/OrgInput.test.tsx
+  organization input and form values
+    ✓ keeps an unchanged organization and dates when confirming (508 ms)
+    ✓ validates a cleared name instead of submitting the previous organization (178 ms)
+    ✓ submits typed text even when matching suggestions have not been selected (443 ms)
+    ✓ keeps explicit suggestion selection working (439 ms)
+    ✓ reports free text immediately without waiting for autocomplete (12 ms)
+    ✓ submits current text while autocomplete is still pending (437 ms)
+    ✓ submits current text after autocomplete fails (430 ms)
+    ✓ does not overwrite newer text when an earlier empty search completes (452 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        6.524 s
+Ran all test suites matching /src\/common\/components\/OrgEdit\/OrgInput.test.tsx/i.

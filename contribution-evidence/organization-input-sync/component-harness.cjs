@@ -1,0 +1,22 @@
+const fs=require('fs');const path=require('path');
+const repo=path.resolve(process.env.COMPASS_REPO||path.join(__dirname,'../..'));const deps=path.resolve(process.env.COMPASS_DEPS||path.join(repo,'node_modules'));const app=path.join(repo,'apps/web');const out=path.join(__dirname,'harness-dist');
+const esbuild=require(path.join(deps,'esbuild'));const resolveFile=p=>['','.ts','.tsx','.js','/index.ts','/index.tsx'].map(s=>p+s).find(f=>fs.existsSync(f)&&fs.statSync(f).isFile());fs.mkdirSync(out,{recursive:true});
+(async()=>{await esbuild.build({stdin:{contents:`
+import React from 'react';import {createRoot} from 'react-dom/client';import {QueryClient,QueryClientProvider} from '@tanstack/react-query';import i18n from 'i18next';import {I18nextProvider} from 'react-i18next';
+import OrgEdit from '${app}/src/common/components/OrgEdit';import en from '${app}/i18n/en/common.json';import zh from '${app}/i18n/zh/common.json';
+const lang=new URLSearchParams(location.search).get('lang')||'en';i18n.init({lng:lang,resources:{en:{common:en},zh:{common:zh}},initImmediate:false,interpolation:{escapeValue:false}});
+window.requests=[];window.mutations=[];window.orgHarnessReady=false;
+const queryClient=new QueryClient({defaultOptions:{queries:{retry:false,refetchOnWindowFocus:false}}});
+function Harness(){React.useEffect(()=>{window.orgHarnessReady=true},[]);return <QueryClientProvider client={queryClient}><I18nextProvider i18n={i18n}><h1>Organization-name input reproduction</h1><p>Actual OrgEdit and Ant Design form; deterministic local GraphQL transport. No real profile is updated.</p><OrgEdit organizations={[{orgName:'Original Org',firstDate:'2020-01-01',lastDate:'2021-01-01'}]} type="edit" index={0} provider="github" setShowEdit={()=>{}} onSuccess={()=>{}}/></I18nextProvider></QueryClientProvider>}
+createRoot(document.getElementById('root')).render(<Harness/>);`,resolveDir:repo,loader:'tsx'},bundle:true,outfile:path.join(out,'bundle.js'),platform:'browser',format:'iife',nodePaths:[deps],define:{'process.env.NODE_ENV':'"development"','__dirname':'"/"'},tsconfigRaw:{compilerOptions:{jsx:'react'}},plugins:[{name:'harness',setup(build){
+ build.onResolve({filter:/^@oss-compass\/graphql$/},()=>({path:path.join(repo,'packages/graphql/src/index.ts')}));
+ build.onResolve({filter:/^@oss-compass\/ui$/},()=>({path:path.join(repo,'packages/ui/src/index.tsx')}));
+ build.onResolve({filter:/^next-i18next$/},()=>({path:path.join(deps,'react-i18next/dist/es/index.js')}));
+ build.onResolve({filter:/^@common\/gqlClient$/},()=>({path:'client',namespace:'fixture'}));
+ build.onLoad({filter:/.*/,namespace:'fixture'},()=>({contents:`export default {request:async ({document,variables})=>{window.requests.push({document,variables:structuredClone(variables)});if(document.includes('mutation modifyUserOrgs')){window.mutations.push(structuredClone(variables));return {modifyUserOrgs:{status:'true',message:'saved'}};}if(document.includes('orgFuzzySearch'))return {orgFuzzySearch:variables.keyword==='New Org'?[{orgName:'New Org'}]:variables.keyword==='Original Org'?[{orgName:'Original Org'}]:[]};throw new Error('Unexpected fixture request');}};`,loader:'js'}));
+ for(const [prefix,dir] of [['@common/','src/common/'],['@modules/','src/modules/'],['@public/','public/']])build.onResolve({filter:new RegExp('^'+prefix)},args=>({path:resolveFile(path.join(app,dir,args.path.slice(prefix.length)))}));
+}}]});
+const postcss=require(path.join(deps,'postcss'));const tailwind=require(path.join(deps,'tailwindcss'));const css=await postcss([tailwind({content:[path.join(app,'src/common/components/OrgEdit/*.tsx'),path.join(repo,'packages/ui/src/components/Button/*.tsx')],theme:{extend:{colors:{primary:'#3A5BEF'}}},plugins:[]})]).process('@tailwind base;@tailwind components;@tailwind utilities;',{from:undefined});
+fs.writeFileSync(path.join(out,'styles.css'),css.css+'body{font-family:system-ui;padding:32px;max-width:850px}h1{font-size:24px;margin-bottom:12px}p{margin-bottom:24px}');
+fs.writeFileSync(path.join(out,'index.html'),'<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="/styles.css"></head><body><div id="root"></div><script src="/bundle.js"></script></body></html>');
+console.log(JSON.stringify({repo,deps,out,boundary:'Actual OrgEdit/OrgInput/DateRangePicker, Antd Form/Input/RangePicker, OSS Compass Button, generated GraphQL query+mutation hooks and React Query. GraphQL client transport alone is a deterministic fixture.'},null,2));})().catch(e=>{console.error(e);process.exitCode=1});

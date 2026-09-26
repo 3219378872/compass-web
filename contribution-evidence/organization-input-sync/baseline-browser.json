@@ -1,0 +1,144 @@
+{
+  "base": "d709b1898549c5ab4091302a4c26f45bbe198c66",
+  "observedAt": "2026-09-26T04:23:47.810Z",
+  "browserVersion": "151.0.7922.34",
+  "boundary": "Actual OrgEdit/OrgInput/DateRangePicker and Antd form, generated query+mutation hooks and React Query. Synthetic GraphQL client transport captures mutation but never sends it to a server. No auth/profile/backend service exercised.",
+  "results": [
+    {
+      "lang": "en",
+      "mode": "clear",
+      "visible": "",
+      "mutations": [
+        {
+          "platform": "github",
+          "organizations": [
+            {
+              "orgName": "Original Org",
+              "firstDate": "2020-01-01",
+              "lastDate": "2021-01-01"
+            }
+          ]
+        }
+      ],
+      "queryKeywords": [
+        "Original Org"
+      ],
+      "formError": false,
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "typed-match",
+      "visible": "New Org",
+      "mutations": [
+        {
+          "platform": "github",
+          "organizations": [
+            {
+              "orgName": "Original Org",
+              "firstDate": "2020-01-01",
+              "lastDate": "2021-01-01"
+            }
+          ]
+        }
+      ],
+      "queryKeywords": [
+        "Original Org",
+        "New Org"
+      ],
+      "formError": false,
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "mode": "selected-match",
+      "visible": "New Org",
+      "mutations": [
+        {
+          "platform": "github",
+          "organizations": [
+            {
+              "orgName": "New Org",
+              "firstDate": "2020-01-01",
+              "lastDate": "2021-01-01"
+            }
+          ]
+        }
+      ],
+      "queryKeywords": [
+        "Original Org",
+        "New Org"
+      ],
+      "formError": false,
+      "errors": []
+    },
+    {
+      "lang": "zh",
+      "mode": "clear",
+      "visible": "",
+      "mutations": [
+        {
+          "platform": "github",
+          "organizations": [
+            {
+              "orgName": "Original Org",
+              "firstDate": "2020-01-01",
+              "lastDate": "2021-01-01"
+            }
+          ]
+        }
+      ],
+      "queryKeywords": [
+        "Original Org"
+      ],
+      "formError": false,
+      "errors": []
+    },
+    {
+      "lang": "zh",
+      "mode": "typed-match",
+      "visible": "New Org",
+      "mutations": [
+        {
+          "platform": "github",
+          "organizations": [
+            {
+              "orgName": "Original Org",
+              "firstDate": "2020-01-01",
+              "lastDate": "2021-01-01"
+            }
+          ]
+        }
+      ],
+      "queryKeywords": [
+        "Original Org",
+        "New Org"
+      ],
+      "formError": false,
+      "errors": []
+    },
+    {
+      "lang": "zh",
+      "mode": "selected-match",
+      "visible": "New Org",
+      "mutations": [
+        {
+          "platform": "github",
+          "organizations": [
+            {
+              "orgName": "New Org",
+              "firstDate": "2020-01-01",
+              "lastDate": "2021-01-01"
+            }
+          ]
+        }
+      ],
+      "queryKeywords": [
+        "Original Org",
+        "New Org"
+      ],
+      "formError": false,
+      "errors": []
+    }
+  ]
+}
