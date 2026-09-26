@@ -1,0 +1,226 @@
+{
+  "upstreamBase": "d709b1898549c5ab4091302a4c26f45bbe198c66",
+  "observedAt": "2026-09-26T03:42:04.676Z",
+  "browserVersion": "151.0.7922.34",
+  "boundary": "Actual collection components and Antd pagination; real generated GraphQL hook and React Query; synthetic GraphQL client transport with standard unclamped page slicing. Does not claim live backend behavior.",
+  "results": [
+    {
+      "lang": "en",
+      "before": {
+        "query": {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "desc"
+          }
+        },
+        "cards": 30
+      },
+      "afterSearch": {
+        "query": {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "needle",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "desc"
+          }
+        },
+        "cards": 0,
+        "displayedPage": "1",
+        "body": "Collection search pagination reproduction\n\nActual collection components; deterministic query boundary fixture.\n\nSQL Database\n1 repositories\nPick for compare\nSQL Database\n1",
+        "queries": [
+          {
+            "ident": "sql-database",
+            "page": 1,
+            "per": 30,
+            "keyword": "",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          },
+          {
+            "ident": "sql-database",
+            "page": 2,
+            "per": 30,
+            "keyword": "",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          },
+          {
+            "ident": "sql-database",
+            "page": 2,
+            "per": 30,
+            "keyword": "needle",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          }
+        ]
+      },
+      "recovery": {
+        "query": {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "needle",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "desc"
+          }
+        },
+        "cards": 0,
+        "queries": [
+          {
+            "ident": "sql-database",
+            "page": 1,
+            "per": 30,
+            "keyword": "",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          },
+          {
+            "ident": "sql-database",
+            "page": 2,
+            "per": 30,
+            "keyword": "",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          },
+          {
+            "ident": "sql-database",
+            "page": 2,
+            "per": 30,
+            "keyword": "needle",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "lang": "zh",
+      "before": {
+        "query": {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "desc"
+          }
+        },
+        "cards": 30
+      },
+      "afterSearch": {
+        "query": {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "needle",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "desc"
+          }
+        },
+        "cards": 0,
+        "displayedPage": "1",
+        "body": "Collection search pagination reproduction\n\nActual collection components; deterministic query boundary fixture.\n\n关系型数据库\n1 个仓库\n勾选对比\n关系型数据库\n1",
+        "queries": [
+          {
+            "ident": "sql-database",
+            "page": 1,
+            "per": 30,
+            "keyword": "",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          },
+          {
+            "ident": "sql-database",
+            "page": 2,
+            "per": 30,
+            "keyword": "",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          },
+          {
+            "ident": "sql-database",
+            "page": 2,
+            "per": 30,
+            "keyword": "needle",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          }
+        ]
+      },
+      "recovery": {
+        "query": {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "needle",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "desc"
+          }
+        },
+        "cards": 0,
+        "queries": [
+          {
+            "ident": "sql-database",
+            "page": 1,
+            "per": 30,
+            "keyword": "",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          },
+          {
+            "ident": "sql-database",
+            "page": 2,
+            "per": 30,
+            "keyword": "",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          },
+          {
+            "ident": "sql-database",
+            "page": 2,
+            "per": 30,
+            "keyword": "needle",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "desc"
+            }
+          }
+        ]
+      },
+      "errors": []
+    }
+  ]
+}

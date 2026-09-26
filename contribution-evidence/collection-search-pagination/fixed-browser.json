@@ -1,0 +1,236 @@
+{
+  "upstreamBase": "d709b1898549c5ab4091302a4c26f45bbe198c66",
+  "observedAt": "2026-09-26T03:58:06.905Z",
+  "browserVersion": "151.0.7922.34",
+  "boundary": "Actual collection components, Antd pagination/dropdown, RepoCard/ECharts, generated GraphQL hook and React Query. Synthetic GraphQL client transport and Next routing/link. No full-app/backend/provider claim.",
+  "results": [
+    {
+      "lang": "en",
+      "method": "enter",
+      "narrow": {
+        "queries": [
+          {
+            "ident": "sql-database",
+            "page": 1,
+            "per": 30,
+            "keyword": "needle",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "asc"
+            }
+          }
+        ],
+        "cards": 1,
+        "page": "1"
+      },
+      "broad": [
+        {
+          "ident": "sql-database",
+          "page": 1,
+          "per": 30,
+          "keyword": "broad",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        },
+        {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "broad",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        }
+      ],
+      "cleared": {
+        "query": {
+          "ident": "sql-database",
+          "page": 1,
+          "per": 30,
+          "keyword": "",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        },
+        "page": "1",
+        "cards": 30
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "method": "click",
+      "narrow": {
+        "queries": [
+          {
+            "ident": "sql-database",
+            "page": 1,
+            "per": 30,
+            "keyword": "needle",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "asc"
+            }
+          }
+        ],
+        "cards": 1,
+        "page": "1"
+      },
+      "broad": [
+        {
+          "ident": "sql-database",
+          "page": 1,
+          "per": 30,
+          "keyword": "broad",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        },
+        {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "broad",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        }
+      ],
+      "cleared": {
+        "query": {
+          "ident": "sql-database",
+          "page": 1,
+          "per": 30,
+          "keyword": "",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        },
+        "page": "1",
+        "cards": 30
+      },
+      "errors": []
+    },
+    {
+      "lang": "zh",
+      "method": "enter",
+      "narrow": {
+        "queries": [
+          {
+            "ident": "sql-database",
+            "page": 1,
+            "per": 30,
+            "keyword": "needle",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "asc"
+            }
+          }
+        ],
+        "cards": 1,
+        "page": "1"
+      },
+      "broad": [
+        {
+          "ident": "sql-database",
+          "page": 1,
+          "per": 30,
+          "keyword": "broad",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        },
+        {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "broad",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        }
+      ],
+      "cleared": {
+        "query": {
+          "ident": "sql-database",
+          "page": 1,
+          "per": 30,
+          "keyword": "",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        },
+        "page": "1",
+        "cards": 30
+      },
+      "errors": []
+    },
+    {
+      "lang": "zh",
+      "method": "click",
+      "narrow": {
+        "queries": [
+          {
+            "ident": "sql-database",
+            "page": 1,
+            "per": 30,
+            "keyword": "needle",
+            "sortOpts": {
+              "type": "activity_score",
+              "direction": "asc"
+            }
+          }
+        ],
+        "cards": 1,
+        "page": "1"
+      },
+      "broad": [
+        {
+          "ident": "sql-database",
+          "page": 1,
+          "per": 30,
+          "keyword": "broad",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        },
+        {
+          "ident": "sql-database",
+          "page": 2,
+          "per": 30,
+          "keyword": "broad",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        }
+      ],
+      "cleared": {
+        "query": {
+          "ident": "sql-database",
+          "page": 1,
+          "per": 30,
+          "keyword": "",
+          "sortOpts": {
+            "type": "activity_score",
+            "direction": "asc"
+          }
+        },
+        "page": "1",
+        "cards": 30
+      },
+      "errors": []
+    }
+  ]
+}

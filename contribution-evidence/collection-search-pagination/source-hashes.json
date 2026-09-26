@@ -1,0 +1,10 @@
+{
+  "upstreamBase": "d709b1898549c5ab4091302a4c26f45bbe198c66",
+  "issue": "https://github.com/oss-compass/compass-web/issues/440",
+  "testedSourceSha256": {
+    "apps/web/src/modules/collection/MainContent.tsx": "893fa6b1029aa05e1097bcaabd819dece6b3476a9b59dd3def8e6bd2900aa799",
+    "apps/web/src/modules/collection/MainContent.test.tsx": "471103d1d945613df479b64166d376e8c22591ab2b5eb2245744654d62846679"
+  },
+  "implementationCommit": "d8ee27ced113e782987d3f78bee5a490064f2c4e",
+  "implementationTree": "cad556b6fa1a9b115ade737284f38dfc8540e1ed"
+}

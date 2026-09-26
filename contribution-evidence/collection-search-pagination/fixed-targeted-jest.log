@@ -1,0 +1,37 @@
+  console.error
+    `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      73 |   });
+      74 |   clients.push(queryClient);
+    > 75 |   return render(
+         |                ^
+      76 |     <QueryClientProvider client={queryClient}>
+      77 |       <MainContent
+      78 |         collectionArray={[
+
+      at Object.<anonymous>.process.env.NODE_ENV.exports.act (../../../compass-agent/node_modules/react-dom/cjs/react-dom-test-utils.development.js:19:17)
+      at ../../../compass-agent/node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (../../../compass-agent/node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (../../../compass-agent/node_modules/@testing-library/react/dist/pure.js:246:10)
+      at renderCollection (src/modules/collection/MainContent.test.tsx:75:16)
+      at Object.renderCollection (src/modules/collection/MainContent.test.tsx:118:5)
+
+  console.log
+    activity_score asc
+
+      at log (src/modules/collection/MainHeader.tsx:70:13)
+
+PASS src/modules/collection/MainContent.test.tsx
+  collection search pagination
+    ✓ keeps normal collection pagination on the selected page (483 ms)
+    ✓ starts a submitted click search on page one and displays its only match (329 ms)
+    ✓ starts a submitted enter search on page one and displays its only match (317 ms)
+    ✓ allows normal pagination within the new search results (517 ms)
+    ✓ returns to the first unfiltered page when the search is cleared (504 ms)
+    ✓ preserves the activity sort and page size while resetting search pagination (687 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        4.818 s, estimated 9 s
+Ran all test suites matching /src\/modules\/collection\/MainContent.test.tsx/i.
